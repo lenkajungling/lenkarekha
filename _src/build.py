@@ -230,11 +230,7 @@ home = f"""
         </div>
       </div>""", "band-hero", "center 42%").replace('</section>', '<a class="scroll-cue" href="#co-hledas">ponoř se ↓</a></section>')}
 
-<section class="s-white wv-up marquee-wrap" style="position:relative;--bg:var(--white);background:var(--bg)" aria-hidden="true">
-  <div class="marquee"><div class="marquee-track">{MARQUEE}</div></div>
-</section>
-
-<section class="section s-white wv-down" id="co-hledas" style="padding-top:clamp(2.5rem,5vw,4rem)">
+<section class="section s-white wv-up wv-down" id="co-hledas">
   <div class="wrap quiz">
     <div class="quiz-head">
       <p class="eyebrow">Rychlá orientace</p>
