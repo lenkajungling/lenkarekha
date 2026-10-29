@@ -549,14 +549,16 @@ pillar_page("dotek", "Dotek", 'Dotek, který tělu vrátí <span class="hand">ro
          """<p>Moje intuitivní masáž kombinuje <strong>sportovní masáž, aromaterapii, práci s dechem a prvky thajské masáže</strong>. Není to jen mechanická technika. Je to vědomý dotek, který uvolní napětí, zklidní nervový systém a znovu tě propojí s vlastním tělem a dechem.</p>
 <p>Každé setkání přizpůsobuji tomu, co tělo právě potřebuje. Někdy hlubší práce se svaly, jindy jemnější přístup k celkovému uvolnění. Začínáme krátkou konzultací, pak masíruji.</p>
 <p>Jsem lektorka jógy a dlouhodobě pracuji s dechem a vědomým pohybem. Jako tanečnice i freediverka se učím vnímat tělo, rytmus a dech v hlubší rovině. Dotek je přirozeným rozšířením téhle práce.</p>
-<p>Časem chci nabídnout i samostatnou thajskou masáž.</p>
+<p>Brzy v nabídce i thajská masáž na futonu.</p>
 <div class="todo">Fotka k masáži (ruce, detail, klidné prostředí).</div>""",
          """<h3>Pro koho</h3><p>Pro každého, kdo cítí napětí v těle, potřebuje si odpočinout nebo chce svému tělu dopřát vědomou péči.</p><p><span class="todo-inline">kde masíruješ?</span></p>""" + ask("Rezervovat masáž"),
          None),
         ("cenik", "Ceník", "Kolik to stojí",
          """<ul class="offer">
-<li><span>Intuitivní masáž · 60 minut (10 minut konzultace, 50 minut masáž)</span><span class="price">800 Kč</span></li>
-</ul>""",
+<li><span>Intuitivní masáž · 45 minut + 10 minut konzultace</span><span class="price">800 Kč</span></li>
+<li><span>Intuitivní masáž · 60 minut + 10 minut konzultace</span><span class="price">1 000 Kč</span></li>
+</ul>
+<p>Brzy v nabídce i <strong>thajská masáž na futonu</strong>.</p>""",
          """<h3>Rezervace</h3><p>Termín domluvíme přes WhatsApp nebo e-mail.</p>""" + ask("Napsat mi"),
          None),
     ],
