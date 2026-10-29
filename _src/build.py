@@ -14,14 +14,14 @@ FORM = "https://formspree.io/f/mdavpakp"
 
 # Čtyři pilíře: (slug, název, podpoložky (odkaz, text), krátký popis, fotka)
 PILLARS = [
-    ("dech", "Dech", [("dech.html#pranajama", "Pránájáma"), ("dech.html#lekce", "Dechové lekce"), ("dech.html#workshopy", "Dechové workshopy")],
-     "Pránájáma, dechové lekce a workshopy Flow State Reset.", "bubliny.jpg"),
-    ("pohyb", "Pohyb", [("pohyb.html#lekce", "Skupinové lekce"), ("pohyb.html#individualne", "Jógová terapie individuálně"), ("firmy.html", "Firemní lekce"), ("rozvrh.html", "Rozvrh")],
-     "Skupinové lekce jógy, jógová terapie individuálně a lekce pro firmy.", "lekce-skupina.jpg"),
-    ("dotek", "Dotek", [("dotek.html#sportovni-masaz", "Sportovní masáž"), ("dotek.html#intuitivni-masaz", "Intuitivní masáž"), ("dotek.html#cenik", "Ceník")],
-     "Sportovní a intuitivní masáž. Vědomý dotek, který uvolní napětí.", None),
-    ("voda", "Voda", [("voda.html#vnitrni-ponor", "Vnitřní ponor"), ("voda.html#retreat", "V rytmu oceánu: Bali, duben 2027"), ("voda.html#freediving", "Kurzy freedivingu")],
-     "Příprava na freediving na suchu, retreat na Bali a brzy kurzy freedivingu.", "ponor-lano.jpg"),
+    ("dech", "Dech", [("dech.html#pranajama", "Pránájáma a dechové techniky"), ("dech.html#workshopy", "Workshop Flow State Reset")],
+     "Pránájáma, dechové techniky a tříhodinový workshop Flow State Reset.", "bubliny.jpg"),
+    ("pohyb", "Pohyb", [("pohyb.html#lekce", "Skupinové lekce"), ("pohyb.html#individualne", "Individuální lekce"), ("firmy.html", "Firemní lekce"), ("rozvrh.html", "Rozvrh")],
+     "Hravá flow a integrovaná terapie ve skupině, individuální lekce a lekce pro firmy.", "lekce-skupina.jpg"),
+    ("dotek", "Dotek", [("dotek.html#intuitivni-masaz", "Intuitivní masáž"), ("dotek.html#cenik", "Ceník")],
+     "Intuitivní masáž: sportovní masáž, aromaterapie, dech a thajská masáž v jednom.", None),
+    ("voda", "Voda", [("voda.html#vnitrni-ponor", "Vnitřní ponor"), ("voda.html#retreat", "V rytmu oceánu: Bali, duben 2027"), ("voda.html#freediving", "Kurzy freedivingu od léta 2027")],
+     "Vnitřní ponor, retreat na Bali a od léta 2027 kurzy freedivingu.", "ponor-lano.jpg"),
 ]
 CESTA_SUB = [("moje-cesta.html#pribeh", "Můj příběh"), ("moje-cesta.html#vzdelani", "Vzdělání a certifikace"),
              ("moje-cesta.html#reference", "Reference"), ("podnikavky.html", "Komunita: Podnikavky Přerov")]
@@ -158,7 +158,7 @@ def page(path, title, desc, body, current=None):
 
 
 def contact_form(pre, topic="", subject="Nová zpráva z webu", button="Odeslat zprávu"):
-    options = ["Dech: lekce nebo workshop", "Pohyb: skupinové lekce", "Jógová terapie individuálně", "Dotek: masáž",
+    options = ["Dech: pránájáma nebo workshop", "Pohyb: skupinové lekce", "Individuální lekce", "Dotek: masáž",
                "Voda: Vnitřní ponor", "Retreat na Bali", "Firemní lekce", "Podnikavky", "Jiné"]
     opts = "".join(f'<option{" selected" if o == topic else ""}>{o}</option>' for o in options)
     return f"""<form class="form" action="{FORM}" method="POST" data-ajax>
@@ -199,8 +199,8 @@ REKHA_LINE = """<svg class="rekha-line" viewBox="0 0 1440 160" preserveAspectRat
 # ======================= DOMŮ =======================
 quiz = [
     ("dotek.html#intuitivni-masaz", "Cítím napětí v těle a potřebuju ho pustit.", "Chci vědomý dotek, ne jen mechaniku.", "Dotek"),
-    ("dech.html", "Potřebuju se zklidnit a pořádně nadechnout.", "Pránájáma a dech pro klid a soustředění.", "Dech"),
-    ("pohyb.html#lekce", "Necvičím málo, spíš necvičím správně.", "Chci detailní vedení, ne pořád to samé.", "Pohyb: jógová terapie"),
+    ("dech.html", "Potřebuju se zklidnit a pořádně nadechnout.", "Pránájáma a dechové techniky pro klid a soustředění.", "Dech"),
+    ("pohyb.html#lekce", "Necvičím málo, spíš necvičím správně.", "Chci detailní vedení, ne pořád to samé.", "Pohyb: integrovaná terapie"),
     ("pohyb.html#lekce", "Potřebuju se hýbat s radostí.", "Bez tlaku na výkon.", "Pohyb: hravá flow"),
     ("voda.html", "Táhne mě hloubka.", "Chci se naučit pracovat s nádechem, který vydrží.", "Voda"),
     ("pohyb.html#individualne", "Chci péči jen pro sebe.", "Individuálně, na míru, s podporou i mezi lekcemi.", "Individuálně"),
@@ -316,7 +316,7 @@ home = f"""
 </section>
 """
 page("index.html", "Lenka Rekha — dech, pohyb, dotek, voda",
-     "Lenka Rekha: jógová terapie, hravá flow, dech a freediving, intuitivní masáž. Přerov, Olomouc, Lipník nad Bečvou.",
+     "Lenka Rekha: pránájáma, hravá flow, integrovaná terapie, intuitivní masáž a freediving. Přerov, Olomouc, Lipník nad Bečvou, Hradčany.",
      home, "index")
 
 # ======================= MOJE CESTA =======================
@@ -483,54 +483,56 @@ def pillar_page(slug, name, h1, lead, hero, sections, refs, cta_title, cta_text)
 
 # ---------- DECH ----------
 pillar_page("dech", "Dech", 'Dech je první <span class="hand">pohyb.</span>',
-    "Pránájáma, dechové lekce a workshopy. Kombinuji klasickou práci s dechem z jógy s technikami z freedivingu.",
+    "Pránájáma, dechové techniky a workshop Flow State Reset. Kombinuji klasickou práci s dechem z jógy s technikami z freedivingu.",
     ("bubliny.jpg", "Bublinový prstenec stoupá pod hladinou ke slunci", "center"),
     [
-        ("pranajama", "Pránájáma", "Klid, který si můžeš kdykoli přivolat",
-         """<p>Pránájáma je práce s dechem, jedna z cest jógy. Propojuji ji s poznatky z freedivingu: jak prodloužit výdech, zklidnit nervový systém a zůstat v klidu i ve chvílích, kdy tělo chce panikařit.</p>
-<p>Dech je nástroj, který máš u sebe pořád. Stačí se naučit ho používat.</p>""",
-         """<h3>Pro koho</h3><p>Pro každého, kdo chce zvládat stres, lépe spát, soustředit se nebo prodloužit zádrž dechu. Freediveři i úplní začátečníci.</p>""" + ask("Napsat mi"),
+        ("pranajama", "Pránájáma a dechové techniky", "Klid, který si můžeš kdykoli přivolat",
+         """<p><strong>Dechové techniky</strong> jsou praktické nástroje: jak prodloužit výdech, zklidnit nervový systém, soustředit se nebo prodloužit zádrž. Naučíš se je rychle a použiješ je hned, třeba před spaním, před důležitým jednáním nebo před ponorem. Propojuji je s poznatky z freedivingu.</p>
+<p><strong>Pránájáma</strong> jde hlouběji. Je to jedna z cest jógy, komplexní praxe, která pracuje s dechem, energií a pozorností zároveň. Nejde jen o techniku, ale o to, jak dech mění tvůj vnitřní stav. Potřebuje pravidelnost a čas, a o to víc ti dá.</p>
+<h3>Pránájáma ve studiu Sangha</h3>
+<p>Jednou měsíčně v neděli ráno, 9:00–10:00.</p>
+<ul class="offer">
+<li><span>Neděle 29. 11. 2026 · 9:00–10:00 · Sangha Přerov</span><span class="price">300 Kč</span></li>
+<li><span>Neděle 20. 12. 2026 · 9:00–10:00 · Sangha Přerov</span><span class="price">300 Kč</span></li>
+</ul>""",
+         """<h3>Nejbližší pránájáma</h3><p>Neděle 29. 11. a 20. 12., 9:00–10:00, studio Sangha, 300 Kč.</p><p>Dechové techniky tě naučím i individuálně, osobně nebo online.</p>""" + ask("Přihlásit se"),
          None),
-        ("lekce", "Dechové lekce", "Skupinově i individuálně",
-         """<p>Na dechových lekcích se učíme vnímat vlastní dech, prodlužovat výdech, pracovat se zádrží a zklidnit mysl. Individuálně ladím techniky přesně na tebe, online i osobně.</p>
-<div class="todo">Kdy a kde probíhají skupinové dechové lekce, ceny skupinových i individuálních lekcí.</div>""",
-         """<h3>Individuálně i online</h3><p>Lekci ti připravím na míru. Funguje i online přes sluchátka, jak píše Arnaud níže.</p>""" + ask("Domluvit lekci"),
-         None),
-        ("workshopy", "Dechové workshopy", "Flow State Reset",
-         """<p>Dvouhodinový workshop. Praktický vhled do propojení pohybu a dechu jako nástrojů vědomé seberegulace. Bez výkonu a bez tlaku na dokonalost.</p>
+        ("workshopy", "Workshop", "Flow State Reset",
+         """<p>Tříhodinový workshop. Praktický vhled do propojení pohybu a dechu jako nástrojů vědomé seberegulace. Bez výkonu a bez tlaku na dokonalost.</p>
 <div class="blocks">
-<div class="block"><span class="tag">Blok 1 · 60 min</span><h3>Pohyb a flow</h3><p>Jógovo-pohybová lekce inspirovaná elementem vody. Skrze spinální vlny, spirální linie a rotace postupně odkrýváme, kde v těle neseš chronické napětí, a právě tyhle pohybové vzorce cíleně uvolňujeme.</p></div>
-<div class="block"><span class="tag">Blok 2 · 60 min</span><h3>Dech a nervový systém</h3><p>Začínáme BOLT testem (Body Oxygen Level Test), jednoduchým měřením tolerance CO₂. Pak prodloužený výdech, přirozené přechody do zádrží a technika udžají. Blok uzavírá integrace a mindfulness.</p></div>
+<div class="block"><span class="tag">Pohyb</span><h3>Pohyb a flow</h3><p>Jógovo-pohybová lekce inspirovaná elementem vody. Skrze spinální vlny, spirální linie a rotace postupně odkrýváme, kde v těle neseš chronické napětí, a právě tyhle pohybové vzorce cíleně uvolňujeme.</p></div>
+<div class="block"><span class="tag">Dech</span><h3>Dech a nervový systém</h3><p>Začínáme BOLT testem (Body Oxygen Level Test), jednoduchým měřením tolerance CO₂. Pak prodloužený výdech, přirozené přechody do zádrží a technika udžají. Workshop uzavírá integrace a mindfulness.</p></div>
 </div>
 <p>Odneseš si konkrétní nástroje pro vědomou práci s vlastním stavem, přenositelné do každodenního života.</p>""",
          """<h3>Nejbližší workshop</h3>
-<ul class="offer"><li><span>21. 11. 2026 · Mariánské Lázně <span class="todo-inline">čas a místo</span></span><span class="price">900 Kč</span></li></ul>
+<ul class="offer"><li><span>So 21. 11. 2026 · 9:00–12:00 · studio Kineo, Mariánské Lázně</span><span class="price">900 Kč</span></li></ul>
 <p>Chceš workshop pro svou skupinu, studio nebo firmu? Napiš mi.</p>""" + ask("Přihlásit se"),
          None),
     ],
-    ["arnaud"], "Chceš se nadechnout jinak?", "Napiš mi, co potřebuješ. Domluvíme lekci, workshop nebo individuální práci s dechem.")
+    ["arnaud"], "Chceš se nadechnout jinak?", "Napiš mi, co potřebuješ. Domluvíme pránájámu, workshop nebo individuální práci s dechem.")
 
 # ---------- POHYB ----------
 pillar_page("pohyb", "Pohyb", 'Pohyb bez <span class="hand">mantinelů.</span>',
-    "Skupinové lekce jógy, jógová terapie individuálně a lekce pro firmy. Detailní práce s tělem i radost z pohybu.",
+    "Skupinové lekce hravá flow a integrovaná terapie, individuální lekce a lekce pro firmy.",
     ("lekce-skupina.jpg", "Skupina v pozici trojúhelníku na terase u moře", "center 40%"),
     [
-        ("lekce", "Skupinové lekce", "Jógová terapie a Hravá flow",
-         """<h3>Jógová terapie</h3>
+        ("lekce", "Skupinové lekce", "Hravá flow a integrovaná terapie",
+         """<h3>Integrovaná terapie</h3>
 <p>Možná nepotřebuješ víc cvičit. Možná jen jinak. Detailní práce s tělem, přesné vedení a hlubší porozumění pohybu, inspirované linií B.K.S. Iyengara, ve které jsem se sama učila. Vhodné i pro ty, kdo mají za sebou zranění nebo je bolí záda.</p>
 <h3>Hravá flow</h3>
 <p>Rozproudi energii a pohybuj se s radostí. Dynamické sekvence, síla a kreativita. Někdy jemnější, jindy silovější, vždy bez tlaku a vždy trochu jiná.</p>
 <h3>Kde a kdy</h3>
 <ul class="offer">
-<li><span>Přerov, Jóga a Pilates · st 16:45–18:00 jógová terapie, st 18:15–19:30 hravá flow</span><span class="price">300 Kč</span></li>
-<li><span>Olomouc, centrum Dákiní · út 17:45–18:45</span><span class="price">300 Kč</span></li>
-<li><span>Lipník nad Bečvou, Frida cafe · otevřená lekce <span class="todo-inline">den a čas</span></span><span class="price">250 Kč</span></li>
-<li><span>Hradčany · <span class="todo-inline">den a čas</span></span><span class="price"><span class="todo-inline">cena</span></span></li>
-</ul>""",
-         """<h3>Přijď na lekci</h3><p>Aktuální časy všech lekcí najdeš v rozvrhu. Místo si rezervuj přes WhatsApp.</p>""" + ask("Rozvrh lekcí", "rozvrh.html"),
+<li><span><strong>Lipník nad Bečvou</strong>, Frida cafe · po 17:00 hravá flow, 18:15 integrovaná terapie · čt 15:00 integrovaná terapie, 16:15 hravá flow</span><span class="price">250 Kč</span></li>
+<li><span><strong>Olomouc</strong>, centrum Dákiní · út 17:45–18:45 · kurz, volné místo</span><span class="price">300 Kč</span></li>
+<li><span><strong>Přerov</strong>, Jóga a Pilates · st 16:45 integrovaná terapie, 18:15 hravá flow · kurzy, volné místo</span><span class="price">300 Kč</span></li>
+<li><span><strong>Hradčany</strong> · čt 18:00–19:00</span><span class="price">200 Kč</span></li>
+</ul>
+<p>Lekce v Přerově a v Olomouci běží jako kurzy, ale je v nich volné místo. Napiš mi a přidáš se.</p>""",
+         """<h3>Přijď na lekci</h3><p>Všechny časy najdeš v rozvrhu. Místo si rezervuj přes WhatsApp.</p>""" + ask("Rozvrh lekcí", "rozvrh.html"),
          ("lenka-tanec-smich.jpg", "Lenka se smíchem tančí ve světlém sále")),
-        ("individualne", "Jógová terapie individuálně", "Péče ušitá na míru",
-         """<p>Pro tebe, ne pro skupinu. Kombinuji jógu, jógovou terapii, dech, pohyb i masáž, přizpůsobené přesně tobě. Sledujeme tvůj progres, zadávám domácí úkoly a jsem ti k dispozici i mezi lekcemi. Osobně i online.</p>
+        ("individualne", "Individuální lekce", "Péče ušitá na míru",
+         """<p>Pro tebe, ne pro skupinu. Kombinuji jógu, dech, pohyb i masáž, přizpůsobené přesně tobě. Sledujeme tvůj progres, zadávám domácí úkoly a jsem ti k dispozici i mezi lekcemi. Osobně i online.</p>
 <ul class="offer">
 <li><span>První lekce, bez závazků. Jen přijď ochutnat.</span><span class="price">zdarma</span></li>
 <li><span>Balíček 5 lekcí</span><span class="price">5 000 Kč</span></li>
@@ -547,25 +549,20 @@ pillar_page("pohyb", "Pohyb", 'Pohyb bez <span class="hand">mantinelů.</span>',
 
 # ---------- DOTEK ----------
 pillar_page("dotek", "Dotek", 'Dotek, který tělu vrátí <span class="hand">rovnováhu.</span>',
-    "Sportovní a intuitivní masáž. Zaměřuji se hlavně na místa, kde se nejčastěji ukládá napětí: záda, šíje, hlava, hrudník.",
+    "Intuitivní masáž: sportovní masáž, aromaterapie, dech a prvky thajské masáže v jednom. Zaměřuji se hlavně na záda, šíji, hlavu a hrudník.",
     None,
     [
-        ("sportovni-masaz", "Sportovní masáž", "Uvolnění svalů",
-         """<p>Sportovní, regenerační masáž zad, šíje, horních a dolních končetin pro uvolnění svalů. Pro ty, kdo hodně sportují, sedí nebo nesou dlouhodobé svalové napětí.</p>
-<div class="todo">Fotka k masáži (ruce, detail, klidné prostředí).</div>""",
-         """<h3>Rezervuj si masáž</h3><p>Napiš mi, kdy se ti to hodí. <span class="todo-inline">kde masíruješ?</span></p>""" + ask("Rezervovat masáž"),
-         None),
         ("intuitivni-masaz", "Intuitivní masáž", "Vědomý dotek",
-         """<p>Intuitivní masáž vychází ze sportovní masáže, práce s dechem a hlubokého porozumění tělu. Masáž není jen mechanická technika. Je to vědomý dotek, který uvolní napětí, zklidní nervový systém a znovu tě propojí s vlastním tělem a dechem.</p>
-<p>Každé setkání přizpůsobuji tomu, co tělo právě potřebuje. Někdy hlubší práce se svaly, jindy jemnější přístup k celkovému uvolnění. Prvních 10 minut si povídáme, pak masíruji.</p>
-<p>Jsem lektorka jógy a jógové terapie a dlouhodobě pracuji s dechem a vědomým pohybem. Jako tanečnice i freediverka se učím vnímat tělo, rytmus a dech v hlubší rovině. Dotek je přirozeným rozšířením téhle práce.</p>""",
-         """<h3>Pro koho</h3><p>Pro každého, kdo cítí napětí v těle, potřebuje si odpočinout nebo chce svému tělu dopřát vědomou péči.</p>""" + ask("Rezervovat masáž"),
+         """<p>Moje intuitivní masáž kombinuje <strong>sportovní masáž, aromaterapii, práci s dechem a prvky thajské masáže</strong>. Není to jen mechanická technika. Je to vědomý dotek, který uvolní napětí, zklidní nervový systém a znovu tě propojí s vlastním tělem a dechem.</p>
+<p>Každé setkání přizpůsobuji tomu, co tělo právě potřebuje. Někdy hlubší práce se svaly, jindy jemnější přístup k celkovému uvolnění. Začínáme krátkou konzultací, pak masíruji.</p>
+<p>Jsem lektorka jógy a dlouhodobě pracuji s dechem a vědomým pohybem. Jako tanečnice i freediverka se učím vnímat tělo, rytmus a dech v hlubší rovině. Dotek je přirozeným rozšířením téhle práce.</p>
+<p>Časem chci nabídnout i samostatnou thajskou masáž.</p>
+<div class="todo">Fotka k masáži (ruce, detail, klidné prostředí).</div>""",
+         """<h3>Pro koho</h3><p>Pro každého, kdo cítí napětí v těle, potřebuje si odpočinout nebo chce svému tělu dopřát vědomou péči.</p><p><span class="todo-inline">kde masíruješ?</span></p>""" + ask("Rezervovat masáž"),
          None),
         ("cenik", "Ceník", "Kolik to stojí",
          """<ul class="offer">
-<li><span>Intuitivní masáž · 45 minut</span><span class="price">600 Kč</span></li>
-<li><span>Intuitivní masáž · 60 minut</span><span class="price">800 Kč</span></li>
-<li><span>Sportovní masáž · 45 minut <span class="todo-inline">ověřit cenu</span></span><span class="price">600 Kč</span></li>
+<li><span>Intuitivní masáž · 60 minut (10 minut konzultace, 50 minut masáž)</span><span class="price">800 Kč</span></li>
 </ul>""",
          """<h3>Rezervace</h3><p>Termín domluvíme přes WhatsApp nebo e-mail.</p>""" + ask("Napsat mi"),
          None),
@@ -574,27 +571,30 @@ pillar_page("dotek", "Dotek", 'Dotek, který tělu vrátí <span class="hand">ro
 
 # ---------- VODA ----------
 pillar_page("voda", "Voda", 'Nádech, který vydrží <span class="hand">déle.</span>',
-    "Příprava na freediving na suchu, retreat na Bali a brzy i kurzy freedivingu ve vodě.",
+    "Vnitřní ponor, retreat V rytmu oceánu na Bali a od léta 2027 kurzy freedivingu.",
     ("ponor-lano.jpg", "Freediverka u lana pod hladinou proti slunci", "center 30%"),
     [
-        ("vnitrni-ponor", "Vnitřní ponor", "Příprava na freediving na suchu",
-         """<p>Desetilekční kurz, který propojuje metodiku Molchanovs a AIDA s jógou a prací s dechem. Nejde o čas ani hloubku. Jde o zkušenost, klid a schopnost zůstat v těle i tam, kde by tělo chtělo panikařit.</p>
+        ("vnitrni-ponor", "Vnitřní ponor", "Příprava na freediving",
+         """<p>Kurz, který propojuje metodiku Molchanovs a AIDA s jógou a prací s dechem. Nejde o čas ani hloubku. Jde o zkušenost, klid a schopnost zůstat v těle i tam, kde by tělo chtělo panikařit.</p>
 <ul>
-<li>8 lekcí na suchu a 2 lekce v bazénu. Druhá, hlubší, je v Aquapalace Čestlice. Obě bazénové lekce vedu s kolegou, instruktorem freedivingu s certifikací AIDA4.</li>
+<li>10 lekcí ve studiu a 1 lekce v jámě.</li>
 <li>Skupina 8–10 lidí, uzavřená podpora na WhatsAppu, týdenní domácí úkoly.</li>
 <li>Pro dospělé 30+, kteří rádi zkoušejí nové věci. Nejde o výkon, jde o zážitek.</li>
 </ul>
-<ul class="offer"><li><span>Celý kurz (10 lekcí)</span><span class="price">cca 4 500–5 500 Kč</span></li></ul>""",
+<ul class="offer">
+<li><span>Kurz (10 lekcí ve studiu)</span><span class="price">3 000 Kč</span></li>
+<li><span>Lekce v jámě</span><span class="price"><span class="todo-inline">cena</span></span></li>
+</ul>""",
          """<h3>Další běh začíná v lednu 2027</h3><p>Místa ve skupině jsou omezená. Napiš mi a pošlu ti termíny jako první.</p>""" + ask("Mám zájem o kurz"),
          None),
         ("retreat", "V rytmu oceánu", "Retreat na Bali, duben 2027",
          """<p>Retreat, který spojuje jógu, dech a freediving v Amedu na Bali, na jednom z nejkrásnějších míst pro ponor. Prostor zpomalit a ponořit se hlouběji do sebe i do vody.</p>
 <p><strong>Další retreat proběhne v dubnu 2027</strong> <span class="todo-inline">přesné datum</span>. Program, ubytování, ceny a přihlášku najdeš na stránce retreatu.</p>""",
          """<h3>Duben 2027 · Amed, Bali</h3><p>Všechny podrobnosti a přihláška.</p><a class="btn" href="https://lenkajungling.github.io/v-rytmu-oceanu/">Stránka retreatu</a>
-<div class="todo" style="margin-top:.6rem">Formulář z MailerLite pro novinky o retreatech.</div>""",
+<div class="todo" style="margin-top:.6rem">Stránka retreatu se upravuje na dubnový termín. Formulář z MailerLite pro novinky o retreatech.</div>""",
          ("lekce-terasa.jpg", "Ranní lekce na terase s výhledem na oceán v Amedu")),
-        ("freediving", "Brzy", "Kurzy freedivingu",
-         """<p>Připravuji kurzy freedivingu ve vodě. Navážou na Vnitřní ponor a povedou tě od prvních ponorů s bezpečností a klidem.</p>""",
+        ("freediving", "Od léta 2027", "Kurzy freedivingu",
+         """<p>Od léta 2027 otevřu kurzy freedivingu ve vodě. Navážou na Vnitřní ponor a povedou tě od prvních ponorů s bezpečností a klidem.</p>""",
          """<h3>Chceš vědět jako první?</h3><p>Napiš mi a dám ti vědět, jakmile vypíšu termíny.</p>""" + ask("Dej mi vědět"),
          ("bazen.jpg", "Freediveři u bóje v bazénu")),
     ],
@@ -636,11 +636,15 @@ page("firmy.html", "Pro firmy — Lenka Rekha", "Jógová terapie a dech pro fir
 # ======================= ROZVRH =======================
 rows = [
     ("prerov", "Pondělí", "15:00–16:00", "MENS rehabilitace", "soukromá skupinka", "Přerov", "Jóga a Pilates", ""),
-    ("olomouc", "Úterý", "17:45–18:45", "Jóga (terapie / flow)", "", "Olomouc", "Centrum Dákiní", "300 Kč"),
-    ("prerov", "Středa", "16:45–18:00", "Jógová terapie", "", "Přerov", "Jóga a Pilates", "300 Kč"),
-    ("prerov", "Středa", "18:15–19:30", "Hravá flow", "", "Přerov", "Jóga a Pilates", "300 Kč"),
-    ("lipnik", '<span class="todo-inline">den</span>', '<span class="todo-inline">čas</span>', "Otevřená lekce (terapie / flow)", "max. 8 lidí", "Lipník nad Bečvou", "Frida cafe", "250 Kč"),
-    ("hradcany", '<span class="todo-inline">den</span>', '<span class="todo-inline">čas</span>', "Jóga", "znovu od října", "Hradčany", "Hradčany 64", '<span class="todo-inline">cena</span>'),
+    ("lipnik", "Pondělí", "17:00–18:00", "Hravá flow", "", "Lipník nad Bečvou", "Frida cafe", "250 Kč"),
+    ("lipnik", "Pondělí", "18:15–19:15", "Integrovaná terapie", "", "Lipník nad Bečvou", "Frida cafe", "250 Kč"),
+    ("olomouc", "Úterý", "17:45–18:45", "Jóga", "kurz, volné místo", "Olomouc", "Centrum Dákiní", "300 Kč"),
+    ("prerov", "Středa", "16:45–18:00", "Integrovaná terapie", "kurz, volné místo", "Přerov", "Jóga a Pilates", "300 Kč"),
+    ("prerov", "Středa", "18:15–19:30", "Hravá flow", "kurz, volné místo", "Přerov", "Jóga a Pilates", "300 Kč"),
+    ("lipnik", "Čtvrtek", "15:00–16:00", "Integrovaná terapie", "", "Lipník nad Bečvou", "Frida cafe", "250 Kč"),
+    ("lipnik", "Čtvrtek", "16:15–17:15", "Hravá flow", "", "Lipník nad Bečvou", "Frida cafe", "250 Kč"),
+    ("hradcany", "Čtvrtek", "18:00–19:00", "Jóga", "", "Hradčany", "Hradčany 64", "200 Kč"),
+    ("prerov", "Neděle", "9:00–10:00", "Pránájáma", "1× měsíčně: 29. 11. a 20. 12.", "Přerov", "Studio Sangha", "300 Kč"),
 ]
 trs = "".join(
     f'<tr data-city="{c}"><td class="day">{d}</td><td>{t}</td><td>{l}{f"<small>{n}</small>" if n else ""}</td><td>{city}<small>{pl}</small></td><td>{p}</td></tr>'
@@ -650,7 +654,7 @@ rozvrh = f"""
   <div class="wrap">
     <p class="crumbs"><a href="./">Domů</a> / Rozvrh</p>
     <h1>Rozvrh lekcí</h1>
-    <p class="lead">Přerov, Olomouc, Lipník nad Bečvou a Hradčany. Na lekci se stačí ozvat na WhatsApp nebo e-mail.</p>
+    <p class="lead">Přerov, Olomouc, Lipník nad Bečvou a Hradčany. Na lekci se stačí ozvat na WhatsApp nebo e-mail. Středeční lekce v Přerově a úterní v Olomouci běží jako kurzy, ale je v nich volné místo.</p>
   </div>
 </section>
 <section class="section">
@@ -669,8 +673,8 @@ rozvrh = f"""
       </table>
     </div>
     <div class="blocks" style="margin-top:2rem">
-      <div class="block"><span class="tag">Kurz</span><h3>Vnitřní ponor</h3><p>Další běh desetilekčního kurzu začíná v lednu 2027.</p><a class="link-arrow" href="voda.html#vnitrni-ponor">O kurzu →</a></div>
-      <div class="block"><span class="tag">Workshop</span><h3>Flow State Reset</h3><p>21. 11. 2026, Mariánské Lázně, 900 Kč.</p><a class="link-arrow" href="dech.html#workshopy">O workshopu →</a></div>
+      <div class="block"><span class="tag">Kurz</span><h3>Vnitřní ponor</h3><p>Další běh kurzu (10 lekcí ve studiu a 1 v jámě) začíná v lednu 2027.</p><a class="link-arrow" href="voda.html#vnitrni-ponor">O kurzu →</a></div>
+      <div class="block"><span class="tag">Workshop</span><h3>Flow State Reset</h3><p>So 21. 11. 2026, 9:00–12:00, studio Kineo, Mariánské Lázně, 900 Kč.</p><a class="link-arrow" href="dech.html#workshopy">O workshopu →</a></div>
     </div>
     <div class="btn-row" style="margin-top:2.4rem">
       <a class="btn" href="{WA}">Rezervovat přes WhatsApp</a>

@@ -250,7 +250,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .prose ul.offer { padding-left: 0; }
 
 .offer { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
-.offer li { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; padding: 1rem 0.1rem; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.offer li { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; padding: 1rem 0.4rem 1rem 0.1rem; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
 .offer li span:first-child { min-width: 0; }
 .offer .price { font-family: var(--font-head); font-weight: 700; color: var(--teal-deep); font-size: 1.25rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
 
