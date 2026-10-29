@@ -94,7 +94,7 @@ def page(path, title, desc, body, current=None):
 <meta property="og:image" content="https://lenkarekha.com/assets/img/freediving-kanon.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=Caveat:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=Dancing+Script:wght@500;600&display=swap">
 <link rel="stylesheet" href="{pre}assets/style.css">
 </head>
 <body>

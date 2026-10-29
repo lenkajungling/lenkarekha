@@ -17,7 +17,7 @@
   --sun-tint: #f1eafe;
   --font-head: "League Spartan", "Helvetica Neue", Arial, sans-serif;
   --font-body: "DM Sans", "Helvetica Neue", Arial, sans-serif;
-  --font-hand: "Caveat", "Segoe Script", cursive;
+  --font-hand: "Dancing Script", "Segoe Script", cursive;
   --wrap: 1240px;
   --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 64' preserveAspectRatio='none'%3E%3Cpath d='M0 34 C 180 6 360 6 540 26 S 900 62 1080 40 S 1340 8 1440 22 V64 H0 Z'/%3E%3C/svg%3E");
   --wave-down: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 64' preserveAspectRatio='none'%3E%3Cpath d='M0 0 H1440 V30 C 1260 58 1080 58 900 38 S 540 2 360 24 S 100 56 0 42 Z'/%3E%3C/svg%3E");
@@ -46,7 +46,7 @@ h2 { font-size: clamp(2.2rem, 5vw, 4.4rem); }
 h3 { font-size: 1.4rem; letter-spacing: -0.01em; }
 p { margin: 0; }
 .hand { font-family: var(--font-hand); font-weight: 500; letter-spacing: 0; }
-h1 .hand, h2 .hand { font-size: 1.12em; color: var(--teal); line-height: 0.8; }
+h1 .hand, h2 .hand { font-size: 1.02em; color: var(--teal); line-height: 0.8; }
 
 .wrap { max-width: var(--wrap); margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
 .narrow { max-width: 760px; }
