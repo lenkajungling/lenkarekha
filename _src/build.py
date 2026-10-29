@@ -19,7 +19,7 @@ PILLARS = [
     ("pohyb", "Pohyb", [("pohyb.html#lekce", "Skupinové lekce"), ("pohyb.html#individualne", "Individuální lekce"), ("firmy.html", "Firemní lekce"), ("rozvrh.html", "Rozvrh")],
      "Hravá flow a integrovaná terapie ve skupině, individuální lekce a lekce pro firmy.", "lekce-skupina.jpg"),
     ("dotek", "Dotek", [("dotek.html#intuitivni-masaz", "Intuitivní masáž"), ("dotek.html#cenik", "Ceník")],
-     "Intuitivní masáž: sportovní masáž, aromaterapie, dech a thajská masáž v jednom.", None),
+     "Intuitivní masáž: sportovní masáž, aromaterapie, dech a thajská masáž v jednom.", "masaz.jpg"),
     ("voda", "Voda", [("voda.html#vnitrni-ponor", "Vnitřní ponor"), ("voda.html#retreat", "V rytmu oceánu: Bali, duben 2027"), ("voda.html#freediving", "Kurzy freedivingu od léta 2027")],
      "Vnitřní ponor, retreat na Bali a od léta 2027 kurzy freedivingu.", "ponor-lano.jpg"),
 ]
@@ -549,10 +549,9 @@ pillar_page("dotek", "Dotek", 'Dotek, který tělu vrátí <span class="hand">ro
          """<p>Moje intuitivní masáž kombinuje <strong>sportovní masáž, aromaterapii, práci s dechem a prvky thajské masáže</strong>. Není to jen mechanická technika. Je to vědomý dotek, který uvolní napětí, zklidní nervový systém a znovu tě propojí s vlastním tělem a dechem.</p>
 <p>Každé setkání přizpůsobuji tomu, co tělo právě potřebuje. Někdy hlubší práce se svaly, jindy jemnější přístup k celkovému uvolnění. Začínáme krátkou konzultací, pak masíruji.</p>
 <p>Jsem lektorka jógy a dlouhodobě pracuji s dechem a vědomým pohybem. Jako tanečnice i freediverka se učím vnímat tělo, rytmus a dech v hlubší rovině. Dotek je přirozeným rozšířením téhle práce.</p>
-<p>Brzy v nabídce i thajská masáž na futonu.</p>
-<div class="todo">Fotka k masáži (ruce, detail, klidné prostředí).</div>""",
+<p>Brzy v nabídce i thajská masáž na futonu.</p>""",
          """<h3>Pro koho</h3><p>Pro každého, kdo cítí napětí v těle, potřebuje si odpočinout nebo chce svému tělu dopřát vědomou péči.</p><p><span class="todo-inline">kde masíruješ?</span></p>""" + ask("Rezervovat masáž"),
-         None),
+         ("masaz.jpg", "Ruce masírují šíji a krk ležící klientky")),
         ("cenik", "Ceník", "Kolik to stojí",
          """<ul class="offer">
 <li><span>Intuitivní masáž · 45 minut + 10 minut konzultace</span><span class="price">800 Kč</span></li>
