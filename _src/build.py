@@ -648,14 +648,14 @@ podnikavky = f"""
 <section class="section" id="o-nas">
   <div class="wrap page-grid">
     <div class="prose">
-      <h2 style="color:#8a6210;margin-top:0">O Podnikavkách</h2>
+      <h2 style="color:var(--sun);margin-top:0">O Podnikavkách</h2>
       <p>Podnikavky Přerov jsou místo, kde se ženy z regionu potkávají, sdílí zkušenosti, inspirují se navzájem a budují si vlastní podnikatelskou síť. Bez tlaku, bez soutěžení, s otevřenou náručí pro začátečnice i zkušené podnikatelky.</p>
       <p>Setkání organizuji já, Lenka Rekha, protože vím, jaké to je začínat vlastní cestu bez opory. A jak moc pomůže mít kolem sebe ženy, které tomu rozumí.</p>
       <div class="page-photo"><img src="assets/img/kdo-07-propojovatelka.jpg" alt="Lenka mluví na setkání Ženy v podnikání v IN-HUB Přerov" style="aspect-ratio:4/5;max-width:420px"></div>
       <div class="todo">Logo Podnikavek (připravuje se).</div>
     </div>
-    <aside class="aside-card" style="background:var(--sun-tint)" id="akce">
-      <h3 style="color:#6e4d0a">Nejbližší setkání</h3>
+    <aside class="aside-card" style="background:var(--sun-tint);color:var(--ink)" id="akce">
+      <h3 style="color:var(--sun-dark)">Nejbližší setkání</h3>
       <ul class="offer"><li><span><strong>15. 11. 2026</strong> · první narozeniny Podnikavek 🎉<br><span class="todo-inline">čas a místo</span></span></li></ul>
     </aside>
   </div>
@@ -663,7 +663,7 @@ podnikavky = f"""
 <section class="section" style="background:var(--sun-tint)" id="prihlaska">
   <div class="wrap split">
     <div class="stack">
-      <h2 style="color:#6e4d0a">Přihlas se na nejbližší setkání</h2>
+      <h2 style="color:var(--sun-dark)">Přihlas se na nejbližší setkání</h2>
       <p class="lead">Stačí pár údajů. Pošlu ti podrobnosti a místo konání.</p>
     </div>
     <div class="form-card">
