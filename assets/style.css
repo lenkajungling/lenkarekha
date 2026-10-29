@@ -436,3 +436,17 @@ td small { display: block; color: var(--muted); }
 .certs em { grid-column: 2; grid-row: 1 / span 2; font-style: normal; font-family: var(--font-hand); font-size: 1.3rem; color: var(--teal-deep); align-self: center; white-space: nowrap; }
 @media (max-width: 760px) { .certs { grid-template-columns: 1fr; } }
 .big-quote.long blockquote { font-size: clamp(1.25rem, 2vw, 1.6rem); line-height: 1.35; }
+
+/* ---------- organické tvary fotek (oblázek, ne vajíčko) ---------- */
+:root {
+  --shape-a: 30% 46% 34% 42% / 24% 32% 28% 36%;
+  --shape-b: 44% 28% 40% 32% / 30% 24% 36% 26%;
+  --shape-c: 36% 40% 28% 46% / 34% 26% 32% 24%;
+}
+.story-photo img, .split-media img { border-radius: var(--shape-a); }
+.page-photo img, .index .peek { border-radius: var(--shape-b); }
+.tl-item figure img { border-radius: var(--shape-c); }
+.tl-item:nth-child(even) figure img { border-radius: var(--shape-a); }
+.kdo-grid img { border-radius: var(--shape-a); }
+.kdo-grid img:nth-child(3n+2) { border-radius: var(--shape-b); }
+.kdo-grid img:nth-child(3n) { border-radius: var(--shape-c); }
