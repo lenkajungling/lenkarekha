@@ -437,16 +437,20 @@ td small { display: block; color: var(--muted); }
 @media (max-width: 760px) { .certs { grid-template-columns: 1fr; } }
 .big-quote.long blockquote { font-size: clamp(1.25rem, 2vw, 1.6rem); line-height: 1.35; }
 
-/* ---------- organické tvary fotek (oblázek, ne vajíčko) ---------- */
+/* ---------- tvary fotek: list (dva protilehlé rohy zaoblené víc) ---------- */
 :root {
-  --shape-a: 30% 46% 34% 42% / 24% 32% 28% 36%;
-  --shape-b: 44% 28% 40% 32% / 30% 24% 36% 26%;
-  --shape-c: 36% 40% 28% 46% / 34% 26% 32% 24%;
+  --leaf: 140px 18px 140px 18px;
+  --leaf-r: 18px 140px 18px 140px;
+  --pebble: 30% 46% 34% 42% / 24% 32% 28% 36%; /* jen medailonek */
 }
-.story-photo img, .split-media img { border-radius: var(--shape-a); }
-.page-photo img, .index .peek { border-radius: var(--shape-b); }
-.tl-item figure img { border-radius: var(--shape-c); }
-.tl-item:nth-child(even) figure img { border-radius: var(--shape-a); }
-.kdo-grid img { border-radius: var(--shape-a); }
-.kdo-grid img:nth-child(3n+2) { border-radius: var(--shape-b); }
-.kdo-grid img:nth-child(3n) { border-radius: var(--shape-c); }
+.story-photo img, .split-media img { border-radius: var(--pebble); }
+.page-photo { max-width: 520px; }
+.page-photo img { border-radius: var(--leaf); aspect-ratio: 5 / 4; }
+.index .peek { width: 180px; border-radius: var(--leaf); }
+.tl-item figure { max-width: 560px; }
+.tl-item figure img { max-height: 380px; border-radius: var(--leaf); }
+.tl-item:nth-child(even) figure { margin-left: auto; }
+.tl-item:nth-child(even) figure img { border-radius: var(--leaf-r); }
+.kdo-grid { max-width: 940px; margin: 0 auto; gap: 0.8rem; }
+.kdo-grid img { border-radius: 90px 14px 90px 14px; }
+.kdo-grid img:nth-child(even) { border-radius: 14px 90px 14px 90px; }
