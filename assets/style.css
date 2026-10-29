@@ -454,3 +454,12 @@ td small { display: block; color: var(--muted); }
 .kdo-grid { max-width: 940px; margin: 0 auto; gap: 0.8rem; }
 .kdo-grid img { border-radius: 22px; }
 .kdo-grid img:nth-child(even) { border-radius: 22px; }
+
+/* odkaz na rozvrh s ikonou kalendáře */
+.cal-link { display: flex; align-items: center; gap: 1.1rem; padding: 1.1rem 1.4rem; margin-top: 0.6rem; border-radius: 22px; background: var(--foam); text-decoration: none; color: var(--ink); transition: background 0.2s, transform 0.2s; width: fit-content; max-width: 100%; }
+.cal-link:hover { background: var(--mint); transform: translateY(-2px); }
+.cal-link svg { width: 46px; height: 46px; flex-shrink: 0; fill: none; stroke: var(--teal-deep); stroke-width: 1.6; stroke-linecap: round; }
+.cal-link svg circle { fill: var(--teal-deep); stroke: none; }
+.cal-link strong { display: block; font-family: var(--font-head); font-size: 1.25rem; color: var(--deep); }
+.cal-link span { color: var(--muted); line-height: 1.45; min-width: 0; }
+.s-foam .cal-link { background: var(--white); }

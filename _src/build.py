@@ -521,14 +521,7 @@ pillar_page("pohyb", "Pohyb", 'Pohyb bez <span class="hand">mantinelů.</span>',
 <p>Možná nepotřebuješ víc cvičit. Možná jen jinak. Detailní práce s tělem, přesné vedení a hlubší porozumění pohybu, inspirované linií B.K.S. Iyengara, ve které jsem se sama učila. Vhodné i pro ty, kdo mají za sebou zranění nebo je bolí záda.</p>
 <h3>Hravá flow</h3>
 <p>Rozproudi energii a pohybuj se s radostí. Dynamické sekvence, síla a kreativita. Někdy jemnější, jindy silovější, vždy bez tlaku a vždy trochu jiná.</p>
-<h3>Kde a kdy</h3>
-<ul class="offer">
-<li><span><strong>Lipník nad Bečvou</strong>, Frida cafe · po 17:00 hravá flow, 18:15 integrovaná terapie · čt 15:00 integrovaná terapie, 16:15 hravá flow</span><span class="price">250 Kč</span></li>
-<li><span><strong>Olomouc</strong>, centrum Dákiní · út 17:45–18:45 · kurz, volné místo</span><span class="price">300 Kč</span></li>
-<li><span><strong>Přerov</strong>, Jóga a Pilates · st 16:45 integrovaná terapie, 18:15 hravá flow · kurzy, volné místo</span><span class="price">300 Kč</span></li>
-<li><span><strong>Hradčany</strong> · čt 18:00–19:00</span><span class="price">200 Kč</span></li>
-</ul>
-<p>Lekce v Přerově a v Olomouci běží jako kurzy, ale je v nich volné místo. Napiš mi a přidáš se.</p>""",
+<a class="cal-link" href="rozvrh.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/><circle cx="8" cy="14" r="1"/><circle cx="12" cy="14" r="1"/><circle cx="16" cy="14" r="1"/></svg><span><strong>Rozvrh lekcí</strong>Přerov · Olomouc · Lipník nad Bečvou · Hradčany<br>200–300 Kč za lekci</span></a>""",
          """<h3>Přijď na lekci</h3><p>Všechny časy najdeš v rozvrhu. Místo si rezervuj přes WhatsApp.</p>""" + ask("Rozvrh lekcí", "rozvrh.html"),
          ("lenka-tanec-smich.jpg", "Lenka se smíchem tančí ve světlém sále")),
         ("individualne", "Individuální lekce", "Péče ušitá na míru",
