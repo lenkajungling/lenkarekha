@@ -57,7 +57,7 @@ h1 .hand, h2 .hand { font-size: 1.02em; color: var(--teal); line-height: 0.8; }
 .note { font-family: var(--font-hand); font-size: 1.5rem; line-height: 1.15; color: var(--teal-deep); }
 
 /* ---------- barvy sekcí podle hloubky ---------- */
-.section { position: relative; padding-block: clamp(4.5rem, 10vw, 8rem); background: var(--bg, var(--white)); }
+.section { position: relative; padding-block: clamp(3rem, 6vw, 5rem); background: var(--bg, var(--white)); }
 .s-white { --bg: var(--white); }
 .s-foam, .section.tint { --bg: var(--foam); }
 .s-mint { --bg: var(--mint); }
@@ -116,11 +116,11 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .link-arrow { font-family: var(--font-head); font-weight: 600; color: var(--teal-deep); text-decoration: none; border-bottom: 1.5px solid currentColor; padding-bottom: 2px; }
 
 /* ---------- fotky přes celou šířku ---------- */
-.band { position: relative; z-index: 1; overflow: hidden; color: var(--white); min-height: clamp(380px, 72vh, 720px); display: flex; align-items: flex-end; background: var(--deep); }
+.band { position: relative; z-index: 1; overflow: hidden; color: var(--white); min-height: clamp(340px, 60vh, 600px); display: flex; align-items: flex-end; background: var(--deep); }
 .band-media { position: absolute; left: 0; right: 0; top: -14%; bottom: -14%; }
 .band-media img { width: 100%; height: 100%; object-fit: cover; will-change: transform; }
 .band-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,37,43,0) 30%, rgba(8,37,43,0.6) 100%); }
-.band-inner { position: relative; z-index: 2; width: 100%; padding-block: clamp(3.5rem, 8vw, 6rem); }
+.band-inner { position: relative; z-index: 2; width: 100%; padding-block: clamp(3rem, 6vw, 4.5rem); }
 .band-inner .wrap { display: flex; flex-direction: column; align-items: flex-start; gap: 1.3rem; }
 .band-quote { font-family: var(--font-head); font-weight: 700; font-size: clamp(2.2rem, 6vw, 5.2rem); line-height: 1; letter-spacing: -0.03em; max-width: 15ch; text-wrap: balance; text-shadow: 0 2px 30px rgba(0,0,0,0.25); }
 .band-quote .hand { color: var(--mint); font-size: 1.1em; }
@@ -287,7 +287,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .svc-card .ph.empty { display: grid; place-items: center; color: var(--teal-deep); font-family: var(--font-hand); font-size: 1.5rem; border: 1.5px dashed var(--teal); }
 
 /* ---------- časová osa (moje cesta) ---------- */
-.timeline { display: flex; flex-direction: column; gap: clamp(4rem, 8vw, 6.5rem); }
+.timeline { display: flex; flex-direction: column; gap: clamp(3rem, 6vw, 4.5rem); }
 .tl-item { display: grid; grid-template-columns: 220px 1fr; gap: 2.5rem; }
 .tl-item > * { min-width: 0; }
 .tl-item:nth-child(even) { grid-template-columns: 1fr 220px; }
