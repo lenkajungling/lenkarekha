@@ -235,7 +235,7 @@ home = f"""
     <div class="quiz-head">
       <p class="eyebrow">Rychlá orientace</p>
       <h2>Co tě dnes <span class="hand">přivádí?</span></h2>
-      <p class="lead">Vyber větu, která ti je nejblíž. Ukážu ti, co pro tebe mám.</p>
+      <p class="lead">Vyber větu, která ti je nejblíž. Ukážu ti, co pro tebe můžu udělat.</p>
     </div>
     <ul class="quiz-list" data-rv>{quiz_rows}</ul>
   </div>
