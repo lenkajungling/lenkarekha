@@ -342,13 +342,12 @@ journey = [
         "Ten pocit, když padáte volným pádem hlouběji do hlubin a neexistuje nic než přítomný okamžik, se těžko popisuje. Freediving se pro mě stal učitelem a životním stylem. Dokončila jsem certifikát AIDA4 a asistentku instruktora, učila jógu a dech na místech jako Panglao, Siquijor nebo Amed na Bali, i po boku uznávaných jmen oboru, jako jsou Ben Piguet nebo Sergey Busargin."],
      ("lenka-snorchl.jpg", "Po ranním ponoru")),
     ("Indie podruhé", "Jógová terapie", [
-        "Než jsem se vrátila do Česka, strávila jsem půl roku v Indii, převážnou část studiem jógové terapie pod vedením Sonal Chaudhari. Její učitel Kobad Variava se pod přímým dohledem B.K.S. Iyengara stal seniorním učitelem. Tahle linie je dodnes základem toho, jak k tělu přistupuji."],
-     ("indie-setkani.jpg", "Indie, setkání s dalajlámou")),
+        "Než jsem se vrátila do Česka, strávila jsem půl roku v Indii, převážnou část studiem jógové terapie pod vedením Sonal Chaudhari. Její učitel Kobad Variava se pod přímým dohledem B.K.S. Iyengara stal seniorním učitelem. Tahle linie je dodnes základem toho, jak k tělu přistupuji."], None),
     ("Teď a tady", "Jóga bez nálepek", [
         "Po téměř dvou letech v Asii jsem si konečně odpověděla na otázky, kdo jsem a co chci. Jsem lektorka, která skrze autentičnost předává vlastní zkušenost prací s tělem. V mém přístupu se potkává dotek, pohyb, jóga i poznatky z freedivingu.",
         "Naučila jsem se žít v přítomném okamžiku, místo abych zůstávala v minulosti nebo budoucnosti. Od striktní aštángy jsem se přesunula k józe bez nálepek a mantinelů. V mém pojetí je jóga prostě taková, jako jsem já sama. A tenhle posun neberu jako konečný. Pořád se učím být vděčnější, objevovat svoji sílu a obracet věci k dobru, i pro druhé.",
         "Podporuji ženy i muže na jejich cestě k autentičtějšímu životu. Individuálně, ve skupinách, na suchu i pod hladinou."],
-     ("tanec-sal.jpg", "Tanec, celoživotní láska")),
+     ("indie-setkani.jpg", "Setkání s dalajlámou")),
 ]
 tl = []
 for place, h, paras, fig in journey:
