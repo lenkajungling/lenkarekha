@@ -587,7 +587,7 @@ pillar_page("voda", "Voda", 'Nádech, který vydrží <span class="hand">déle.<
 <li><span>Lekce v jámě</span><span class="price"><span class="todo-inline">cena</span></span></li>
 </ul>""",
          """<h3>Další běh začíná v lednu 2027</h3><p>Místa ve skupině jsou omezená. Napiš mi a pošlu ti termíny jako první.</p>""" + ask("Mám zájem o kurz"),
-         ("zelva-shora.jpg", "Lenka se noří nad útesem, pod ní plave mořská želva")),
+         ("meditace-bazen.jpg", "Lenka sedí se zavřenýma očima v meditaci na okraji bazénu, odráží se ve vodě")),
         ("retreat", "V rytmu oceánu", "Retreat na Bali, duben 2027",
          """<p>Retreat, který spojuje jógu, dech a freediving v Amedu na Bali, na jednom z nejkrásnějších míst pro ponor. Prostor zpomalit a ponořit se hlouběji do sebe i do vody.</p>
 <p><strong>Další retreat proběhne v dubnu 2027</strong> <span class="todo-inline">přesné datum</span>. Program, ubytování, ceny a přihlášku najdeš na stránce retreatu.</p>""",

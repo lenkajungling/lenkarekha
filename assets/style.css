@@ -485,3 +485,4 @@ td small { display: block; color: var(--muted); }
 .ref-nav button:hover { background: var(--teal-deep); color: var(--white); }
 @media (max-width: 600px) { .ref-track { grid-auto-columns: 85%; } }
 .page-photo img { object-position: center 22%; }
+.page-photo img[src$="meditace-bazen.jpg"] { aspect-ratio: 4 / 5; max-width: 420px; object-position: center 64%; }
