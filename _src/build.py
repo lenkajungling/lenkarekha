@@ -347,7 +347,7 @@ journey = [
         "Po téměř dvou letech v Asii jsem si konečně odpověděla na otázky, kdo jsem a co chci. Jsem lektorka, která skrze autentičnost předává vlastní zkušenost prací s tělem. V mém přístupu se potkává dotek, pohyb, jóga i poznatky z freedivingu.",
         "Naučila jsem se žít v přítomném okamžiku, místo abych zůstávala v minulosti nebo budoucnosti. Od striktní aštángy jsem se přesunula k józe bez nálepek a mantinelů. V mém pojetí je jóga prostě taková, jako jsem já sama. A tenhle posun neberu jako konečný. Pořád se učím být vděčnější, objevovat svoji sílu a obracet věci k dobru, i pro druhé.",
         "Podporuji ženy i muže na jejich cestě k autentičtějšímu životu. Individuálně, ve skupinách, na suchu i pod hladinou."],
-     ("lekce-terasa.jpg", "Lekce na terase v Amedu")),
+     ("tanec-sal.jpg", "Tanec, celoživotní láska")),
 ]
 tl = []
 for place, h, paras, fig in journey:
