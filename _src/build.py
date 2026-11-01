@@ -350,7 +350,7 @@ journey = [
 tl = []
 for place, h, paras, fig in journey:
     if place == "Filipíny · Bali":
-        tl.append('</div></div></section>' + band('', 'amed-bali.jpg', 'Pobřeží Amedu na Bali se sopkou Agung při západu slunce', '<p class="band-quote">Tentokrát už intuici nešlo umlčet rozumem.</p>', '', 'center 30%') + '<section class="section"><div class="wrap"><div class="timeline">')
+        tl.append('</div></div></section>' + band('', 'lekce-filipiny.jpg', 'Lenka vede lekci jógy na pláži na Filipínách, skupina v pozici válečníka', '<p class="band-quote">Tentokrát už intuici nešlo umlčet rozumem.</p>', '', 'center 30%') + '<section class="section"><div class="wrap"><div class="timeline">')
     ps = "".join(f"<p>{p}</p>" for p in paras)
     f = (f'<figure><img src="assets/img/{fig[0]}" alt="{fig[1]}" loading="lazy"><figcaption>{fig[1]}</figcaption></figure>' if fig else "")
     tl.append(f'<article class="tl-item" data-rv><div class="tl-place"><b>{len([x for x in tl if x.startswith("<article")]) + 1:02d}</b><span>{place}</span></div><div><h2>{h}</h2>{ps}{f}</div></article>')
