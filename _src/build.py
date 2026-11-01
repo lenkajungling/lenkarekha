@@ -254,7 +254,7 @@ home = f"""
   </div>
 </section>
 
-{band('', 'amed-bali.jpg', 'Pobřeží Amedu na Bali se sopkou Agung při západu slunce', '<p class="band-quote">Nádech. Výdech. <span class="hand">Přítomný okamžik.</span></p>', 'right')}
+{band('', 'lekce-bambus.jpg', 'Skupina cvičí jógu na bambusové terase s výhledem na moře', '<p class="band-quote">Nádech. Výdech. <span class="hand">Přítomný okamžik.</span></p>', 'right')}
 
 <section class="section s-foam wv-up wv-down">
   <div class="wrap story">
