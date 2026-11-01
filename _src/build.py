@@ -209,6 +209,8 @@ quiz = [
 quiz_rows = "".join(
     f'<li><a href="{h}"><strong>{q}</strong><small>{d}</small><span class="go">→ {t}</span></a></li>'
     for h, q, d, t in quiz)
+quiz_rows += ('<li><a href="podnikavky.html"><strong>Podnikám (nebo chci) a hledám ženy, které tomu rozumí.</strong>'
+              '<small>Neformální setkání v Přerově a okolí.</small><span class="go">→ Podnikavky Přerov</span></a></li>')
 
 
 index_rows = "".join(
@@ -224,7 +226,7 @@ home = f"""
         <h1>Dech, pohyb, dotek, <span class="hand">voda.</span><span class="sub">Cesta zpátky k sobě má víc podob.</span></h1>
         <p class="lead">Jsem Lenka Rekha, lektorka jógy a jógové terapie, průvodkyně dechem a freediverka. Přes deset let pomáhám lidem naslouchat vlastnímu tělu. Individuálně, ve skupině i pod hladinou.</p>
         <div class="btn-row">
-          <a class="btn light" href="pohyb.html#individualne">Rezervovat první lekci zdarma</a>
+          <a class="btn light" href="pohyb.html#individualne">Domluvit první lekci</a>
           <a class="btn outline-light" href="kontakt.html">Napsat mi</a>
         </div>
       </div>""", "band-hero", "center 42%").replace('</section>', '<a class="scroll-cue" href="#co-hledas">ponoř se ↓</a></section>')}
@@ -281,9 +283,9 @@ home = f"""
   </div>
 </section>
 
-{band('', 'ponor-lano.jpg', 'Freediverka u lana pod hladinou proti slunci', '<p class="band-quote">Nádech, který vydrží <span class="hand">déle, než si myslíš.</span></p><a class="btn light" href="voda.html">Voda</a>', '', 'center 30%')}
+{band('', 'ponor-lano.jpg', 'Freediverka u lana pod hladinou proti slunci', '<p class="band-quote">Nádech, který vydrží <span class="hand">déle, než si myslíš.</span></p>', '', 'center 30%')}
 
-<section class="section s-teal wv-up" style="padding-bottom:clamp(5rem,9vw,7rem)">
+<section class="section s-teal wv-up wv-down">
   <div class="wrap">
     <p class="eyebrow" style="margin-bottom:2rem">Co říkají ti, kdo se mnou cvičí</p>
     <div class="refs-mag" data-rv>
@@ -294,9 +296,25 @@ home = f"""
       <div class="small-quotes">
         <figure><blockquote>{REFS["olga"][2]}</blockquote><figcaption>{REFS["olga"][0]}, {REFS["olga"][1]}</figcaption></figure>
         <figure><blockquote>{REFS["sandra"][2]}</blockquote><figcaption>{REFS["sandra"][0]}, {REFS["sandra"][1]}</figcaption></figure>
-        <div class="btn-row"><a class="btn light" href="moje-cesta.html#reference">Všechny reference</a><a class="btn outline-light" href="kontakt.html">Napsat mi</a></div>
+        <div><a class="btn light" href="moje-cesta.html#reference">Všechny reference</a></div>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="section s-deep wv-up" style="padding-top:clamp(5rem,9vw,7rem)">
+  <div class="wrap contact-split">
+    <div class="stack-lg">
+      <p class="eyebrow">Kontakt</p>
+      <h2>Napiš <span class="hand" style="color:var(--mint)">mi.</span></h2>
+      <p class="lead">Ať už váháš, co je pro tebe to pravé, nebo přesně víš, co chceš. Odpovídám osobně, obvykle do 24 hodin.</p>
+      <ul class="contact-list">
+        <li><span class="k">WhatsApp</span><a href="{WA}">{PHONE}</a></li>
+        <li><span class="k">E-mail</span><a href="mailto:{EMAIL}">{EMAIL}</a></li>
+        <li><span class="k">Instagram</span><a href="{IG}">@lenka_rekha_</a></li>
+      </ul>
+    </div>
+    <div class="form-card" data-rv>{contact_form('')}</div>
   </div>
 </section>
 """
