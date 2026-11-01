@@ -97,3 +97,17 @@
     if (el.getBoundingClientRect().top > window.innerHeight) { el.classList.add('rv'); io.observe(el); }
   });
 })();
+
+// Reference: posun pásu šipkami
+(function () {
+  document.querySelectorAll('.ref-slider').forEach(function (slider) {
+    var track = slider.querySelector('.ref-track');
+    function step(dir) {
+      var card = track.querySelector('.ref-card');
+      var w = card ? card.getBoundingClientRect().width + 18 : 320;
+      track.scrollBy({ left: dir * w, behavior: 'smooth' });
+    }
+    slider.querySelector('.ref-prev').addEventListener('click', function () { step(-1); });
+    slider.querySelector('.ref-next').addEventListener('click', function () { step(1); });
+  });
+})();

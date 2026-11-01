@@ -16,9 +16,9 @@ FORM = "https://formspree.io/f/mdavpakp"
 PILLARS = [
     ("dech", "Dech", [("dech.html#pranajama", "Pránájáma a dechové techniky"), ("dech.html#workshopy", "Workshop Flow State Reset")],
      "Pránájáma, dechové techniky a tříhodinový workshop Flow State Reset.", "bubliny.jpg"),
-    ("pohyb", "Pohyb", [("pohyb.html#lekce", "Skupinové lekce"), ("pohyb.html#individualne", "Individuální lekce"), ("firmy.html", "Firemní lekce"), ("rozvrh.html", "Rozvrh")],
+    ("pohyb", "Pohyb", [("pohyb.html#individualne", "Individuální lekce"), ("pohyb.html#lekce", "Skupinové lekce"), ("firmy.html", "Firemní lekce"), ("dech.html#workshopy", "Workshop Flow State Reset")],
      "Hravá flow a integrovaná terapie ve skupině, individuální lekce a lekce pro firmy.", "lekce-skupina.jpg"),
-    ("dotek", "Dotek", [("dotek.html#intuitivni-masaz", "Intuitivní masáž"), ("dotek.html#cenik", "Ceník")],
+    ("dotek", "Dotek", [("dotek.html#intuitivni-masaz", "Intuitivní masáž")],
      "Intuitivní masáž: sportovní masáž, aromaterapie, dech a thajská masáž v jednom.", "masaz.jpg"),
     ("voda", "Voda", [("voda.html#vnitrni-ponor", "Vnitřní ponor"), ("voda.html#retreat", "V rytmu oceánu: Bali, duben 2027"), ("voda.html#freediving", "Kurzy freedivingu od léta 2027")],
      "Vnitřní ponor, retreat na Bali a od léta 2027 kurzy freedivingu.", "ponor-lano.jpg"),
@@ -225,12 +225,24 @@ home = f"""
         <h1>Dech, pohyb, dotek, <span class="hand">voda.</span><span class="sub">Cesta zpátky k sobě má víc podob.</span></h1>
         <p class="lead">Jsem Lenka Rekha, lektorka jógy a jógové terapie, průvodkyně dechem a freediverka. Přes deset let pomáhám lidem naslouchat vlastnímu tělu. Individuálně, ve skupině i pod hladinou.</p>
         <div class="btn-row">
-          <a class="btn light" href="#co-hledas">Najít tu pravou cestu</a>
+          <a class="btn light" href="pohyb.html#individualne">Rezervovat první lekci zdarma</a>
           <a class="btn outline-light" href="kontakt.html">Napsat mi</a>
         </div>
       </div>""", "band-hero", "center 42%").replace('</section>', '<a class="scroll-cue" href="#co-hledas">ponoř se ↓</a></section>')}
 
-<section class="section s-white wv-up wv-down" id="co-hledas">
+<section class="section s-white wv-up" id="nabidka">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Co pro tebe mám</p><h2>Začni <span class="hand">tady</span></h2></div>
+    <div class="offers" data-rv>
+      <a class="offer-card" href="pohyb.html#individualne"><span class="tag">První lekce zdarma</span><h3>Individuální lekce</h3><p>Jóga, dech a pohyb přesně pro tebe. Osobně i online, s podporou mezi lekcemi.</p><span class="btn">Rezervovat lekci</span></a>
+      <a class="offer-card" href="dech.html#workshopy"><span class="tag">So 21. 11. · Mariánské Lázně</span><h3>Workshop Flow State Reset</h3><p>Tři hodiny pohybu a dechu. Odneseš si nástroje, jak se zklidnit a vrátit do flow.</p><span class="btn">Přihlásit se</span></a>
+      <a class="offer-card" href="voda.html#vnitrni-ponor"><span class="tag">Nový běh od ledna 2027</span><h3>Kurz Vnitřní ponor</h3><p>Jóga a dech inspirované freedivingem. 10 lekcí ve studiu a 1 v jámě.</p><span class="btn">Mám zájem</span></a>
+      <a class="offer-card" href="firmy.html"><span class="tag">První lekce zdarma</span><h3>Jóga pro firmy</h3><p>Pravidelné lekce pro týmy v Přerově a Olomouci. Méně bolesti zad a stresu.</p><span class="btn">Poptat pro firmu</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section s-foam wv-up wv-down" id="co-hledas">
   <div class="wrap quiz">
     <div class="quiz-head">
       <p class="eyebrow">Rychlá orientace</p>
@@ -367,7 +379,10 @@ certs = [
 ]
 CERTS = "".join(f'<li><strong>{a}</strong><span>{b}</span><em>{c}</em></li>' for a, b, c in certs)
 cats = [("Pohyb", ["zuzka", "marketa", "olga"]), ("Dech", ["arnaud"]), ("Dotek", ["sandra"]), ("Firmy", ["monika", "zivina"])]
-REFS_ALL = "".join(f'<div class="stack"><h3 style="color:var(--teal-deep)">{c}</h3><div class="ref-grid">{ref_cards(k)}</div></div>' for c, k in cats)
+REFS_ALL = ('<div class="ref-slider"><div class="ref-track" tabindex="0" aria-label="Reference, posouvej do strany">'
+            + "".join(ref_cards(k).replace('<figcaption>', f'<figcaption><span class="ref-cat">{c}</span>') for c, k in cats)
+            + '</div><div class="ref-nav"><button type="button" class="ref-prev" aria-label="Předchozí reference">←</button>'
+            '<button type="button" class="ref-next" aria-label="Další reference">→</button></div></div>')
 REFS_ALL += '<div class="todo">Další reference z rekhayoga.cz.</div>'
 cesta = f"""
 <section class="page-hero wv-down">
@@ -516,14 +531,6 @@ pillar_page("pohyb", "Pohyb", 'Pohyb bez <span class="hand">mantinelů.</span>',
     "Skupinové lekce hravá flow a integrovaná terapie, individuální lekce a lekce pro firmy.",
     ("lekce-skupina.jpg", "Skupina v pozici trojúhelníku na terase u moře", "center 40%"),
     [
-        ("lekce", "Skupinové lekce", "Hravá flow a integrovaná terapie",
-         """<h3>Integrovaná terapie</h3>
-<p>Možná nepotřebuješ víc cvičit. Možná jen jinak. Detailní práce s tělem, přesné vedení a hlubší porozumění pohybu, inspirované linií B.K.S. Iyengara, ve které jsem se sama učila. Vhodné i pro ty, kdo mají za sebou zranění nebo je bolí záda.</p>
-<h3>Hravá flow</h3>
-<p>Rozproudi energii a pohybuj se s radostí. Dynamické sekvence, síla a kreativita. Někdy jemnější, jindy silovější, vždy bez tlaku a vždy trochu jiná.</p>
-<p>Lekce probíhají v Přerově, Olomouci, Lipníku nad Bečvou a Hradčanech. Cena 200–300 Kč za lekci.</p>""",
-         """<h3>Přijď na lekci</h3><p>Všechny časy najdeš v rozvrhu. Místo si rezervuj přes WhatsApp.</p>""" + ask("Rozvrh lekcí", "rozvrh.html"),
-         ("lenka-tanec-smich.jpg", "Lenka se smíchem tančí ve světlém sále")),
         ("individualne", "Individuální lekce", "Péče ušitá na míru",
          """<p>Pro tebe, ne pro skupinu. Kombinuji jógu, dech, pohyb i masáž, přizpůsobené přesně tobě. Sledujeme tvůj progres, zadávám domácí úkoly a jsem ti k dispozici i mezi lekcemi. Osobně i online.</p>
 <ul class="offer">
@@ -533,6 +540,14 @@ pillar_page("pohyb", "Pohyb", 'Pohyb bez <span class="hand">mantinelů.</span>',
 </ul>""",
          f"""<h3>Rezervuj si první lekci</h3><p>Napiš mi, co tě trápí nebo co hledáš. Domluvíme termín a místo.</p>{ask('Napsat mi')}<p style="font-size:.95rem">Nebo rovnou na <a href="{WA}">WhatsApp</a>.</p>""",
          ("lekce-korekce.jpg", "Lenka koriguje pozici klientky na lekci")),
+        ("lekce", "Skupinové lekce", "Hravá flow a integrovaná terapie",
+         """<h3>Integrovaná terapie</h3>
+<p>Možná nepotřebuješ víc cvičit. Možná jen jinak. Detailní práce s tělem, přesné vedení a hlubší porozumění pohybu, inspirované linií B.K.S. Iyengara, ve které jsem se sama učila. Vhodné i pro ty, kdo mají za sebou zranění nebo je bolí záda.</p>
+<h3>Hravá flow</h3>
+<p>Rozproudi energii a pohybuj se s radostí. Dynamické sekvence, síla a kreativita. Někdy jemnější, jindy silovější, vždy bez tlaku a vždy trochu jiná.</p>
+<p>Lekce probíhají v Přerově, Olomouci, Lipníku nad Bečvou a Hradčanech. Cena 200–300 Kč za lekci.</p>""",
+         """<h3>Přijď na lekci</h3><p>Všechny časy najdeš v rozvrhu. Místo si rezervuj přes WhatsApp.</p>""" + ask("Rozvrh lekcí", "rozvrh.html"),
+         ("lenka-tanec-smich.jpg", "Lenka se smíchem tančí ve světlém sále")),
         ("firmy", "Firemní lekce", "Jóga a dech přímo u vás",
          """<p>Pravidelné lekce jógové terapie pro týmy v Přerově a Olomouci. Ulevují zádům a hlavě, zlepšují posturu při dlouhém sezení a posilují odolnost vůči stresu. První lekce je zdarma.</p>""",
          """<h3>Pro firmy</h3><p>Balíčky, ceny a reference firem najdeš na samostatné stránce.</p>""" + ask("Nabídka pro firmy", "firmy.html"),
