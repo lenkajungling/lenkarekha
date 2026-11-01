@@ -334,7 +334,7 @@ journey = [
     ("Zpátky v Přerově", "Návrat domů a další oklika", [
         "Po návratu domů jsem chtěla dávat zpátky komunitě. Kromě naší kavárny i skrze politiku. Byla jsem aktivní v Pirátské straně, organizovala sbírky v době covidu i za války na Ukrajině, dostala se do zastupitelstva a s kolegy jsme prosadili třeba vznik dostupného městského bydlení místo bourané Strojaře.",
         "Zároveň jsem začala učit. Nejdřív kamarády, pak menší skupinky. Honila jsem se za dokonalým provedením ásán, praktikovala aštángu denně a byla na sebe extrémně přísná, až jsem si skoro zničila koleno. Naštěstí jsem tehdy potkala učitelku, která mě zpomalila a naučila naslouchat tělu místo toho, abych ho přemáhala."],
-     ("prerov-navrat.jpg", "Zpátky v Přerově")),
+     ("prerov-strojar.jpg", "Sběr podpisů za Strojař lidem, Přerov")),
     ("Zlom", "Když intuici nikdo neposlouchá", [
         "Pak přišel rozchod. Samovolný potrat. Fungovala jsem na autopilota, přes spoustu lekcí jógy a ostré lokty v politice. Intuice říkala: odpočiň si, něco změň. Neposlechla jsem ji. Místo toho jsem se vrhla do intenzivního masérského kurzu. A po něm přišlo vyhoření."], None),
     ("Filipíny · Bali", "Freediving jako učitel", [
