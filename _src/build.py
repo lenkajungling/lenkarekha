@@ -224,7 +224,7 @@ home = f"""
 {band('', 'freediving-kanon.jpg', 'Freediverka klesá mezi skalními stěnami do modré hloubky', """
       <div class="band-text">
         <h1>Dech, pohyb, dotek, <span class="hand">voda.</span><span class="sub">Cesta zpátky k sobě má víc podob.</span></h1>
-        <p class="lead">Jsem Lenka Rekha, lektorka jógy a jógové terapie, průvodkyně dechem a freediverka. Přes deset let pomáhám lidem naslouchat vlastnímu tělu. Individuálně, ve skupině i pod hladinou.</p>
+        <p class="lead">Jsem Lenka Rekha, lektorka jógy a jógové terapie, průvodkyně dechem a freediverka. Téměř deset let pomáhám lidem naslouchat vlastnímu tělu. Individuálně, ve skupině, offline i online.</p>
         <div class="btn-row">
           <a class="btn light" href="pohyb.html#individualne">Domluvit úvodní lekci</a>
           <a class="btn outline-light" href="kontakt.html">Napsat mi</a>
@@ -347,7 +347,7 @@ journey = [
     ("Teď a tady", "Jóga bez nálepek", [
         "Po téměř dvou letech v Asii jsem si konečně odpověděla na otázky, kdo jsem a co chci. Jsem lektorka, která skrze autentičnost předává vlastní zkušenost prací s tělem. V mém přístupu se potkává dotek, pohyb, jóga i poznatky z freedivingu.",
         "Naučila jsem se žít v přítomném okamžiku, místo abych zůstávala v minulosti nebo budoucnosti. Od striktní aštángy jsem se přesunula k józe bez nálepek a mantinelů. V mém pojetí je jóga prostě taková, jako jsem já sama. A tenhle posun neberu jako konečný. Pořád se učím být vděčnější, objevovat svoji sílu a obracet věci k dobru, i pro druhé.",
-        "Podporuji ženy i muže na jejich cestě k autentičtějšímu životu. Individuálně, ve skupinách, na suchu i pod hladinou."],
+        "Podporuji ženy i muže na jejich cestě k autentičtějšímu životu. Individuálně, ve skupinách, offline i online."],
      ("indie-setkani.jpg", "Setkání s dalajlámou")),
 ]
 tl = []
@@ -386,7 +386,7 @@ cesta = f"""
     <div class="stack-lg">
     <h1>Kdo je Lenka Rekha?</h1>
     <p class="roles">učitelka · jogínka · freediverka · tanečnice · cestovatelka · propojovatelka · žena</p>
-    <p class="lead">Lektorka jógy a jógové terapie s více než desetiletou praxí. Průvodkyně dechem, která kombinuje pranajámu s technikami z freedivingu. Celoživotní tanečnice. Freediverka s certifikací AIDA4. A taky někdo, kdo si prošel pěkně dlouhou oklikou, než se dostal tam, kde je teď.</p>
+    <p class="lead">Lektorka jógy a jógové terapie s téměř desetiletou praxí. Průvodkyně dechem, která kombinuje pranajámu s technikami z freedivingu. Celoživotní tanečnice. Freediverka s certifikací AIDA4. A taky někdo, kdo si prošel pěkně dlouhou oklikou, než se dostal tam, kde je teď.</p>
     </div>
     <div class="split-media" style="max-width:380px;justify-self:end"><img src="assets/img/lenka-portret.jpg" alt="Portrét Lenky Rekhy"></div>
     </div>
