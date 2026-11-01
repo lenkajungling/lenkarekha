@@ -505,3 +505,5 @@ td small { display: block; color: var(--muted); }
   .tl-item.has-fig:nth-child(even) .tl-place { text-align: left; }
   .tl-item.has-fig figure { max-width: 520px; margin-top: 1rem; }
 }
+.tl-item.has-fig figure img { width: auto; max-width: 100%; }
+.tl-item.has-fig:nth-child(even) figure { justify-self: start; }

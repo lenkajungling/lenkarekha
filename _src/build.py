@@ -340,7 +340,7 @@ journey = [
     ("Filipíny · Bali", "Freediving jako učitel", [
         "Tentokrát už intuici nešlo umlčet rozumem. Vyklidila jsem byt, prodala hromadu věcí a odstěhovala se na Filipíny. Půl roku jsem budovala jógovo-freedivingovou komunitu pod Blue Freedom, potkala světové špičky v oboru a hlavně se ponořila sama do sebe.",
         "Ten pocit, když padáte volným pádem hlouběji do hlubin a neexistuje nic než přítomný okamžik, se těžko popisuje. Freediving se pro mě stal učitelem a životním stylem. Dokončila jsem certifikát AIDA4 a asistentku instruktora, učila jógu a dech na místech jako Panglao, Siquijor nebo Amed na Bali, i po boku uznávaných jmen oboru, jako jsou Ben Piguet nebo Sergey Busargin."],
-     ("lenka-snorchl.jpg", "Po ranním ponoru")),
+     ("lenka-snorchl-vyrez.jpg", "Po ranním ponoru")),
     ("Indie podruhé", "Jógová terapie", [
         "Než jsem se vrátila do Česka, strávila jsem půl roku v Indii, převážnou část studiem jógové terapie pod vedením Sonal Chaudhari. Její učitel Kobad Variava se pod přímým dohledem B.K.S. Iyengara stal seniorním učitelem. Tahle linie je dodnes základem toho, jak k tělu přistupuji."],
      ("indie-terapie.jpg", "Studium jógové terapie v Indii")),
