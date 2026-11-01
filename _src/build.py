@@ -226,7 +226,7 @@ home = f"""
         <h1>Dech, pohyb, dotek, <span class="hand">voda.</span><span class="sub">Cesta zpátky k sobě má víc podob.</span></h1>
         <p class="lead">Jsem Lenka Rekha, lektorka jógy a jógové terapie, průvodkyně dechem a freediverka. Přes deset let pomáhám lidem naslouchat vlastnímu tělu. Individuálně, ve skupině i pod hladinou.</p>
         <div class="btn-row">
-          <a class="btn light" href="pohyb.html#individualne">Domluvit první lekci</a>
+          <a class="btn light" href="pohyb.html#individualne">Domluvit úvodní lekci</a>
           <a class="btn outline-light" href="kontakt.html">Napsat mi</a>
         </div>
       </div>""", "band-hero", "center 42%").replace('</section>', '<a class="scroll-cue" href="#co-hledas">ponoř se ↓</a></section>')}
@@ -235,10 +235,10 @@ home = f"""
   <div class="wrap">
     <div class="section-head"><p class="eyebrow">Co pro tebe mám</p><h2>Začni <span class="hand">tady</span></h2></div>
     <div class="offers" data-rv>
-      <a class="offer-card" href="pohyb.html#individualne"><span class="tag">První lekce zdarma</span><h3>Individuální lekce</h3><p>Jóga, dech a pohyb přesně pro tebe. Osobně i online, s podporou mezi lekcemi.</p><span class="btn">Rezervovat lekci</span></a>
+      <a class="offer-card" href="pohyb.html#individualne"><span class="tag">Nezávazná úvodní lekce</span><h3>Individuální lekce</h3><p>Jóga, dech a pohyb přesně pro tebe. Osobně i online, s podporou mezi lekcemi.</p><span class="btn">Rezervovat lekci</span></a>
       <a class="offer-card" href="dech.html#workshopy"><span class="tag">So 21. 11. · Mariánské Lázně</span><h3>Workshop Flow State Reset</h3><p>Tři hodiny pohybu a dechu. Odneseš si nástroje, jak se zklidnit a vrátit do flow.</p><span class="btn">Přihlásit se</span></a>
       <a class="offer-card" href="voda.html#vnitrni-ponor"><span class="tag">Nový běh od ledna 2027</span><h3>Kurz Vnitřní ponor</h3><p>Jóga a dech inspirované freedivingem. 10 lekcí ve studiu a 1 v jámě.</p><span class="btn">Mám zájem</span></a>
-      <a class="offer-card" href="firmy.html"><span class="tag">První lekce zdarma</span><h3>Jóga pro firmy</h3><p>Pravidelné lekce pro týmy v Přerově a Olomouci. Méně bolesti zad a stresu.</p><span class="btn">Poptat pro firmu</span></a>
+      <a class="offer-card" href="firmy.html"><span class="tag">Nezávazná úvodní lekce</span><h3>Jóga pro firmy</h3><p>Pravidelné lekce pro týmy v Přerově a Olomouci. Méně bolesti zad a stresu.</p><span class="btn">Poptat pro firmu</span></a>
     </div>
   </div>
 </section>
@@ -525,11 +525,11 @@ pillar_page("pohyb", "Pohyb", 'Pohyb bez <span class="hand">mantinelů.</span>',
         ("individualne", "Individuální lekce", "Péče ušitá na míru",
          """<p>Pro tebe, ne pro skupinu. Kombinuji jógu, dech, pohyb i masáž, přizpůsobené přesně tobě. Sledujeme tvůj progres, zadávám domácí úkoly a jsem ti k dispozici i mezi lekcemi. Osobně i online.</p>
 <ul class="offer">
-<li><span>První lekce, bez závazků. Jen přijď ochutnat.</span><span class="price">zdarma</span></li>
+<li><span>Nezávazná úvodní lekce. Poznáme se a zjistíme, co potřebuješ.</span><span class="price">zdarma</span></li>
 <li><span>Balíček 5 lekcí</span><span class="price">5 000 Kč</span></li>
 <li><span>Balíček 10 lekcí, domácí úkoly, dokumentace progresu, podpora přes WhatsApp</span><span class="price">10 000 Kč</span></li>
 </ul>""",
-         f"""<h3>Rezervuj si první lekci</h3><p>Napiš mi, co tě trápí nebo co hledáš. Domluvíme termín a místo.</p>{ask('Napsat mi')}<p style="font-size:.95rem">Nebo rovnou na <a href="{WA}">WhatsApp</a>.</p>""",
+         f"""<h3>Domluv si úvodní lekci</h3><p>Napiš mi, co tě trápí nebo co hledáš. Domluvíme termín a místo.</p>{ask('Napsat mi')}<p style="font-size:.95rem">Nebo rovnou na <a href="{WA}">WhatsApp</a>.</p>""",
          ("lekce-korekce.jpg", "Lenka koriguje pozici klientky na lekci")),
         ("lekce", "Skupinové lekce", "Hravá flow a integrovaná terapie",
          """<h3>Integrovaná terapie</h3>
@@ -540,7 +540,7 @@ pillar_page("pohyb", "Pohyb", 'Pohyb bez <span class="hand">mantinelů.</span>',
          """<h3>Přijď na lekci</h3><p>Všechny časy najdeš v rozvrhu. Místo si rezervuj přes WhatsApp.</p>""" + ask("Rozvrh lekcí", "rozvrh.html"),
          ("lenka-tanec-smich.jpg", "Lenka se smíchem tančí ve světlém sále")),
         ("firmy", "Firemní lekce", "Jóga a dech přímo u vás",
-         """<p>Pravidelné lekce jógové terapie pro týmy v Přerově a Olomouci. Ulevují zádům a hlavě, zlepšují posturu při dlouhém sezení a posilují odolnost vůči stresu. První lekce je zdarma.</p>""",
+         """<p>Pravidelné lekce jógové terapie pro týmy v Přerově a Olomouci. Ulevují zádům a hlavě, zlepšují posturu při dlouhém sezení a posilují odolnost vůči stresu. Začínáme nezávaznou úvodní lekcí.</p>""",
          """<h3>Pro firmy</h3><p>Balíčky, ceny a reference firem najdeš na samostatné stránce.</p>""" + ask("Nabídka pro firmy", "firmy.html"),
          None),
     ],
@@ -619,7 +619,7 @@ firmy = f"""
       </div>
       <h2>Balíčky</h2>
       <ul class="offer">
-        <li><span><strong>První lekce</strong>, nezávazná ochutnávka</span><span class="price">zdarma</span></li>
+        <li><span><strong>Nezávazná úvodní lekce</strong> pro váš tým</span><span class="price">zdarma</span></li>
         <li><span><strong>Měsíční spolupráce</strong> · 4 × 50 min, skupina do 15 osob</span><span class="price">12 000 Kč / měs.</span></li>
         <li><span><strong>Půlroční spolupráce</strong> · 4 × 50 min měsíčně, celkem 48 000 Kč, ušetříte 24 000 Kč</span><span class="price">8 000 Kč / měs.</span></li>
       </ul>
@@ -629,9 +629,9 @@ firmy = f"""
   </div>
 </section>
 {refs_section(["monika", "zivina"], "Co říkají firmy")}
-{cta_band('', 'Chcete to vyzkoušet?', 'První lekce je zdarma a bez závazku.', 'Napsat mi')}
+{cta_band('', 'Chcete to vyzkoušet?', 'Začněte nezávaznou úvodní lekcí.', 'Napsat mi')}
 """
-page("firmy.html", "Pro firmy — Lenka Rekha", "Jógová terapie a dech pro firmy v Přerově a Olomouci. První lekce zdarma.", firmy, "firmy")
+page("firmy.html", "Pro firmy — Lenka Rekha", "Jógová terapie a dech pro firmy v Přerově a Olomouci. Nezávazná úvodní lekce.", firmy, "firmy")
 
 # ======================= ROZVRH =======================
 rows = [
