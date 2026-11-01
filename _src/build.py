@@ -503,7 +503,7 @@ pillar_page("dech", "Dech", 'Dech je první <span class="hand">pohyb.</span>',
 <li><span>Neděle 20. 12. 2026 · 9:00–10:00 · Sangha Přerov</span><span class="price">300 Kč</span></li>
 </ul>""",
          """<h3>Nejbližší pránájáma</h3><p>Neděle 29. 11. a 20. 12., 9:00–10:00, studio Sangha, 300 Kč.</p><p>Dechové techniky tě naučím i individuálně, osobně nebo online.</p>""" + ask("Přihlásit se"),
-         None),
+         ("lenka-tanec.jpg", "Lenka se zavřenýma očima a úsměvem v pohybu, soustředěná na dech")),
         ("workshopy", "Workshop", "Flow State Reset",
          """<p>Tříhodinový workshop. Praktický vhled do propojení pohybu a dechu jako nástrojů vědomé seberegulace. Bez výkonu a bez tlaku na dokonalost.</p>
 <div class="blocks">
@@ -514,7 +514,7 @@ pillar_page("dech", "Dech", 'Dech je první <span class="hand">pohyb.</span>',
          """<h3>Nejbližší workshop</h3>
 <ul class="offer"><li><span>So 21. 11. 2026 · 9:00–12:00 · studio Kineo, Mariánské Lázně</span><span class="price">900 Kč</span></li></ul>
 <p>Chceš workshop pro svou skupinu, studio nebo firmu? Napiš mi.</p>""" + ask("Přihlásit se"),
-         None),
+         ("lekce-filipiny.jpg", "Skupina na pláži v pozici válečníka s rukama nad hlavou")),
     ],
     ["arnaud"], "Chceš se nadechnout jinak?", "Napiš mi, co potřebuješ. Domluvíme pránájámu, workshop nebo individuální práci s dechem.")
 
@@ -550,7 +550,7 @@ pillar_page("pohyb", "Pohyb", 'Pohyb bez <span class="hand">mantinelů.</span>',
 # ---------- DOTEK ----------
 pillar_page("dotek", "Dotek", 'Dotek, který tělu vrátí <span class="hand">rovnováhu.</span>',
     "Intuitivní masáž: sportovní masáž, aromaterapie, dech a prvky thajské masáže v jednom. Zaměřuji se hlavně na záda, šíji, hlavu a hrudník.",
-    None,
+    ("masaz.jpg", "Ruce masírují šíji a krk ležící klientky", "center 38%"),
     [
         ("intuitivni-masaz", "Intuitivní masáž", "Vědomý dotek",
          """<p>Moje intuitivní masáž kombinuje <strong>sportovní masáž, aromaterapii, práci s dechem a prvky thajské masáže</strong>. Není to jen mechanická technika. Je to vědomý dotek, který uvolní napětí, zklidní nervový systém a znovu tě propojí s vlastním tělem a dechem.</p>
@@ -558,7 +558,7 @@ pillar_page("dotek", "Dotek", 'Dotek, který tělu vrátí <span class="hand">ro
 <p>Jsem lektorka jógy a dlouhodobě pracuji s dechem a vědomým pohybem. Jako tanečnice i freediverka se učím vnímat tělo, rytmus a dech v hlubší rovině. Dotek je přirozeným rozšířením téhle práce.</p>
 <p>Brzy v nabídce i thajská masáž na futonu.</p>""",
          """<h3>Pro koho</h3><p>Pro každého, kdo cítí napětí v těle, potřebuje si odpočinout nebo chce svému tělu dopřát vědomou péči.</p><p><span class="todo-inline">kde masíruješ?</span></p>""" + ask("Rezervovat masáž"),
-         ("masaz.jpg", "Ruce masírují šíji a krk ležící klientky")),
+         None),
         ("cenik", "Ceník", "Kolik to stojí",
          """<ul class="offer">
 <li><span>Intuitivní masáž · 45 minut + 10 minut konzultace</span><span class="price">800 Kč</span></li>
@@ -587,7 +587,7 @@ pillar_page("voda", "Voda", 'Nádech, který vydrží <span class="hand">déle.<
 <li><span>Lekce v jámě</span><span class="price"><span class="todo-inline">cena</span></span></li>
 </ul>""",
          """<h3>Další běh začíná v lednu 2027</h3><p>Místa ve skupině jsou omezená. Napiš mi a pošlu ti termíny jako první.</p>""" + ask("Mám zájem o kurz"),
-         None),
+         ("zelva-shora.jpg", "Lenka se noří nad útesem, pod ní plave mořská želva")),
         ("retreat", "V rytmu oceánu", "Retreat na Bali, duben 2027",
          """<p>Retreat, který spojuje jógu, dech a freediving v Amedu na Bali, na jednom z nejkrásnějších míst pro ponor. Prostor zpomalit a ponořit se hlouběji do sebe i do vody.</p>
 <p><strong>Další retreat proběhne v dubnu 2027</strong> <span class="todo-inline">přesné datum</span>. Program, ubytování, ceny a přihlášku najdeš na stránce retreatu.</p>""",
