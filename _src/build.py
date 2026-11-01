@@ -362,12 +362,12 @@ kdo = [("kdo-01-kdo-jsem", "Kdo jsem?"), ("kdo-02-ucitelka", "učitelka"), ("kdo
        ("kdo-05-tanecnice", "tanečnice"), ("kdo-06-cestovatelka", "cestovatelka"), ("kdo-07-propojovatelka", "propojovatelka"), ("kdo-08-zena", "žena")]
 KDO = "".join(f'<img src="assets/img/{f}.jpg" alt="Lenka Rekha — {t}" loading="lazy">' for f, t in kdo)
 certs = [
-    ("Aštánga jóga", "Scott Johnson", "Londýn 2018"),
-    ("Yoga Chikitsa", "Manju Jois", "Londýn"),
-    ("Intenzivní kurz aštánga jógy", "Saraswathi Jois", "Maisúr, Indie"),
+    ("Aštánga jóga", "Scott Johnson", "Londýn 2017"),
+    ("Yoga Chikitsa", "Manju Jois", "Londýn 2018"),
+    ("Intenzivní kurz aštánga jógy", "Saraswathi Jois", "Maisúr, Indie 2019"),
     ("Lektorka jógy, multistyl (akreditace MŠMT)", "Kabir", "Olomouc 2020"),
     ("Dynamické meditace", "Kabir", "Olomouc 2021"),
-    ("Sportovní masáž", "VZ HSZ Zlín", "Zlín 2023"),
+    ("Sportovní masáž (akreditace MŠMT)", "Vzdělávací zařízení zdravotně-hygienických služeb Zlín", "Zlín 2023"),
     ("Freediving AIDA4 a asistentka instruktora", "AIDA", "Filipíny 2024"),
     ("Jógová terapie", "Sonal Chaudhari, linie B.K.S. Iyengara", "Indie 2025"),
 ]
