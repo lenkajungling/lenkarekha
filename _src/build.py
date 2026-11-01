@@ -362,14 +362,14 @@ kdo = [("kdo-01-kdo-jsem", "Kdo jsem?"), ("kdo-02-ucitelka", "učitelka"), ("kdo
        ("kdo-05-tanecnice", "tanečnice"), ("kdo-06-cestovatelka", "cestovatelka"), ("kdo-07-propojovatelka", "propojovatelka"), ("kdo-08-zena", "žena")]
 KDO = "".join(f'<img src="assets/img/{f}.jpg" alt="Lenka Rekha — {t}" loading="lazy">' for f, t in kdo)
 certs = [
-    ("Aštánga jóga", "Scott Johnson", "Londýn"),
+    ("Aštánga jóga", "Scott Johnson", "Londýn 2018"),
     ("Yoga Chikitsa", "Manju Jois", "Londýn"),
     ("Intenzivní kurz aštánga jógy", "Saraswathi Jois", "Maisúr, Indie"),
-    ("Lektorský kurz jógy", "Kabir, Oshova tradice", ""),
-    ("Lektor/ka jógy, akreditace MŠMT", '<span class="todo-inline">název kurzu, rok</span>', ""),
-    ("Jógová terapie", "Sonal Chaudhari, linie B.K.S. Iyengara", "Indie"),
-    ("Freediving AIDA4 a asistentka instruktora", "AIDA", "Filipíny"),
-    ("Sportovní masáž", '<span class="todo-inline">kde</span>', ""),
+    ("Lektorka jógy, multistyl (akreditace MŠMT)", "Kabir", "Olomouc 2020"),
+    ("Dynamické meditace", "Kabir", "Olomouc 2021"),
+    ("Sportovní masáž", "VZ HSZ Zlín", "Zlín 2023"),
+    ("Freediving AIDA4 a asistentka instruktora", "AIDA", "Filipíny 2024"),
+    ("Jógová terapie", "Sonal Chaudhari, linie B.K.S. Iyengara", "Indie 2025"),
 ]
 CERTS = "".join(f'<li><strong>{a}</strong><span>{b}</span><em>{c}</em></li>' for a, b, c in certs)
 cats = [("Pohyb", ["zuzka", "marketa", "olga"]), ("Dech", ["arnaud"]), ("Dotek", ["sandra"]), ("Firmy", ["monika", "zivina"])]
