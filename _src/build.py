@@ -356,7 +356,7 @@ for place, h, paras, fig in journey:
         tl.append('</div></div></section>' + band('', 'zelva-ponor.jpg', 'Lenka se noří vedle mořské želvy nad písečným dnem', '<p class="band-quote">Tentokrát už intuici nešlo umlčet rozumem.</p>', '', 'center 58%') + '<section class="section"><div class="wrap"><div class="timeline">')
     ps = "".join(f"<p>{p}</p>" for p in paras)
     f = (f'<figure><img src="assets/img/{fig[0]}" alt="{fig[1]}" loading="lazy"><figcaption>{fig[1]}</figcaption></figure>' if fig else "")
-    tl.append(f'<article class="tl-item" data-rv><div class="tl-place"><b>{len([x for x in tl if x.startswith("<article")]) + 1:02d}</b><span>{place}</span></div><div><h2>{h}</h2>{ps}{f}</div></article>')
+    tl.append(f'<article class="tl-item{" has-fig" if fig else ""}" data-rv><div class="tl-place"><b>{len([x for x in tl if x.startswith("<article")]) + 1:02d}</b><span>{place}</span></div><div class="tl-text"><h2>{h}</h2>{ps}</div>{f}</article>')
 
 kdo = [("kdo-01-kdo-jsem", "Kdo jsem?"), ("kdo-02-ucitelka", "učitelka"), ("kdo-03-joginka", "jogínka"), ("kdo-04-freediverka", "freediverka"),
        ("kdo-05-tanecnice", "tanečnice"), ("kdo-06-cestovatelka", "cestovatelka"), ("kdo-07-propojovatelka", "propojovatelka"), ("kdo-08-zena", "žena")]
@@ -396,7 +396,7 @@ cesta = f"""
 <section class="section" id="pribeh">
   <div class="wrap">
     <div class="timeline">{''.join(tl)}</div>
-    <div class="todo" style="margin-top:3rem;max-width:720px">Fotky ke kapitolám 01 Než přišla jóga, 03 Návrat domů a 07 Teď a tady (bez nápisů).</div>
+    <div class="todo" style="margin-top:3rem;max-width:720px">Fotka ke kapitole 01 Než přišla jóga (Přerov, korporát).</div>
   </div>
 </section>
 <section class="section s-foam wv-up" id="vzdelani">
