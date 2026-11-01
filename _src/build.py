@@ -501,7 +501,7 @@ pillar_page("dech", "Dech", 'Dech je první <span class="hand">pohyb.</span>',
 <li><span>Neděle 20. 12. 2026 · 9:00–10:00 · Sangha Přerov</span><span class="price">300 Kč</span></li>
 </ul>""",
          """<h3>Nejbližší pránájáma</h3><p>Neděle 29. 11. a 20. 12., 9:00–10:00, studio Sangha, 300 Kč.</p><p>Dechové techniky tě naučím i individuálně, osobně nebo online.</p>""" + ask("Přihlásit se"),
-         ("lekce-filipiny.jpg", "Skupina na pláži v pozici válečníka s rukama nad hlavou")),
+         ("bhramari.jpg", "Lenka v sedu s dlaněmi na očích při dechové technice bhramari")),
         ("workshopy", "Workshop", "Flow State Reset",
          """<p>Tříhodinový workshop. Praktický vhled do propojení pohybu a dechu jako nástrojů vědomé seberegulace. Bez výkonu a bez tlaku na dokonalost.</p>
 <div class="blocks">
