@@ -513,11 +513,11 @@ pillar_page("pohyb", "Pohyb", 'Pohyb bez <span class="hand">mantinelů.</span>',
     ("lekce-skupina.jpg", "Skupina v pozici trojúhelníku na terase u moře", "center 40%"),
     [
         ("individualne", "Individuální lekce", "Péče ušitá na míru",
-         """<p>Pro tebe, ne pro skupinu. Kombinuji jógu, dech, pohyb i masáž, přizpůsobené přesně tobě. Sledujeme tvůj progres, zadávám domácí úkoly a jsem ti k dispozici i mezi lekcemi. Osobně i online.</p>
+         """<p>Pro tebe, ne pro skupinu. Kombinuji jógu, dech, pohyb i masáž, přizpůsobené přesně tobě. Sleduji a zapisuji tvůj progres, zadávám domácí úkoly a jsem ti k dispozici i mezi lekcemi přes WhatsApp. Osobně i online.</p>
 <ul class="offer">
 <li><span>Nezávazná úvodní lekce. Poznáme se a zjistíme, co potřebuješ.</span><span class="price">zdarma</span></li>
 <li><span>Balíček 5 lekcí</span><span class="price">5 000 Kč</span></li>
-<li><span>Balíček 10 lekcí, domácí úkoly, dokumentace progresu, podpora přes WhatsApp</span><span class="price">10 000 Kč</span></li>
+<li><span>Balíček 10 lekcí</span><span class="price">10 000 Kč</span></li>
 </ul>""",
          f"""<h3>Domluv si úvodní lekci</h3><p>Napiš mi, co tě trápí nebo co hledáš. Domluvíme termín a místo.</p>{ask('Napsat mi')}<p style="font-size:.95rem">Nebo rovnou na <a href="{WA}">WhatsApp</a>.</p>""",
          ("lekce-popruh.jpg", "Lenka nastavuje klientovi jógový popruh přes ramena")),
