@@ -384,6 +384,7 @@ cesta = f"""
     <div class="split rev" style="align-items:end">
     <div class="stack-lg">
     <h1>Kdo je Lenka Rekha?</h1>
+    <p class="roles">učitelka · jogínka · freediverka · tanečnice · cestovatelka · propojovatelka · žena</p>
     <p class="lead">Lektorka jógy a jógové terapie s více než desetiletou praxí. Průvodkyně dechem, která kombinuje pranajámu s technikami z freedivingu. Celoživotní tanečnice. Freediverka s certifikací AIDA4. A taky někdo, kdo si prošel pěkně dlouhou oklikou, než se dostal tam, kde je teď.</p>
     </div>
     <div class="split-media" style="max-width:380px;justify-self:end"><img src="assets/img/lenka-portret.jpg" alt="Portrét Lenky Rekhy"></div>
@@ -393,13 +394,8 @@ cesta = f"""
 <nav class="subnav wv-up" aria-label="Moje cesta: obsah stránky"><div class="wrap">{"".join(f'<a href="{h}">{t}</a>' for h, t in CESTA_SUB)}</div></nav>
 <section class="section" id="pribeh">
   <div class="wrap">
-    <div class="kdo-grid">{KDO}</div>
-  </div>
-</section>
-<section class="section" style="padding-top:0">
-  <div class="wrap">
     <div class="timeline">{''.join(tl)}</div>
-    <div class="todo" style="margin-top:3rem;max-width:720px">Fotky na časovou osu: Londýn, Indie (Maisúr), Filipíny, Přerov dnes. Čím víc osobních, tím líp.</div>
+    <div class="todo" style="margin-top:3rem;max-width:720px">Fotky ke kapitolám 01 Než přišla jóga, 03 Návrat domů a 07 Teď a tady (bez nápisů).</div>
   </div>
 </section>
 <section class="section s-foam wv-up" id="vzdelani">
