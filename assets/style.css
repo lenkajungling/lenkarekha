@@ -510,3 +510,4 @@ td small { display: block; color: var(--muted); }
 /* vzdělání: dva sloupce, chronologicky shora dolů (nejdřív levý, pak pravý) */
 .certs { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(4, auto); grid-auto-flow: column; max-width: none; }
 @media (max-width: 760px) { .certs { grid-template-columns: 1fr; grid-template-rows: none; grid-auto-flow: row; } }
+.page-photo img[src$="lenka-tanec-smich.jpg"] { aspect-ratio: 3 / 4; max-width: 440px; object-position: center 8%; }
