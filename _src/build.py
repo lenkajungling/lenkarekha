@@ -15,7 +15,7 @@ FORM = "https://formspree.io/f/mdavpakp"
 # Čtyři pilíře: (slug, název, podpoložky (odkaz, text), krátký popis, fotka)
 PILLARS = [
     ("dech", "Dech", [("dech.html#pranajama", "Pránájáma a dechové techniky"), ("dech.html#workshopy", "Workshop Flow State Reset")],
-     "Pránájáma, dechové techniky a tříhodinový workshop Flow State Reset.", "bubliny.jpg"),
+     "Pránájáma, dechové techniky a tříhodinový workshop Flow State Reset.", "relaxace-podlozka.jpg"),
     ("pohyb", "Pohyb", [("pohyb.html#individualne", "Individuální lekce"), ("pohyb.html#lekce", "Skupinové lekce"), ("firmy.html", "Firemní lekce"), ("dech.html#workshopy", "Workshop Flow State Reset")],
      "Hravá flow a integrovaná terapie ve skupině, individuální lekce a lekce pro firmy.", "lekce-skupina.jpg"),
     ("dotek", "Dotek", [("dotek.html#intuitivni-masaz", "Intuitivní masáž")],
@@ -283,7 +283,7 @@ home = f"""
   </div>
 </section>
 
-{band('', 'ponor-lano.jpg', 'Freediverka u lana pod hladinou proti slunci', '<p class="band-quote">Nádech, který vydrží <span class="hand">déle, než si myslíš.</span></p>', '', 'center 30%')}
+{band('', 'lenka-plaz-sirka.jpg', 'Lenka s rukama nad hlavou a zavřenýma očima na pláži u moře', '<p class="band-quote">Nádech, který vydrží <span class="hand">déle, než si myslíš.</span></p>', 'right', '30% 35%')}
 
 <section class="section s-teal wv-up wv-down">
   <div class="wrap">
@@ -350,7 +350,7 @@ journey = [
 tl = []
 for place, h, paras, fig in journey:
     if place == "Filipíny · Bali":
-        tl.append('</div></div></section>' + band('', 'ponor-lano.jpg', 'Freediverka u lana pod hladinou proti slunci', '<p class="band-quote">Tentokrát už intuici nešlo umlčet rozumem.</p>', '', 'center 30%') + '<section class="section"><div class="wrap"><div class="timeline">')
+        tl.append('</div></div></section>' + band('', 'amed-bali.jpg', 'Pobřeží Amedu na Bali se sopkou Agung při západu slunce', '<p class="band-quote">Tentokrát už intuici nešlo umlčet rozumem.</p>', '', 'center 30%') + '<section class="section"><div class="wrap"><div class="timeline">')
     ps = "".join(f"<p>{p}</p>" for p in paras)
     f = (f'<figure><img src="assets/img/{fig[0]}" alt="{fig[1]}" loading="lazy"><figcaption>{fig[1]}</figcaption></figure>' if fig else "")
     tl.append(f'<article class="tl-item" data-rv><div class="tl-place"><b>{len([x for x in tl if x.startswith("<article")]) + 1:02d}</b><span>{place}</span></div><div><h2>{h}</h2>{ps}{f}</div></article>')
@@ -490,7 +490,7 @@ def pillar_page(slug, name, h1, lead, hero, sections, refs, cta_title, cta_text)
 # ---------- DECH ----------
 pillar_page("dech", "Dech", 'Dech je první <span class="hand">pohyb.</span>',
     "Pránájáma, dechové techniky a workshop Flow State Reset. Kombinuji klasickou práci s dechem z jógy s technikami z freedivingu.",
-    ("bubliny.jpg", "Bublinový prstenec stoupá pod hladinou ke slunci", "center"),
+    ("relaxace-podlozka.jpg", "Klient leží se zavřenýma očima na podložce, Lenka mu uvolňuje ramena", "center 40%"),
     [
         ("pranajama", "Pránájáma a dechové techniky", "Klid, který si můžeš kdykoli přivolat",
          """<p><strong>Dechové techniky</strong> jsou praktické nástroje: jak prodloužit výdech, zklidnit nervový systém, soustředit se nebo prodloužit zádrž. Naučíš se je rychle a použiješ je hned, třeba před spaním, před důležitým jednáním nebo před ponorem. Propojuji je s poznatky z freedivingu.</p>
@@ -530,7 +530,7 @@ pillar_page("pohyb", "Pohyb", 'Pohyb bez <span class="hand">mantinelů.</span>',
 <li><span>Balíček 10 lekcí, domácí úkoly, dokumentace progresu, podpora přes WhatsApp</span><span class="price">10 000 Kč</span></li>
 </ul>""",
          f"""<h3>Domluv si úvodní lekci</h3><p>Napiš mi, co tě trápí nebo co hledáš. Domluvíme termín a místo.</p>{ask('Napsat mi')}<p style="font-size:.95rem">Nebo rovnou na <a href="{WA}">WhatsApp</a>.</p>""",
-         ("lekce-korekce.jpg", "Lenka koriguje pozici klientky na lekci")),
+         ("lekce-popruh.jpg", "Lenka nastavuje klientovi jógový popruh přes ramena")),
         ("lekce", "Skupinové lekce", "Hravá flow a integrovaná terapie",
          """<h3>Integrovaná terapie</h3>
 <p>Možná nepotřebuješ víc cvičit. Možná jen jinak. Detailní práce s tělem, přesné vedení a hlubší porozumění pohybu, inspirované linií B.K.S. Iyengara, ve které jsem se sama učila. Vhodné i pro ty, kdo mají za sebou zranění nebo je bolí záda.</p>
