@@ -490,13 +490,7 @@ pillar_page("dech", "Dech", 'Dech je první <span class="hand">pohyb.</span>',
     [
         ("pranajama", "Pránájáma a dechové techniky", "Klid, který si můžeš kdykoli přivolat",
          """<p><strong>Dechové techniky</strong> jsou praktické nástroje: jak prodloužit výdech, zklidnit nervový systém, soustředit se nebo prodloužit zádrž. Naučíš se je rychle a použiješ je hned, třeba před spaním, před důležitým jednáním nebo před ponorem. Propojuji je s poznatky z freedivingu.</p>
-<p><strong>Pránájáma</strong> jde hlouběji. Je to jedna z cest jógy, komplexní praxe, která pracuje s dechem, energií a pozorností zároveň. Nejde jen o techniku, ale o to, jak dech mění tvůj vnitřní stav. Potřebuje pravidelnost a čas, a o to víc ti dá.</p>
-<h3>Pránájáma ve studiu Sangha</h3>
-<p>Jednou měsíčně v neděli ráno, 9:00–10:00.</p>
-<ul class="offer">
-<li><span>Neděle 29. 11. 2026 · 9:00–10:00 · Sangha Přerov</span><span class="price">300 Kč</span></li>
-<li><span>Neděle 20. 12. 2026 · 9:00–10:00 · Sangha Přerov</span><span class="price">300 Kč</span></li>
-</ul>""",
+<p><strong>Pránájáma</strong> jde hlouběji. Je to jedna z cest jógy, komplexní praxe, která pracuje s dechem, energií a pozorností zároveň. Nejde jen o techniku, ale o to, jak dech mění tvůj vnitřní stav. Potřebuje pravidelnost a čas, a o to víc ti dá.</p>""",
          """<h3>Nejbližší pránájáma</h3><p>Neděle 29. 11. a 20. 12., 9:00–10:00, studio Sangha, 300 Kč.</p><p>Dechové techniky tě naučím i individuálně, osobně nebo online.</p>""" + ask("Přihlásit se"),
          ("lenka-tanec.jpg", "Lenka se zavřenýma očima a úsměvem v pohybu, soustředěná na dech")),
         ("workshopy", "Workshop", "Flow State Reset",
