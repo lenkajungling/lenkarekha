@@ -507,3 +507,5 @@ td small { display: block; color: var(--muted); }
 }
 .tl-item.has-fig figure img { width: auto; max-width: 100%; }
 .tl-item.has-fig:nth-child(even) figure { justify-self: start; }
+/* vzdělání: jeden sloupec, chronologicky shora dolů */
+.certs { grid-template-columns: 1fr; max-width: 860px; }
