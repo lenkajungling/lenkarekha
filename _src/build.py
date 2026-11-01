@@ -411,15 +411,12 @@ cesta = f"""
     {REFS_ALL}
   </div>
 </section>
-<section class="section s-deep wv-up" id="komunita">
+<section class="section s-foam wv-up" id="komunita">
   <div class="wrap">
-    <div class="pod-band">
-      <div class="stack">
-        <span class="pod-badge">Komunita · Podnikavky Přerov</span>
-        <h2>Setkání podnikavých žen</h2>
-        <p>Kromě vlastní praxe organizuji pravidelné neformální setkání pro ženy, které podnikají nebo o tom přemýšlí. 15. listopadu slavíme první narozeniny.</p>
-      </div>
-      <a class="btn sun" href="podnikavky.html">Chci vědět víc</a>
+    <div class="section-head"><p class="eyebrow">Komunita · Podnikavky Přerov</p><h2>Setkání podnikavých <span class="hand">žen</span></h2></div>
+    <div class="stack" style="max-width:66ch">
+      <p class="lead">Kromě vlastní praxe organizuji pravidelné neformální setkání pro ženy, které podnikají nebo o tom přemýšlí. 15. listopadu slavíme první narozeniny.</p>
+      <div><a class="btn" href="podnikavky.html">Chci vědět víc</a></div>
     </div>
   </div>
 </section>
