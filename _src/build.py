@@ -503,7 +503,7 @@ pillar_page("dech", "Dech", 'Dech je první <span class="hand">pohyb.</span>',
 <li><span>Neděle 20. 12. 2026 · 9:00–10:00 · Sangha Přerov</span><span class="price">300 Kč</span></li>
 </ul>""",
          """<h3>Nejbližší pránájáma</h3><p>Neděle 29. 11. a 20. 12., 9:00–10:00, studio Sangha, 300 Kč.</p><p>Dechové techniky tě naučím i individuálně, osobně nebo online.</p>""" + ask("Přihlásit se"),
-         ("lenka-tanec.jpg", "Lenka se zavřenýma očima a úsměvem v pohybu, soustředěná na dech")),
+         ("lekce-filipiny.jpg", "Skupina na pláži v pozici válečníka s rukama nad hlavou")),
         ("workshopy", "Workshop", "Flow State Reset",
          """<p>Tříhodinový workshop. Praktický vhled do propojení pohybu a dechu jako nástrojů vědomé seberegulace. Bez výkonu a bez tlaku na dokonalost.</p>
 <div class="blocks">
@@ -514,7 +514,7 @@ pillar_page("dech", "Dech", 'Dech je první <span class="hand">pohyb.</span>',
          """<h3>Nejbližší workshop</h3>
 <ul class="offer"><li><span>So 21. 11. 2026 · 9:00–12:00 · studio Kineo, Mariánské Lázně</span><span class="price">900 Kč</span></li></ul>
 <p>Chceš workshop pro svou skupinu, studio nebo firmu? Napiš mi.</p>""" + ask("Přihlásit se"),
-         ("lekce-filipiny.jpg", "Skupina na pláži v pozici válečníka s rukama nad hlavou")),
+         ("lenka-tanec.jpg", "Lenka se zavřenýma očima a úsměvem v pohybu, soustředěná na dech")),
     ],
     ["arnaud"], "Chceš se nadechnout jinak?", "Napiš mi, co potřebuješ. Domluvíme pránájámu, workshop nebo individuální práci s dechem.")
 
