@@ -277,7 +277,7 @@ home = f"""
   <div class="wrap">
     <div class="section-head stack" style="margin-bottom:2.6rem;max-width:820px">
       <p class="eyebrow">Čtyři cesty k sobě</p>
-      <h2>Jak spolu můžeme <span class="hand">pracovat</span></h2>
+      <h2>Jak můžeme <span class="hand">spolupracovat</span></h2>
     </div>
     <ul class="index" data-rv>{index_rows}</ul>
   </div>
