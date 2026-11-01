@@ -35,7 +35,7 @@ PLACES = [
 
 
 REFS = {
-    "arnaud": ("Arnaud", "online pranayama, freediver", "We had an online pranayama session and I can honestly say it was incredible! Even though Lenka is currently in India, the virtual class felt so personal and engaging, like being in a real in-person session. Using our headphones, I could fully immerse myself in her guidance, breathing exercises, and the sense of presence she creates. As a freediver, I found her pranayama techniques especially helpful for improving my breathing technique and breathholds, which are key for diving deeper and staying calm underwater. Lenka is such a talented and engaging teacher, and I highly recommend her classes to anyone looking to learn about yoga. Thank you, Lenka, for this amazing experience. Can’t wait for the next session!"),
+    "arnaud": ("Arnaud", "online pránájáma, freediver", "Měli jsme online lekci pránájámy a byla úžasná. I když byla Lenka zrovna v Indii, lekce působila osobně, jako bychom byli ve stejné místnosti. Se sluchátky jsem se mohl úplně ponořit do jejího vedení a dechových cvičení. Jako freediverovi mi její techniky pránájámy hodně pomohly zlepšit dýchání a zádrže, které jsou klíčové pro hlubší ponor a klid pod vodou. Lenka je talentovaná a poutavá učitelka a její lekce vřele doporučuji každému, kdo se chce o józe dozvědět víc. Děkuju, Lenko, už se těším na další lekci!"),
     "sandra": ("Sandra", "masáž", "Ráda bych touto cestou poděkovala za vynikající masáž. Moje zkušenost byla maximálně pozitivní, a to především díky tomu, že masáž byla zaměřena přesně na problematické partie (záda, lopatky, šíje), které mě dlouhodobě trápí. Oceňuji velmi citlivý, ale přitom účinný přístup. Podařilo se uvolnit i hluboké svalové napětí. Po návštěvě cítím výrazné povolení. Celková péče probíhala v klidném a příjemném duchu. Vřele doporučuji!"),
     "marketa": ("Markéta", "online lekce na míru", "Lenčiny online lekce jsou skvělé. Vytvoří ti lekci přímo na míru. Řekneš jí předem, s čím máš problémy, a ona ti udělá lekci přímo na to. A hlavně to jsou cviky, které nejsou těžké a které můžeš dělat i sama doma. Všem moc doporučuji!"),
     "olga": ("Olga", "učitelka", "Jsem workoholik. Díky józe s Lenkou jsem zpomalila. Učím se mít ráda svoje tělo, trénuji dechové návyky a užívám si jejich vliv na energii i duši. Po hodině cvičení je mi skvěle. Umím pracovně vypnout, zklidnit se a zahnat negativní myšlenky."),
@@ -49,7 +49,7 @@ def ref_cards(keys):
     out = []
     for k in keys:
         n, role, q = REFS[k]
-        lang = ' lang="en"' if k == "arnaud" else ""
+        lang = ""
         out.append(f'<figure class="ref-card"><blockquote{lang}>{q}</blockquote><figcaption><strong>{n}</strong>{role}</figcaption></figure>')
     return "".join(out)
 
@@ -440,9 +440,9 @@ def refs_section(keys, eyebrow="Co říkají ti, kdo to zažili"):
         return ""
     first, rest = keys[0], keys[1:]
     n, role, q = REFS[first]
-    lang = ' lang="en"' if first == "arnaud" else ""
+    lang = ""
     small = "".join(
-        f'<figure><blockquote{" lang=\"en\"" if k == "arnaud" else ""}>{REFS[k][2]}</blockquote><figcaption>{REFS[k][0]}, {REFS[k][1]}</figcaption></figure>'
+        f'<figure><blockquote{""}>{REFS[k][2]}</blockquote><figcaption>{REFS[k][0]}, {REFS[k][1]}</figcaption></figure>'
         for k in rest)
     return f"""<section class="section s-teal wv-up" id="reference">
   <div class="wrap">
