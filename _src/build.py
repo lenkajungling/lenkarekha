@@ -350,7 +350,7 @@ journey = [
 tl = []
 for place, h, paras, fig in journey:
     if place == "Filipíny · Bali":
-        tl.append('</div></div></section>' + band('', 'lekce-filipiny.jpg', 'Lenka vede lekci jógy na pláži na Filipínách, skupina v pozici válečníka', '<p class="band-quote">Tentokrát už intuici nešlo umlčet rozumem.</p>', '', 'center 30%') + '<section class="section"><div class="wrap"><div class="timeline">')
+        tl.append('</div></div></section>' + band('', 'zelva-ponor.jpg', 'Lenka se noří vedle mořské želvy nad písečným dnem', '<p class="band-quote">Tentokrát už intuici nešlo umlčet rozumem.</p>', '', 'center 58%') + '<section class="section"><div class="wrap"><div class="timeline">')
     ps = "".join(f"<p>{p}</p>" for p in paras)
     f = (f'<figure><img src="assets/img/{fig[0]}" alt="{fig[1]}" loading="lazy"><figcaption>{fig[1]}</figcaption></figure>' if fig else "")
     tl.append(f'<article class="tl-item" data-rv><div class="tl-place"><b>{len([x for x in tl if x.startswith("<article")]) + 1:02d}</b><span>{place}</span></div><div><h2>{h}</h2>{ps}{f}</div></article>')
@@ -592,7 +592,7 @@ pillar_page("voda", "Voda", 'Nádech, který vydrží <span class="hand">déle.<
 <p><strong>Další retreat proběhne v dubnu 2027</strong> <span class="todo-inline">přesné datum</span>. Program, ubytování, ceny a přihlášku najdeš na stránce retreatu.</p>""",
          """<h3>Duben 2027 · Amed, Bali</h3><p>Všechny podrobnosti a přihláška.</p><a class="btn" href="https://lenkajungling.github.io/v-rytmu-oceanu/">Stránka retreatu</a>
 <div class="todo" style="margin-top:.6rem">Stránka retreatu se upravuje na dubnový termín. Formulář z MailerLite pro novinky o retreatech.</div>""",
-         ("zelva-ponor.jpg", "Lenka se nořící vedle mořské želvy nad písečným dnem")),
+         ("lekce-terasa.jpg", "Ranní lekce na terase s výhledem na oceán v Amedu")),
         ("freediving", "Od léta 2027", "Kurzy freedivingu",
          """<p>Od léta 2027 otevřu kurzy freedivingu ve vodě. Navážou na Vnitřní ponor a povedou tě od prvních ponorů s bezpečností a klidem.</p>""",
          """<h3>Chceš vědět jako první?</h3><p>Napiš mi a dám ti vědět, jakmile vypíšu termíny.</p>""" + ask("Dej mi vědět"),
