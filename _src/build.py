@@ -15,14 +15,14 @@ FORM = "https://formspree.io/f/mdavpakp"
 
 # Čtyři pilíře: (slug, název, podpoložky (odkaz, text), krátký popis, fotka)
 PILLARS = [
-    ("dech", "Dech", [("dech.html#pranajama", "Pránájáma a dechové techniky"), ("dech.html#workshopy", "Workshop Flow State Reset")],
-     "Pránájáma, dechové techniky a tříhodinový workshop Flow State Reset.", "relaxace-podlozka.jpg"),
-    ("pohyb", "Pohyb", [("pohyb.html#individualne", "Individuální lekce"), ("pohyb.html#lekce", "Skupinové lekce"), ("firmy.html", "Firemní lekce"), ("dech.html#workshopy", "Workshop Flow State Reset")],
-     "Hravá flow a integrovaná terapie ve skupině, individuální lekce a lekce pro firmy.", "lekce-skupina.jpg"),
+    ("dech", "Dech", [("dech.html#pranajama", "Pránájáma a dechové techniky"), ("dech.html#workshopy", "Workshop Flow State Reset"), ("voda.html#vnitrni-ponor", "Kurz: Vnitřní ponor")],
+     "Pránájáma, dechové techniky, tříhodinový workshop Flow State Reset a kurz Vnitřní ponor.", "relaxace-podlozka.jpg"),
+    ("pohyb", "Pohyb", [("pohyb.html#individualne", "Individuální lekce"), ("pohyb.html#lekce", "Skupinové lekce"), ("firmy.html", "Firemní lekce"), ("dech.html#workshopy", "Workshop Flow State Reset"), ("voda.html#vnitrni-ponor", "Kurz: Vnitřní ponor")],
+     "Hravá flow a integrovaná terapie ve skupině, individuální lekce, lekce pro firmy a kurz Vnitřní ponor.", "lekce-skupina.jpg"),
     ("dotek", "Dotek", [("dotek.html#intuitivni-masaz", "Intuitivní masáž")],
      "Intuitivní masáž: sportovní masáž, aromaterapie, dech a thajská masáž v jednom.", "masaz.jpg"),
-    ("voda", "Voda", [("voda.html#vnitrni-ponor", "Vnitřní ponor"), ("voda.html#retreat", "V rytmu oceánu: Bali, duben 2027"), ("voda.html#freediving", "Kurzy freedivingu od léta 2027")],
-     "Vnitřní ponor, retreat na Bali a od léta 2027 kurzy freedivingu.", "ponor-lano.jpg"),
+    ("voda", "Voda", [("voda.html#vnitrni-ponor", "Kurz: Vnitřní ponor"), ("voda.html#retreat", "Retreat: V rytmu oceánu"), ("voda.html#freediving", "Kurzy freedivingu od léta 2027")],
+     "Kurz Vnitřní ponor, retreat V rytmu oceánu na Bali a od léta 2027 kurzy freedivingu.", "ponor-lano.jpg"),
 ]
 CESTA_SUB = [("moje-cesta.html#pribeh", "Můj příběh"), ("moje-cesta.html#vzdelani", "Vzdělání a certifikace"),
              ("moje-cesta.html#reference", "Reference"), ("podnikavky.html", "Komunita: Podnikavky Přerov")]
@@ -561,7 +561,7 @@ pillar_page("voda", "Voda", 'Nádech, který vydrží <span class="hand">déle.<
     "Vnitřní ponor, retreat V rytmu oceánu na Bali a od léta 2027 kurzy freedivingu.",
     ("ponor-lano.jpg", "Freediverka u lana pod hladinou proti slunci", "center 30%"),
     [
-        ("vnitrni-ponor", "Vnitřní ponor", "Příprava na freediving",
+        ("vnitrni-ponor", "Kurz: Vnitřní ponor", "Příprava na freediving",
          """<p>Kurz, který propojuje metodiku Molchanovs a AIDA s jógou a prací s dechem. Nejde o čas ani hloubku. Jde o zkušenost, klid a schopnost zůstat v těle i tam, kde by tělo chtělo panikařit.</p>
 <ul>
 <li>10 lekcí ve studiu a 1 lekce v jámě.</li>
@@ -574,7 +574,7 @@ pillar_page("voda", "Voda", 'Nádech, který vydrží <span class="hand">déle.<
 </ul>""",
          """<h3>Další běh začíná v lednu 2027</h3><p>Místa ve skupině jsou omezená. Napiš mi a pošlu ti termíny jako první.</p>""" + ask("Mám zájem o kurz"),
          ("meditace-bazen.jpg", "Lenka sedí se zavřenýma očima v meditaci na okraji bazénu, odráží se ve vodě")),
-        ("retreat", "V rytmu oceánu", "Retreat na Bali, duben 2027",
+        ("retreat", "Retreat: V rytmu oceánu", "Amed, Bali, duben 2027",
          """<p>Retreat, který spojuje jógu, dech a freediving v Amedu na Bali, na jednom z nejkrásnějších míst pro ponor. Prostor zpomalit a ponořit se hlouběji do sebe i do vody.</p>
 <p><strong>Další retreat proběhne v dubnu 2027</strong> <span class="todo-inline">přesné datum</span>. Program, ubytování, ceny a přihlášku najdeš na stránce retreatu.</p>""",
          """<h3>Duben 2027 · Amed, Bali</h3><p>Všechny podrobnosti a přihláška.</p><a class="btn" href="https://lenkajungling.github.io/v-rytmu-oceanu/">Stránka retreatu</a>
