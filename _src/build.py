@@ -563,7 +563,7 @@ pillar_page("voda", "Voda", 'Nádech, který vydrží <span class="hand">déle.<
     [
         ("vnitrni-ponor", "Kurz: Vnitřní ponor", "Příprava na freediving",
          """<p><strong>Tohle není klasický jógový kurz. Není to ani kurz potápění.</strong> Je to deset týdnů, ve kterých zjistíš, co všechno dokáže tvůj dech a tvoje tělo, když jim dáš prostor.</p>
-<p>Kurz propojuje metodiku AIDA s jógou a prací s dechem. Nejde o čas ani hloubku. Jde o zkušenost, klid a schopnost zůstat v těle i tam, kde by tělo chtělo panikařit.</p>
+<p>Kurz propojuje metodiku AIDA s jógou, dechem a všímavostí. Nejde o čas ani hloubku. Jde o zkušenost, klid a schopnost zůstat v těle i tam, kde by tělo chtělo panikařit.</p>
 <ul>
 <li>10 lekcí ve studiu a 1 lekce ve vodě: jáma v Aquapalace Čestlice nebo Deep Spot (podle domluvy), vždy s certifikovaným instruktorem freedivingu.</li>
 <li>Skupina 8–10 lidí, uzavřená podpora na WhatsAppu, týdenní domácí úkoly.</li>
