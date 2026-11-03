@@ -494,7 +494,7 @@ pillar_page("dech", "Dech", 'Dech je první <span class="hand">pohyb.</span>',
          """<p>Tříhodinový workshop. Praktický vhled do propojení pohybu a dechu jako nástrojů vědomé seberegulace. Bez výkonu a bez tlaku na dokonalost.</p>
 <div class="blocks">
 <div class="block"><span class="tag">Pohyb</span><h3>Pohyb a flow</h3><p>Jógovo-pohybová lekce plná organického pohybu inspirovaná elementem vody. Skrze spinální vlny, spirální linie, rotace, třesení a další postupně odkrýváme, kde v těle neseš chronické napětí, a právě tyhle pohybové vzorce cíleně uvolňujeme.</p></div>
-<div class="block"><span class="tag">Dech</span><h3>Dech a nervový systém</h3><p>Začínáme BOLT testem (Body Oxygen Level Test), jednoduchým měřením tolerance CO₂. Pak prodloužený výdech, přirozené přechody do zádrží a technika udžají. Workshop uzavírá integrace a mindfulness.</p></div>
+<div class="block"><span class="tag">Dech</span><h3>Dech a nervový systém</h3><p>Začínáme výchozím bodem, například BOLT testem (Body Oxygen Level Test). Pak přichází zklidnění, prohloubení dechu a hlavně výdechu, který se přenese do zádrže. Vydržíš déle, než si myslíš. Workshop uzavírá integrace a mindfulness.</p></div>
 </div>
 <p>Odneseš si konkrétní nástroje pro vědomou práci s vlastním stavem, přenositelné do každodenního života.</p>""",
          """<h3>Nejbližší workshop</h3>
