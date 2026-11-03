@@ -492,7 +492,7 @@ pillar_page("dech", "Dech", 'Dech je první <span class="hand">pohyb.</span>',
         ("pranajama", "Lekce: Pránájáma a dechové techniky", "Klid, který si můžeš kdykoli přivolat",
          """<p><strong>Dechové techniky</strong> jsou praktické nástroje: jak prodloužit výdech, zklidnit nervový systém, soustředit se nebo prodloužit zádrž. Naučíš se je rychle a použiješ je hned, třeba před spaním, před důležitým jednáním nebo před ponorem. Propojuji je s poznatky z freedivingu.</p>
 <p><strong>Pránájáma</strong> jde hlouběji. Je to jedna z cest jógy, komplexní praxe, která pracuje s dechem, energií a pozorností zároveň. Nejde jen o techniku, ale o to, jak dech mění tvůj vnitřní stav. Potřebuje pravidelnost a čas, a o to víc ti dá.</p>""",
-         """<h3>Nejbližší pránájáma</h3><p>Neděle 29. 11. a 20. 12., 9:00–10:00, studio Sangha, 300 Kč.</p><p>Dechové techniky tě naučím i individuálně, osobně nebo online.</p>""" + ask("Přihlásit se"),
+         """<h3>Nejbližší pránájáma</h3><p>Neděle 29. 11. a 20. 12., 9:00–10:00, <a href="https://www.google.com/maps/search/?api=1&query=Studio+Sangha%2C+Přerov" target="_blank" rel="noopener">studio Sangha</a>, 300 Kč.</p><p>Dechové techniky tě naučím i individuálně, osobně nebo online.</p>""" + ask("Přihlásit se"),
          ("lenka-tanec.jpg", "Lenka se zavřenýma očima a úsměvem v pohybu, soustředěná na dech")),
         ("workshopy", "Workshop: Flow State Reset", "Lehkost, radost a stav flow",
          """<p>Tříhodinový workshop. Praktický vhled do propojení pohybu a dechu jako nástrojů vědomé seberegulace. Bez výkonu a bez tlaku na dokonalost.</p>
@@ -502,7 +502,7 @@ pillar_page("dech", "Dech", 'Dech je první <span class="hand">pohyb.</span>',
 </div>
 <p>Odneseš si konkrétní nástroje pro vědomou práci s vlastním stavem, přenositelné do každodenního života.</p>""",
          """<h3>Nejbližší workshop</h3>
-<ul class="offer"><li><span>So 21. 11. 2026 · 9:00–12:00 · studio Kineo, Mariánské Lázně</span><span class="price">900 Kč</span></li></ul>
+<ul class="offer"><li><span>So 21. 11. 2026 · 9:00–12:00 · <a href="https://www.google.com/maps/search/?api=1&query=Kineo%2C+Mariánské+Lázně" target="_blank" rel="noopener">studio Kineo, Mariánské Lázně</a></span><span class="price">900 Kč</span></li></ul>
 <p>Chceš workshop pro svou skupinu, studio nebo firmu? Napiš mi.</p>""" + ask("Přihlásit se"),
          ("lenka-tanec-smich.jpg", "Lenka se smíchem tančí ve světlém sále")),
     ],
@@ -547,7 +547,7 @@ pillar_page("dotek", "Dotek", 'Dotek, který tělu vrátí <span class="hand">ro
 <p>Každé setkání přizpůsobuji tomu, co tělo právě potřebuje. Někdy hlubší práce se svaly, jindy jemnější přístup k celkovému uvolnění. Začínáme krátkou konzultací, pak masíruji.</p>
 <p>Jsem lektorka jógy a dlouhodobě pracuji s dechem a vědomým pohybem. Jako tanečnice i freediverka se učím vnímat tělo, rytmus a dech v hlubší rovině. Dotek je přirozeným rozšířením téhle práce.</p>
 <p>Brzy v nabídce i thajská masáž na futonu.</p>""",
-         """<h3>Pro koho</h3><p>Pro každého, kdo cítí napětí v těle, potřebuje si odpočinout nebo chce svému tělu dopřát vědomou péči.</p><p><strong>Kde:</strong> Přerov, Wilsonova ulice</p>""" + ask("Rezervovat masáž"),
+         """<h3>Pro koho</h3><p>Pro každého, kdo cítí napětí v těle, potřebuje si odpočinout nebo chce svému tělu dopřát vědomou péči.</p><p><strong>Kde:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Wilsonova%2C+Přerov" target="_blank" rel="noopener">Přerov, Wilsonova ulice</a></p>""" + ask("Rezervovat masáž"),
          None),
         ("cenik", "Ceník", "Kolik to stojí",
          """<ul class="offer">
@@ -639,8 +639,19 @@ rows = [
     ("hradcany", "Čtvrtek", "18:00–19:00", "Jóga", "", "Hradčany", "Sál OÚ", "200 Kč"),
     ("prerov", "Neděle", "9:00–10:00", "Pránájáma", "1× měsíčně: 29. 11. a 20. 12.", "Přerov", "Studio Sangha", "300 Kč"),
 ]
+ADDR = {pl: a for _, pl, a in PLACES}
+ADDR["Studio Sangha"] = "Studio Sangha, Přerov"
+
+
+def place_cell(city, pl):
+    if not pl:
+        return city
+    q = ADDR.get(pl, f"{pl}, {city}")
+    return f'{city}<small><a class="map-link" href="{maps(q)}" target="_blank" rel="noopener">{pl}</a></small>'
+
+
 trs = "".join(
-    f'<tr data-city="{c}"><td class="day">{d}</td><td>{t}</td><td>{l}{f"<small>{n}</small>" if n else ""}</td><td>{city}{f"<small>{pl}</small>" if pl else ""}</td><td>{p}</td></tr>'
+    f'<tr data-city="{c}"><td class="day">{d}</td><td>{t}</td><td>{l}{f"<small>{n}</small>" if n else ""}</td><td>{place_cell(city, pl)}</td><td>{p}</td></tr>'
     for c, d, t, l, n, city, pl, p in rows)
 rozvrh = f"""
 <section class="page-hero wv-down">
@@ -732,7 +743,7 @@ page("podnikavky.html", "Podnikavky Přerov — setkání podnikavých žen",
      "Neformální setkání pro ženy, které podnikají nebo o tom přemýšlí. Přerov a okolí.", podnikavky, "moje-cesta")
 
 # ======================= KONTAKT =======================
-places = "".join(f'<a class="place" href="{maps(a + ", " + p)}"><strong>{c}</strong><span>{p}<br>{a}</span></a>'.replace('<a class="place"', '<a class="place" style="text-decoration:none"') for c, p, a in PLACES)
+places = "".join(f'<a class="place" href="{maps(a)}" target="_blank" rel="noopener"><strong>{c}</strong><span>{p}<br>{a}</span></a>'.replace('<a class="place"', '<a class="place" style="text-decoration:none"') for c, p, a in PLACES)
 kontakt = f"""
 <section class="page-hero wv-down">
   <div class="wrap">
