@@ -336,7 +336,7 @@ journey = [
         "Korporát se držel. Jóga se rozjížděla a já se honila za dokonalým provedením ásán, praktikovala denně aštángu, až jsem si z toho skoro zničila koleno."],
      ("prerov-navrat.jpg", "Zpátky v Přerově")),
     ("Zlom", "Když intuici nikdo neposlouchá", [
-        "Pak přišel rozchod. Samovolný potrat. Fungovala jsem na autopilota, přes spoustu lekcí jógy a ostré lokty v politice. Intuice říkala: odpočiň si, něco změň. Neposlechla jsem ji. Místo toho jsem se vrhla do intenzivního masérského kurzu. A po něm přišlo vyhoření."], None),
+        "Pak přišel rozchod. Samovolný potrat. Fungovala jsem na autopilota, přes spoustu lekcí jógy a ostré lokty v politice. Intuice říkala: odpočiň si, něco změň. Neposlechla jsem ji. Místo toho jsem se vrhla do intenzivního masérského kurzu. A po něm přišlo vyhoření. Každý den jsem se probouzela s vyčerpáním, astmatem a alergiemi. Můj nervový systém se přetížil."], None),
     ("Filipíny · Bali", "Freediving jako učitel", [
         "Tentokrát už intuici nešlo umlčet rozumem. Vyklidila jsem byt, prodala hromadu věcí a odstěhovala se na Filipíny. Půl roku jsem budovala jógovo-freedivingovou komunitu pod Blue Freedom, potkala světové špičky v oboru a hlavně se ponořila sama do sebe.",
         "Ten pocit, když padáte volným pádem hlouběji do hlubin a neexistuje nic než přítomný okamžik, se těžko popisuje. Freediving se pro mě stal učitelem a životním stylem. Dokončila jsem certifikát AIDA4 a asistentku instruktora, učila jógu a dech na místech jako Panglao, Siquijor nebo Amed na Bali, i po boku uznávaných jmen oboru, jako jsou Ben Piguet nebo Sergey Busargin."],
