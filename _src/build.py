@@ -628,7 +628,7 @@ page("firmy.html", "Pro firmy — Lenka Rekha", "Jógová terapie a dech pro fir
 
 # ======================= ROZVRH =======================
 rows = [
-    ("prerov", "Pondělí", "15:00–16:00", "MENS rehabilitace", "soukromá skupinka", "Přerov", "Jóga a Pilates", ""),
+    ("prerov", "Pondělí", "15:00–16:00", "MENS rehabilitace", "soukromá skupinka", "Přerov", "", ""),
     ("lipnik", "Pondělí", "17:00–18:00", "Hravá flow", "", "Lipník nad Bečvou", "Frida cafe", "250 Kč"),
     ("lipnik", "Pondělí", "18:15–19:15", "Integrovaná terapie", "", "Lipník nad Bečvou", "Frida cafe", "250 Kč"),
     ("olomouc", "Úterý", "17:45–18:45", "Jóga", "kurz, volné místo", "Olomouc", "Centrum Dákiní", "300 Kč"),
@@ -640,7 +640,7 @@ rows = [
     ("prerov", "Neděle", "9:00–10:00", "Pránájáma", "1× měsíčně: 29. 11. a 20. 12.", "Přerov", "Studio Sangha", "300 Kč"),
 ]
 trs = "".join(
-    f'<tr data-city="{c}"><td class="day">{d}</td><td>{t}</td><td>{l}{f"<small>{n}</small>" if n else ""}</td><td>{city}<small>{pl}</small></td><td>{p}</td></tr>'
+    f'<tr data-city="{c}"><td class="day">{d}</td><td>{t}</td><td>{l}{f"<small>{n}</small>" if n else ""}</td><td>{city}{f"<small>{pl}</small>" if pl else ""}</td><td>{p}</td></tr>'
     for c, d, t, l, n, city, pl, p in rows)
 rozvrh = f"""
 <section class="page-hero wv-down">
