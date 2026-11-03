@@ -520,7 +520,7 @@ pillar_page("pohyb", "Pohyb", 'Pohyb bez <span class="hand">mantinelů.</span>',
          ("lekce-popruh.jpg", "Lenka nastavuje klientovi jógový popruh přes ramena")),
         ("lekce", "Lekce: Skupinové", "Hravá flow a integrovaná terapie",
          """<h3>Integrovaná terapie</h3>
-<p>Možná nepotřebuješ víc cvičit. Možná jen jinak. Detailní práce s tělem, přesné vedení a hlubší porozumění pohybu, inspirované linií B.K.S. Iyengara, ve které jsem se sama učila. Vhodné i pro ty, kdo mají za sebou zranění nebo je bolí záda.</p>
+<p>Možná nepotřebuješ víc cvičit. Možná jen jinak. Detailní práce s tělem, přesné vedení a hlubší porozumění pohybu, inspirované linií B.K.S. Iyengara. Vhodná pro všechny, i pro ty, kdo mají za sebou zranění nebo je bolí záda.</p>
 <h3>Hravá flow</h3>
 <p>Rozproudi energii a pohybuj se s radostí. Dynamické sekvence, síla a kreativita. Někdy jemnější, jindy silovější, vždy bez tlaku a vždy trochu jiná. Vhodná pro mírně pokročilé a pokročilé.</p>
 <p>Lekce probíhají v Přerově, Olomouci, Lipníku nad Bečvou a Hradčanech. Cena 200–300 Kč za lekci.</p>""",
