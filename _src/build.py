@@ -331,7 +331,7 @@ journey = [
         "Pak přišly léčivé ceremonie v peruánské Amazonii. O rok později první cesta do Indie, do Maisúru, na intenzivní kurz u Saraswathi Jois, dcery zakladatele aštánga jógy. Jógu jsem zkoumala na sobě i skrze učení druhých, až jsem si udělala lektorský kurz u Kabira, studenta Oshovy tradice. Dávat energii korporátu přestalo dávat smysl."],
      ("indie-maisur.jpg", "Maisúr, Indie poprvé")),
     ("Zpátky v Přerově", "Návrat domů a další oklika", [
-        "Po návratu domů jsem chtěla dávat zpátky komunitě. Kromě naší kavárny i skrze politiku. Byla jsem aktivní v Pirátské straně, organizovala sbírky v době covidu i za války na Ukrajině, dostala se do zastupitelstva a s kolegy jsme prosadili třeba vznik dostupného městského bydlení místo bourané Strojaře.",
+        "Po návratu domů jsem chtěla dávat zpátky komunitě. Kromě naší kavárny i skrze veřejné dění. Organizovala jsem sbírky v době covidu i za války na Ukrajině a jako zastupitelka jsem se několik let věnovala tomu, aby se v Přerově lépe žilo.",
         "Zároveň jsem začala učit. Nejdřív kamarády, pak menší skupinky. Honila jsem se za dokonalým provedením ásán, praktikovala aštángu denně a byla na sebe extrémně přísná, až jsem si skoro zničila koleno. Naštěstí jsem tehdy potkala učitelku, která mě zpomalila a naučila naslouchat tělu místo toho, abych ho přemáhala."],
      ("prerov-navrat.jpg", "Zpátky v Přerově")),
     ("Zlom", "Když intuici nikdo neposlouchá", [
