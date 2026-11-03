@@ -15,9 +15,9 @@ FORM = "https://formspree.io/f/mdavpakp"
 
 # Čtyři pilíře: (slug, název, podpoložky (odkaz, text), krátký popis, fotka)
 PILLARS = [
-    ("dech", "Dech", [("dech.html#pranajama", "Pránájáma a dechové techniky"), ("dech.html#workshopy", "Workshop Flow State Reset"), ("voda.html#vnitrni-ponor", "Kurz: Vnitřní ponor")],
+    ("dech", "Dech", [("dech.html#pranajama", "Pránájáma a dechové techniky"), ("dech.html#workshopy", "Workshop: Flow State Reset"), ("voda.html#vnitrni-ponor", "Kurz: Vnitřní ponor")],
      "Pránájáma, dechové techniky, tříhodinový workshop Flow State Reset a kurz Vnitřní ponor.", "relaxace-podlozka.jpg"),
-    ("pohyb", "Pohyb", [("pohyb.html#individualne", "Individuální lekce"), ("pohyb.html#lekce", "Skupinové lekce"), ("firmy.html", "Firemní lekce"), ("dech.html#workshopy", "Workshop Flow State Reset"), ("voda.html#vnitrni-ponor", "Kurz: Vnitřní ponor")],
+    ("pohyb", "Pohyb", [("pohyb.html#individualne", "Individuální lekce"), ("pohyb.html#lekce", "Skupinové lekce"), ("firmy.html", "Firemní lekce"), ("dech.html#workshopy", "Workshop: Flow State Reset"), ("voda.html#vnitrni-ponor", "Kurz: Vnitřní ponor")],
      "Hravá flow a integrovaná terapie ve skupině, individuální lekce, lekce pro firmy a kurz Vnitřní ponor.", "lekce-skupina.jpg"),
     ("dotek", "Dotek", [("dotek.html#intuitivni-masaz", "Intuitivní masáž")],
      "Intuitivní masáž: sportovní masáž, aromaterapie, dech a thajská masáž v jednom.", "masaz.jpg"),
@@ -490,7 +490,7 @@ pillar_page("dech", "Dech", 'Dech je první <span class="hand">pohyb.</span>',
 <p><strong>Pránájáma</strong> jde hlouběji. Je to jedna z cest jógy, komplexní praxe, která pracuje s dechem, energií a pozorností zároveň. Nejde jen o techniku, ale o to, jak dech mění tvůj vnitřní stav. Potřebuje pravidelnost a čas, a o to víc ti dá.</p>""",
          """<h3>Nejbližší pránájáma</h3><p>Neděle 29. 11. a 20. 12., 9:00–10:00, studio Sangha, 300 Kč.</p><p>Dechové techniky tě naučím i individuálně, osobně nebo online.</p>""" + ask("Přihlásit se"),
          ("lenka-tanec.jpg", "Lenka se zavřenýma očima a úsměvem v pohybu, soustředěná na dech")),
-        ("workshopy", "Workshop", "Flow State Reset",
+        ("workshopy", "Workshop: Flow State Reset", "Lehkost, radost a stav flow",
          """<p>Tříhodinový workshop. Praktický vhled do propojení pohybu a dechu jako nástrojů vědomé seberegulace. Bez výkonu a bez tlaku na dokonalost.</p>
 <div class="blocks">
 <div class="block"><span class="tag">Pohyb</span><h3>Pohyb a flow</h3><p>Jógovo-pohybová lekce inspirovaná elementem vody. Skrze spinální vlny, spirální linie a rotace postupně odkrýváme, kde v těle neseš chronické napětí, a právě tyhle pohybové vzorce cíleně uvolňujeme.</p></div>
