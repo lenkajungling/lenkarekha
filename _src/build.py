@@ -571,7 +571,7 @@ pillar_page("voda", "Voda", 'Nádech, který vydrží <span class="hand">déle.<
 </ul>
 <ul class="offer">
 <li><span>Kurz (10 lekcí ve studiu)</span><span class="price">3 000 Kč</span></li>
-<li><span>Lekce v jámě (Čestlice / Deep Spot) s certifikovaným instruktorem</span><span class="price"><span class="todo-inline">cena</span></span></li>
+<li><span>Lekce v jámě (Čestlice / Deep Spot) s certifikovaným instruktorem</span><span class="price">podle domluvy</span></li>
 </ul>""",
          """<h3>Další běh začíná v lednu 2027</h3><p>Místa ve skupině jsou omezená. Napiš mi a pošlu ti termíny jako první.</p>""" + ask("Mám zájem o kurz"),
          ("meditace-bazen.jpg", "Lenka sedí se zavřenýma očima v meditaci na okraji bazénu, odráží se ve vodě")),
