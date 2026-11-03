@@ -377,7 +377,6 @@ REFS_ALL = ('<div class="ref-slider"><div class="ref-track" tabindex="0" aria-la
             + "".join(ref_cards(k).replace('<figcaption>', f'<figcaption><span class="ref-cat">{c}</span>') for c, k in cats)
             + '</div><div class="ref-nav"><button type="button" class="ref-prev" aria-label="Předchozí reference">←</button>'
             '<button type="button" class="ref-next" aria-label="Další reference">→</button></div></div>')
-REFS_ALL += '<div class="todo">Další reference z rekhayoga.cz.</div>'
 cesta = f"""
 <section class="page-hero wv-down">
   <div class="wrap">
