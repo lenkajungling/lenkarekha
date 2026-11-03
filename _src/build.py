@@ -324,7 +324,7 @@ page("index.html", "Lenka Rekha — dech, pohyb, dotek, voda",
 # ======================= MOJE CESTA =======================
 journey = [
     ("Přerov · korporát", "Než přišla jóga", [
-        "Vyrostla jsem v Přerově. Vystudovala jsem ekonomku a nastoupila do korporátu. Ne proto, že bych věděla, co chci, ale proto, že jsem to nevěděla. Vdala jsem se, abych unikla, a to doslova do Londýna.",
+        "Vyrostla jsem v Přerově. Vystudovala jsem ekonomku a nastoupila do korporátu. Ne proto, že bych věděla, co chci, ale proto, že jsem to vyjma tance nevěděla vůbec. Vdala jsem se a přestěhovala se do Londýna.",
         "Třetinu života jsem byla manželkou, dvě třetiny hodnou dcerou, která následovala představu rodičů o ideálním životě: dostudovat, najít kancelářskou práci, vdát se, pořídit byt, založit rodinu. Rozhodovala jsem se rozumem, i když mi intuice radila něco jiného. A rozum byl vždycky hlasitější."], None),
     ("Londýn · Peru · Indie", "Londýn, Peru, Indie", [
         "V Londýně začala moje transformace. Studovala jsem u učitele aštángy Scotta Johnsona a poprvé si začala klást otázky, kterým jsem se předtím vyhýbala: Kdo jsem? Co vlastně chci? Jaké je moje poslání?",
