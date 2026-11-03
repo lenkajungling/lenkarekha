@@ -631,7 +631,7 @@ rows = [
     ("prerov", "Pondělí", "15:00–16:00", "MENS rehabilitace", "soukromá skupinka", "Přerov", "", ""),
     ("lipnik", "Pondělí", "17:00–18:00", "Hravá flow", "", "Lipník nad Bečvou", "Frida cafe", "250 Kč"),
     ("lipnik", "Pondělí", "18:15–19:15", "Integrovaná terapie", "", "Lipník nad Bečvou", "Frida cafe", "250 Kč"),
-    ("olomouc", "Úterý", "17:45–18:45", "Jóga", "kurz, volné místo", "Olomouc", "Centrum Dákiní", "300 Kč"),
+    ("olomouc", "Úterý", "17:45–18:45", "Vnitřní ponor", "kurz, volné místo", "Olomouc", "Centrum Dákiní", "300 Kč"),
     ("prerov", "Středa", "16:45–18:00", "Integrovaná terapie", "kurz, volné místo", "Přerov", "Jóga a Pilates", "300 Kč"),
     ("prerov", "Středa", "18:15–19:30", "Hravá flow", "kurz, volné místo", "Přerov", "Jóga a Pilates", "300 Kč"),
     ("lipnik", "Čtvrtek", "15:00–16:00", "Integrovaná terapie", "", "Lipník nad Bečvou", "Frida cafe", "250 Kč"),
