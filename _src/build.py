@@ -543,7 +543,7 @@ pillar_page("dotek", "Dotek", 'Dotek, který tělu vrátí <span class="hand">ro
 <p>Každé setkání přizpůsobuji tomu, co tělo právě potřebuje. Někdy hlubší práce se svaly, jindy jemnější přístup k celkovému uvolnění. Začínáme krátkou konzultací, pak masíruji.</p>
 <p>Jsem lektorka jógy a dlouhodobě pracuji s dechem a vědomým pohybem. Jako tanečnice i freediverka se učím vnímat tělo, rytmus a dech v hlubší rovině. Dotek je přirozeným rozšířením téhle práce.</p>
 <p>Brzy v nabídce i thajská masáž na futonu.</p>""",
-         """<h3>Pro koho</h3><p>Pro každého, kdo cítí napětí v těle, potřebuje si odpočinout nebo chce svému tělu dopřát vědomou péči.</p><p><span class="todo-inline">kde masíruješ?</span></p>""" + ask("Rezervovat masáž"),
+         """<h3>Pro koho</h3><p>Pro každého, kdo cítí napětí v těle, potřebuje si odpočinout nebo chce svému tělu dopřát vědomou péči.</p><p><strong>Kde:</strong> Přerov, Wilsonova ulice</p>""" + ask("Rezervovat masáž"),
          None),
         ("cenik", "Ceník", "Kolik to stojí",
          """<ul class="offer">
