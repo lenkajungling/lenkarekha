@@ -576,7 +576,8 @@ pillar_page("voda", "Voda", 'Nádech, který vydrží <span class="hand">déle.<
          """<h3>Další běh začíná v lednu 2027</h3><p>Místa ve skupině jsou omezená. Napiš mi a pošlu ti termíny jako první.</p>""" + ask("Mám zájem o kurz"),
          ("meditace-bazen.jpg", "Lenka sedí se zavřenýma očima v meditaci na okraji bazénu, odráží se ve vodě")),
         ("retreat", "Retreat: V rytmu oceánu", "Amed, Bali, duben 2027",
-         """<p>Retreat, který spojuje jógu, dech a freediving v Amedu na Bali, na jednom z nejkrásnějších míst pro ponor. Prostor zpomalit a ponořit se hlouběji do sebe i do vody.</p>
+         """<p>Tohle je víc než jógový retreat na Bali. Tohle je spojení s vodou a se sebou samým skrze opravdové uvolnění a bytí v přítomném okamžiku. Pod vodou to ani jinak nejde.</p>
+<p>Provedu tě místem, které považuju za svůj druhý domov. Amed je vesnice, kde je stále málo turistů, ceny nejsou přemrštěné a nikdo si na nic nehraje. Majestátný Agung jde vidět z ulice, ze břehu i z vody. Magické místo.</p>
 <p><strong>Další retreat proběhne v dubnu 2027</strong> <span class="todo-inline">přesné datum</span>. Program, ubytování, ceny a přihlášku najdeš na stránce retreatu.</p>""",
          """<h3>Duben 2027 · Amed, Bali</h3><p>Všechny podrobnosti a přihláška.</p><a class="btn" href="https://lenkajungling.github.io/v-rytmu-oceanu/">Stránka retreatu</a>
 <div class="todo" style="margin-top:.6rem">Stránka retreatu se upravuje na dubnový termín. Formulář z MailerLite pro novinky o retreatech.</div>""",
