@@ -535,7 +535,7 @@ pillar_page("pohyb", "Pohyb", 'Pohyb bez <span class="hand">mantinelů.</span>',
 
 # ---------- DOTEK ----------
 pillar_page("dotek", "Dotek", 'Dotek, který tělu vrátí <span class="hand">rovnováhu.</span>',
-    "Intuitivní masáž: sportovní masáž, aromaterapie, dech a prvky thajské masáže v jednom. Zaměřuji se hlavně na záda, šíji, hlavu a hrudník.",
+    "Intuitivní masáž: sportovní masáž, aromaterapie, dech a prvky thajské masáže v jednom. Zaměřuji se hlavně na záda, šíji, hlavu, hrudník a nohy.",
     ("masaz.jpg", "Ruce masírují šíji a krk ležící klientky", "center 38%"),
     [
         ("intuitivni-masaz", "Intuitivní masáž", "Vědomý dotek",
