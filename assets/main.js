@@ -111,3 +111,38 @@
     slider.querySelector('.ref-next').addEventListener('click', function () { step(1); });
   });
 })();
+
+// Po kliknutí na kategorii začít nahoře, po kliknutí na podkategorii skončit přesně na ní
+(function () {
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  function header() {
+    var h = document.querySelector('.site-header');
+    return h ? h.getBoundingClientRect().height + 16 : 0;
+  }
+  function go(smooth) {
+    var id = decodeURIComponent(location.hash.slice(1));
+    var el = id && document.getElementById(id);
+    if (!el) { if (!smooth) window.scrollTo(0, 0); return; }
+    var y = el.getBoundingClientRect().top + window.scrollY - header();
+    window.scrollTo({ top: Math.max(0, y), behavior: smooth ? 'smooth' : 'auto' });
+  }
+  go(false);
+  window.addEventListener('load', function () { go(false); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { go(false); });
+  window.addEventListener('hashchange', function () { go(true); });
+  // odkazy na stejnou stránku (podmenu i menu)
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var url = new URL(a.getAttribute('href'), location.href);
+    if (url.pathname !== location.pathname) return;
+    e.preventDefault();
+    var nav = document.querySelector('.nav.open');
+    if (nav) { nav.classList.remove('open'); var b = document.querySelector('.menu-btn'); if (b) { b.setAttribute('aria-expanded', 'false'); b.textContent = 'Menu'; } }
+    if (url.hash) {
+      if (location.hash === url.hash) go(true); else location.hash = url.hash;
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
+})();
