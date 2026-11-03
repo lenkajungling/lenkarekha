@@ -628,7 +628,7 @@ page("firmy.html", "Pro firmy — Lenka Rekha", "Jógová terapie a dech pro fir
 
 # ======================= ROZVRH =======================
 rows = [
-    ("prerov", "Pondělí", "15:00–16:00", "MENS rehabilitace", "soukromá skupinka", "Přerov", "", ""),
+    ("prerov", "Pondělí", "15:00–16:00", "Integrovaná terapie", "soukromá skupinka", "Přerov", "", ""),
     ("lipnik", "Pondělí", "17:00–18:00", "Hravá flow", "", "Lipník nad Bečvou", "Frida cafe", "250 Kč"),
     ("lipnik", "Pondělí", "18:15–19:15", "Integrovaná terapie", "", "Lipník nad Bečvou", "Frida cafe", "250 Kč"),
     ("olomouc", "Úterý", "17:45–18:45", "Vnitřní ponor", "kurz, volné místo", "Olomouc", "Centrum Dákiní", "300 Kč"),
