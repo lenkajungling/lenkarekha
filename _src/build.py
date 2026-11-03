@@ -325,7 +325,8 @@ page("index.html", "Lenka Rekha — dech, pohyb, dotek, voda",
 journey = [
     ("Přerov · korporát", "Než přišla jóga", [
         "Vyrostla jsem v Přerově. Vystudovala jsem ekonomku a nastoupila do korporátu. Ne proto, že bych věděla, co chci, ale proto, že jsem to vyjma tance nevěděla vůbec. Vdala jsem se a přestěhovala se do Londýna.",
-        "Třetinu života jsem byla manželkou, dvě třetiny hodnou dcerou, která následovala představu rodičů o ideálním životě: dostudovat, najít kancelářskou práci, vdát se, pořídit byt, založit rodinu. Rozhodovala jsem se rozumem, i když mi intuice radila něco jiného. A rozum byl vždycky hlasitější."], None),
+        "Třetinu života jsem byla manželkou, dvě třetiny hodnou dcerou, která následovala představu rodičů o ideálním životě: dostudovat, najít kancelářskou práci, vdát se, pořídit byt, založit rodinu. Rozhodovala jsem se rozumem, i když mi intuice radila něco jiného. A rozum byl vždycky hlasitější."],
+     ("pred-jogou.jpg", "Než přišla jóga")),
     ("Londýn · Peru · Indie", "Londýn, Peru, Indie", [
         "V Londýně začala moje transformace. Studovala jsem u učitele aštángy Scotta Johnsona a poprvé si začala klást otázky, kterým jsem se předtím vyhýbala: Kdo jsem? Co vlastně chci? Jaké je moje poslání?",
         "Pak přišly léčivé ceremonie v peruánské Amazonii. O rok později první cesta do Indie, do Maisúru, na intenzivní kurz u Saraswathi Jois, dcery zakladatele aštánga jógy. Jógu jsem zkoumala na sobě i skrze učení druhých, až jsem si udělala lektorský kurz u Kabira, studenta Oshovy tradice. Dávat energii korporátu přestalo dávat smysl."],
@@ -397,7 +398,7 @@ cesta = f"""
 <section class="section" id="pribeh">
   <div class="wrap">
     <div class="timeline">{''.join(tl)}</div>
-    <div class="todo" style="margin-top:3rem;max-width:720px">Fotka ke kapitole 01 Než přišla jóga (Přerov, korporát).</div>
+    
   </div>
 </section>
 <section class="section s-foam wv-up" id="vzdelani">
