@@ -31,7 +31,7 @@ PLACES = [
     ("Přerov", "Jóga a Pilates", "Žerotínovo nám. 14, 750 02 Přerov"),
     ("Olomouc", "Centrum Dákiní", "8. května 12, 779 00 Olomouc"),
     ("Lipník nad Bečvou", "Frida cafe", "Losertova 624/12, 751 31 Lipník nad Bečvou"),
-    ("Hradčany", "Hradčany 64", "751 11 Radslavice"),
+    ("Hradčany", "Sál OÚ", "Hradčany 64, 751 11 Radslavice"),
 ]
 
 
@@ -636,7 +636,7 @@ rows = [
     ("prerov", "Středa", "18:15–19:30", "Hravá flow", "kurz, volné místo", "Přerov", "Jóga a Pilates", "300 Kč"),
     ("lipnik", "Čtvrtek", "15:00–16:00", "Integrovaná terapie", "", "Lipník nad Bečvou", "Frida cafe", "250 Kč"),
     ("lipnik", "Čtvrtek", "16:15–17:15", "Hravá flow", "", "Lipník nad Bečvou", "Frida cafe", "250 Kč"),
-    ("hradcany", "Čtvrtek", "18:00–19:00", "Jóga", "", "Hradčany", "Hradčany 64", "200 Kč"),
+    ("hradcany", "Čtvrtek", "18:00–19:00", "Jóga", "", "Hradčany", "Sál OÚ", "200 Kč"),
     ("prerov", "Neděle", "9:00–10:00", "Pránájáma", "1× měsíčně: 29. 11. a 20. 12.", "Přerov", "Studio Sangha", "300 Kč"),
 ]
 trs = "".join(
