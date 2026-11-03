@@ -567,7 +567,7 @@ pillar_page("voda", "Voda", 'Nádech, který vydrží <span class="hand">déle.<
 <ul>
 <li>10 lekcí ve studiu a 1 lekce ve vodě: jáma v Aquapalace Čestlice nebo Deep Spot (podle domluvy), vždy s certifikovaným instruktorem freedivingu.</li>
 <li>Skupina 8–10 lidí, uzavřená podpora na WhatsAppu, týdenní domácí úkoly.</li>
-<li>Pro dospělé 25+, kteří rádi zkoušejí nové věci. Nejde o výkon, jde o zážitek.</li>
+<li>Pro dospělé 25+, kteří rádi zkoušejí nové věci.</li>
 </ul>
 <ul class="offer">
 <li><span>Kurz (10 lekcí ve studiu)</span><span class="price">3 000 Kč</span></li>
