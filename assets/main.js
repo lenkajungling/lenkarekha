@@ -122,9 +122,19 @@
   function go(smooth) {
     var id = decodeURIComponent(location.hash.slice(1));
     var el = id && document.getElementById(id);
-    if (!el) { if (!smooth) window.scrollTo(0, 0); return; }
+    var how = smooth ? 'smooth' : 'auto';
+    if (!el) {
+      if (smooth) return;
+      window.scrollTo(0, 0);
+      // když stránka běží v rámečku (náhled), posune i okolní okno
+      try { document.body.scrollIntoView({ block: 'start', behavior: how }); } catch (e) {}
+      return;
+    }
     var y = el.getBoundingClientRect().top + window.scrollY - header();
-    window.scrollTo({ top: Math.max(0, y), behavior: smooth ? 'smooth' : 'auto' });
+    window.scrollTo({ top: Math.max(0, y), behavior: how });
+    if (window.self !== window.top) {
+      try { el.scrollIntoView({ block: 'start', behavior: how }); } catch (e) {}
+    }
   }
   go(false);
   window.addEventListener('load', function () { go(false); });
@@ -143,6 +153,7 @@
       if (location.hash === url.hash) go(true); else location.hash = url.hash;
     } else {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+      try { document.body.scrollIntoView({ block: 'start', behavior: 'smooth' }); } catch (err) {}
     }
   });
 })();
