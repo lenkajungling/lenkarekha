@@ -530,3 +530,8 @@ td small { display: block; color: var(--muted); }
 .page-hero { padding-bottom: clamp(4.5rem, 7vw, 5.5rem); }
 .band-inner { padding-bottom: max(72px, clamp(3.5rem, 8vw, 6rem)); }
 @media (max-width: 700px) { .band-inner { padding-bottom: 96px; } }
+
+/* menší mezera mezi štítky podkategorií a první sekcí */
+.subnav { padding-bottom: 0.4rem; }
+.subnav + .section { padding-top: 2rem; }
+.subnav + .section::before { display: none; }
