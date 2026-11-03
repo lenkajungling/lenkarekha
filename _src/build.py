@@ -615,7 +615,7 @@ firmy = f"""
     <aside class="aside-card"><h3>Nabídka pro váš tým</h3><p>Napište mi. Do 48 hodin se ozvu s konkrétním návrhem frekvence, formátu a ceny.</p>{ask('Poptat spolupráci')}</aside>
   </div>
 </section>
-{refs_section(["monika", "zivina"], "Co říkají firmy")}
+{refs_section(["zivina", "monika"], "Co říkají firmy")}
 {cta_band('', 'Chcete to vyzkoušet?', 'Začněte nezávaznou úvodní lekcí.', 'Napsat mi')}
 """
 page("firmy.html", "Pro firmy — Lenka Rekha", "Jógová terapie a dech pro firmy v Přerově a Olomouci. Nezávazná úvodní lekce.", firmy, "firmy")
