@@ -562,15 +562,16 @@ pillar_page("voda", "Voda", 'Nádech, který vydrží <span class="hand">déle.<
     ("ponor-lano.jpg", "Freediverka u lana pod hladinou proti slunci", "center 30%"),
     [
         ("vnitrni-ponor", "Kurz: Vnitřní ponor", "Příprava na freediving",
-         """<p>Kurz, který propojuje metodiku Molchanovs a AIDA s jógou a prací s dechem. Nejde o čas ani hloubku. Jde o zkušenost, klid a schopnost zůstat v těle i tam, kde by tělo chtělo panikařit.</p>
+         """<p><strong>Tohle není klasický jógový kurz. Není to ani kurz potápění.</strong> Je to deset týdnů, ve kterých zjistíš, co všechno dokáže tvůj dech a tvoje tělo, když jim dáš prostor.</p>
+<p>Kurz propojuje metodiku Molchanovs a AIDA s jógou a prací s dechem. Nejde o čas ani hloubku. Jde o zkušenost, klid a schopnost zůstat v těle i tam, kde by tělo chtělo panikařit.</p>
 <ul>
-<li>10 lekcí ve studiu a 1 lekce v jámě.</li>
+<li>10 lekcí ve studiu a 1 lekce ve vodě: jáma v Aquapalace Čestlice nebo Deep Spot (podle domluvy), vždy s certifikovaným instruktorem freedivingu.</li>
 <li>Skupina 8–10 lidí, uzavřená podpora na WhatsAppu, týdenní domácí úkoly.</li>
 <li>Pro dospělé 30+, kteří rádi zkoušejí nové věci. Nejde o výkon, jde o zážitek.</li>
 </ul>
 <ul class="offer">
 <li><span>Kurz (10 lekcí ve studiu)</span><span class="price">3 000 Kč</span></li>
-<li><span>Lekce v jámě</span><span class="price"><span class="todo-inline">cena</span></span></li>
+<li><span>Lekce v jámě (Čestlice / Deep Spot) s certifikovaným instruktorem</span><span class="price"><span class="todo-inline">cena</span></span></li>
 </ul>""",
          """<h3>Další běh začíná v lednu 2027</h3><p>Místa ve skupině jsou omezená. Napiš mi a pošlu ti termíny jako první.</p>""" + ask("Mám zájem o kurz"),
          ("meditace-bazen.jpg", "Lenka sedí se zavřenýma očima v meditaci na okraji bazénu, odráží se ve vodě")),
