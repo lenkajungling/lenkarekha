@@ -231,19 +231,7 @@ home = f"""
         </div>
       </div>""", "band-hero", "center 42%").replace('</section>', '<a class="scroll-cue" href="#co-hledas">ponoř se ↓</a></section>')}
 
-<section class="section s-white wv-up" id="nabidka">
-  <div class="wrap">
-    <div class="section-head"><p class="eyebrow">Co pro tebe mám</p><h2>Začni <span class="hand">tady</span></h2></div>
-    <div class="offers" data-rv>
-      <a class="offer-card" href="pohyb.html#individualne"><span class="tag">Nezávazná úvodní lekce</span><h3>Individuální lekce</h3><p>Jóga, dech a pohyb přesně pro tebe. Osobně i online, s podporou mezi lekcemi.</p><span class="btn">Rezervovat lekci</span></a>
-      <a class="offer-card" href="dech.html#workshopy"><span class="tag">So 21. 11. · Mariánské Lázně</span><h3>Workshop Flow State Reset</h3><p>Tři hodiny pohybu a dechu. Odneseš si nástroje, jak se zklidnit a vrátit do flow.</p><span class="btn">Přihlásit se</span></a>
-      <a class="offer-card" href="voda.html#vnitrni-ponor"><span class="tag">Nový běh od ledna 2027</span><h3>Kurz Vnitřní ponor</h3><p>Jóga a dech inspirované freedivingem. 10 lekcí ve studiu a 1 v jámě.</p><span class="btn">Mám zájem</span></a>
-      <a class="offer-card" href="firmy.html"><span class="tag">Nezávazná úvodní lekce</span><h3>Jóga pro firmy</h3><p>Pravidelné lekce pro týmy v Přerově a Olomouci. Méně bolesti zad a stresu.</p><span class="btn">Poptat pro firmu</span></a>
-    </div>
-  </div>
-</section>
-
-<section class="section s-foam wv-up wv-down" id="co-hledas">
+<section class="section s-white wv-up wv-down" id="co-hledas">
   <div class="wrap quiz">
     <div class="quiz-head">
       <p class="eyebrow">Rychlá orientace</p>
