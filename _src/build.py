@@ -213,7 +213,7 @@ quiz = [
     ("pohyb.html#lekce", "Potřebuju se hýbat s radostí.", "Bez tlaku na výkon.", "Pohyb: hravá flow"),
     ("voda.html", "Táhne mě hloubka.", "Chci se naučit pracovat s nádechem, který vydrží.", "Voda"),
     ("pohyb.html#individualne", "Chci péči jen pro sebe.", "Individuálně, na míru, s podporou i mezi lekcemi.", "Individuálně"),
-    ("firmy.html", "Hledám to samé pro svůj tým.", "Jóga a dech přímo na pracovišti.", "Pro firmy"),
+    ("firmy.html", "Hledám jógu pro svůj tým.", "Jóga a dech přímo na pracovišti.", "Pro firmy"),
 ]
 quiz_rows = "".join(
     f'<li><a href="{h}"><strong>{q}</strong><small>{d}</small><span class="go">→ {t}</span></a></li>'
