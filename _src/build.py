@@ -1,5 +1,6 @@
 """Generátor webu lenkarekha.com — spusť `python3 _src/build.py` z kořene projektu.
 Společná hlavička a patička jsou tady, obsah jednotlivých stránek níže."""
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -61,6 +62,13 @@ def maps(q):
 def logo(pre, sub=True):
     s = '<span class="logo-sub">FLOW • DIVE • YOGA</span>' if sub else ""
     return (f'<a class="logo" href="{pre}./" aria-label="Rekha — domů">r<span class="e">e</span>kha</a>{s}')
+
+
+def nbsp(html):
+    """Česká typografie: jednopísmenná slova (a, i, v, k, s, z, o, u) nezůstávají na konci řádku."""
+    parts = re.split(r"(<script.*?</script>|<style.*?</style>|<[^>]+>)", html, flags=re.S)
+    one = re.compile(r"(?<![\w&;])([AaIiKkOoSsUuVvZz])\s+(?=\S)")
+    return "".join(x if x.startswith("<") else one.sub(r"\1&nbsp;", x) for x in parts)
 
 
 def page(path, title, desc, body, current=None):
@@ -152,6 +160,7 @@ def page(path, title, desc, body, current=None):
 </body>
 </html>
 """
+    html = nbsp(html)
     out = ROOT / path
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(html, encoding="utf-8")
