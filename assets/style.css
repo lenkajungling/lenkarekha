@@ -512,3 +512,4 @@ td small { display: block; color: var(--muted); }
 @media (max-width: 760px) { .certs { grid-template-columns: 1fr; grid-template-rows: none; grid-auto-flow: row; } }
 .page-photo img[src$="lenka-tanec-smich.jpg"] { object-position: center 34%; }
 .story-photo img, .split-media img[src$="lenka-portret.jpg"] { object-position: center 0%; }
+.page-photo img[src$="lenka-tanec.jpg"] { object-position: center 6%; }
