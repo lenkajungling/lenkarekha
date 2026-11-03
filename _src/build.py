@@ -579,8 +579,8 @@ pillar_page("voda", "Voda", 'Nádech, který vydrží <span class="hand">déle.<
          """<p>Tohle je víc než jógový retreat na Bali. Tohle je spojení s vodou a se sebou samým skrze opravdové uvolnění a bytí v přítomném okamžiku. Pod vodou to ani jinak nejde.</p>
 <p>Provedu tě místem, které považuju za svůj druhý domov. Amed je vesnice, kde je stále málo turistů, ceny nejsou přemrštěné a nikdo si na nic nehraje. Majestátný Agung jde vidět z ulice, ze břehu i z vody. Magické místo.</p>
 <p><strong>Další retreat proběhne v dubnu 2027.</strong> Přesné datum, program, ubytování i ceny brzy doplním.</p>""",
-         """<h3>Duben 2027 · Amed, Bali</h3><p>Všechny podrobnosti a přihláška.</p><a class="btn" href="https://lenkajungling.github.io/v-rytmu-oceanu/">Stránka retreatu</a>
-<div class="todo" style="margin-top:.6rem">Stránka retreatu se upravuje na dubnový termín. Formulář z MailerLite pro novinky o retreatech.</div>""",
+         """<h3>Duben 2027 · Amed, Bali</h3><p>Chceš o retreatu vědět jako první? Napiš mi a pošlu ti podrobnosti, jakmile budou.</p>""" + ask("Mám zájem o retreat") + """
+<!-- Po aktualizaci stránky retreatu sem vrátit odkaz: https://lenkajungling.github.io/v-rytmu-oceanu/ -->""",
          ("amed-bali.jpg", "Pobřeží Amedu na Bali se sopkou Agung při západu slunce")),
         ("freediving", "Kurz: Freediving", "Od léta 2027",
          """<p>Od léta 2027 otevřu kurzy freedivingu ve vodě. Navážou na Vnitřní ponor a povedou tě od prvních ponorů s bezpečností a klidem.</p>""",
