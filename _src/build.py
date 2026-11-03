@@ -257,7 +257,7 @@ home = f"""
   <div class="wrap story">
     <div class="story-photo" data-rv>
       <img src="assets/img/lenka-portret.jpg" alt="Usměvavá Lenka Rekha s rukama pod bradou" loading="lazy">
-      <span class="note">to jsem já, Lenka</span>
+      <span class="note">těší mě, Lenka</span>
     </div>
     <div class="story-text" data-rv>
       <p class="eyebrow">Moje cesta</p>
