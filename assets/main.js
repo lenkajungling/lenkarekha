@@ -75,12 +75,17 @@
 (function () {
   var val = document.querySelector('.depth-val');
   var dot = document.querySelector('.depth-dot');
-  if (!val) return;
+  var mini = document.querySelector('.depth-mini');
+  var bar = document.querySelector('.depth-bar');
+  if (!val && !mini) return;
   function update() {
     var max = document.documentElement.scrollHeight - window.innerHeight;
     var f = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
-    val.textContent = '−' + Math.round(f * 40) + ' m';
-    dot.style.top = (f * 133) + 'px';
+    var txt = '−' + Math.round(f * 40) + ' m';
+    if (val) val.textContent = txt;
+    if (dot) dot.style.top = (f * 133) + 'px';
+    if (mini) mini.textContent = txt;
+    if (bar) bar.style.transform = 'scaleX(' + f.toFixed(3) + ')';
   }
   window.addEventListener('scroll', update, { passive: true });
   update();

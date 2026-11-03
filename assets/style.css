@@ -535,3 +535,13 @@ td small { display: block; color: var(--muted); }
 .subnav { padding-bottom: 0.4rem; }
 .subnav + .section { padding-top: 2rem; }
 .subnav + .section::before { display: none; }
+
+/* hloubkoměr na mobilu: údaj v hlavičce a tenká linka, která se při posouvání plní */
+.depth-mini, .depth-bar { display: none; }
+@media (max-width: 1100px) {
+  .site-header { position: sticky; }
+  .site-header .wrap { position: relative; }
+  .depth-mini { display: inline-block; margin-left: auto; margin-right: 0.8rem; font: 600 0.78rem var(--font-head); letter-spacing: 0.08em; color: var(--teal-deep); font-variant-numeric: tabular-nums; }
+  .depth-bar { display: block; position: absolute; left: 0; bottom: -1px; height: 2px; width: 100%; background: var(--teal); transform-origin: left; transform: scaleX(0); }
+}
+@media (max-width: 1100px) and (min-width: 981px) { .depth-mini { display: none; } }

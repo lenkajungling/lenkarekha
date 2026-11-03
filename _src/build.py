@@ -107,9 +107,11 @@ def page(path, title, desc, body, current=None):
 <header class="site-header">
   <div class="wrap">
     <div>{logo(pre, sub=False)}</div>
+    <span class="depth-mini" aria-hidden="true">−0 m</span>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav" aria-label="Hlavní menu">{''.join(nav)}</nav>
   </div>
+  <span class="depth-bar" aria-hidden="true"></span>
 </header>
 <main>
 {body}
@@ -382,7 +384,7 @@ cesta = f"""
     <div class="split rev" style="align-items:end">
     <div class="stack-lg">
     <h1>Kdo je Lenka Rekha?</h1>
-    <p class="roles">učitelka · jogínka · freediverka · tanečnice · cestovatelka · propojovatelka · žena</p>
+    <p class="roles">učitelka · jogínka · freediverka · tanečnice · cestovatelka · propojovatelka</p>
     <p class="lead">Lektorka jógy a jógové terapie s téměř desetiletou praxí. Průvodkyně dechem, která kombinuje pranajámu s technikami z freedivingu. Celoživotní tanečnice. Freediverka s certifikací AIDA4. A taky někdo, kdo si prošel pěkně dlouhou oklikou, než se dostal tam, kde je teď.</p>
     </div>
     <div class="split-media" style="max-width:380px;justify-self:end"><img src="assets/img/lenka-portret.jpg" alt="Portrét Lenky Rekhy"></div>
