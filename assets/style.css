@@ -513,3 +513,10 @@ td small { display: block; color: var(--muted); }
 .page-photo img[src$="lenka-tanec-smich.jpg"] { object-position: center 34%; }
 .story-photo img, .split-media img[src$="lenka-portret.jpg"] { object-position: center 0%; }
 .page-photo img[src$="lenka-tanec.jpg"] { object-position: center 6%; }
+
+/* mobil: tlačítka v úvodu menší vedle sebe a dost místa nad vlnou */
+@media (max-width: 700px) {
+  .band-inner { padding-bottom: 96px; }
+  .band-text .btn-row { gap: 0.6rem; }
+  .band-text .btn { padding: 0.85em 1.2em; font-size: 0.8rem; letter-spacing: 0.06em; }
+}
