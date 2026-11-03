@@ -262,7 +262,7 @@ home = f"""
     <div class="story-text" data-rv>
       <p class="eyebrow">Moje cesta</p>
       <p class="pull">Byla jsem političkou, spolumajitelkou kavárny a devět let jsem strávila v korporátu. <em>Pak přišel zlom, který umlčel rozum.</em></p>
-      <p>Dnes předávám to, co jsem se musela naučit sama: vnímat tělo, dech a to, co je uvnitř skutečné. Londýn, Indie, Filipíny, Bali a zase zpátky v Přerově.</p>
+      <p>Dnes předávám to, co jsem se musela naučit sama: být víc v těle a méně v hlavě skrze dech, dotek, pohyb a vodu. Londýn, Indie, Filipíny, Bali a zase zpátky v Přerově.</p>
       <div><a class="link-arrow" href="moje-cesta.html">Celý příběh →</a></div>
     </div>
   </div>
