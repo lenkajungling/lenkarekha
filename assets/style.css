@@ -520,3 +520,13 @@ td small { display: block; color: var(--muted); }
   .band-text .btn-row { gap: 0.6rem; }
   .band-text .btn { padding: 0.85em 1.2em; font-size: 0.8rem; letter-spacing: 0.06em; }
 }
+
+/* vlny nesmí překrývat obsah: nižší vlna a dost místa v každé sekci */
+.wv-up::before, .wv-down::after { height: 44px; }
+.wv-up::before { top: -43px; }
+.wv-down::after { bottom: -43px; }
+.section { padding-block: clamp(4.75rem, 8vw, 6rem); }
+.subnav { padding-bottom: 3.6rem; }
+.page-hero { padding-bottom: clamp(4.5rem, 7vw, 5.5rem); }
+.band-inner { padding-bottom: max(72px, clamp(3.5rem, 8vw, 6rem)); }
+@media (max-width: 700px) { .band-inner { padding-bottom: 96px; } }
