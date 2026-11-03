@@ -261,7 +261,7 @@ home = f"""
     </div>
     <div class="story-text" data-rv>
       <p class="eyebrow">Moje cesta</p>
-      <p class="pull">Byla jsem političkou, spolumajitelkou kavárny a devět let jsem strávila v korporátu. <em>Pak přišel zlom, který rozum umlčel.</em></p>
+      <p class="pull">Byla jsem političkou, spolumajitelkou kavárny a devět let jsem strávila v korporátu. <em>Pak přišel zlom, který umlčel rozum.</em></p>
       <p>Dnes učím to, co jsem se musela naučit sama: vnímat tělo, dech a to, co je uvnitř skutečné. Londýn, Indie, Filipíny, Bali a zase zpátky v Přerově.</p>
       <div><a class="link-arrow" href="moje-cesta.html">Celý příběh →</a></div>
     </div>
