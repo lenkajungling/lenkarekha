@@ -346,7 +346,7 @@ journey = [
      ("indie-terapie.jpg", "Studium jógové terapie v Indii")),
     ("Teď a tady", "Jóga bez nálepek", [
         "Po téměř dvou letech v Asii jsem si konečně odpověděla na otázky, kdo jsem a co chci. Dnes do jednoho přístupu propojuji jógu, pohyb, práci s dechem, vědomý dotek a poznatky z freedivingu.",
-        "Od striktní aštángy jsem se přesunula k józe bez nálepek a mantinelů. Místo dokonalých ásán mě zajímá, jak se ve svém těle cítíš a jak dýcháš. Učím se žít v přítomném okamžiku, být vděčnější a obracet věci k dobru, i pro druhé. A tenhle posun neberu jako konečný.",
+        "Od striktní aštángy jsem se přesunula k józe bez nálepek a mantinelů. Zajímá mě, jak pozici podle své fyziologie uděláš, ale taky jak se cítíš a jak dýcháš. Učím se žít v přítomném okamžiku, být vděčnější a obracet věci k dobru, i pro druhé. A tenhle posun neberu jako konečný.",
         "Pomáhám ženám i mužům být víc v těle a méně v hlavě. Najít jejich autentické já."],
      ("indie-setkani.jpg", "Setkání s dalajlámou")),
 ]
