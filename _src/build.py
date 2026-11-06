@@ -18,10 +18,10 @@ FORM = "https://formspree.io/f/mdavpakp"
 
 # Čtyři pilíře: (slug, název, podpoložky (odkaz, text), krátký popis, fotka)
 PILLARS = [
-    ("dech", "Dech", [("dech.html#pranajama", "Lekce: Pránájáma a dechové techniky"), ("dech.html#workshopy", "Workshop: Flow State Reset"), ("voda.html#vnitrni-ponor", "Kurz: Vnitřní ponor")],
-     "Pránájáma, dechové techniky, tříhodinový workshop Flow State Reset a kurz Vnitřní ponor.", "relaxace-podlozka.jpg"),
-    ("pohyb", "Pohyb", [("pohyb.html#individualne", "Lekce: Individuální"), ("pohyb.html#lekce", "Lekce: Skupinové"), ("firmy.html", "Lekce: Pro firmy"), ("dech.html#workshopy", "Workshop: Flow State Reset"), ("voda.html#vnitrni-ponor", "Kurz: Vnitřní ponor")],
-     "Jóga: hravá flow a integrovaná terapie ve skupině, individuální lekce, jóga pro firmy a kurz Vnitřní ponor.", "pohyb-terasa.jpg"),
+    ("dech", "Dech", [("dech.html#pranajama", "Lekce: Pránájáma a dechové techniky"), ("dech.html#workshopy", "Workshop: Flow State Reset"), ("voda.html#vnitrni-ponor", "Kurz: Vnitřní ponor (u Vody)")],
+     "Pránájáma, dechové techniky a tříhodinový workshop Flow State Reset. Dech je i základ kurzu Vnitřní ponor u Vody.", "relaxace-podlozka.jpg"),
+    ("pohyb", "Pohyb", [("pohyb.html#individualne", "Lekce: Individuální"), ("pohyb.html#lekce", "Lekce: Skupinové"), ("firmy.html", "Lekce: Pro firmy"), ("dech.html#workshopy", "Workshop: Flow State Reset (u Dechu)"), ("voda.html#vnitrni-ponor", "Kurz: Vnitřní ponor (u Vody)")],
+     "Jóga: hravá flow a integrovaná terapie ve skupině, individuální lekce a jóga pro firmy.", "pohyb-terasa.jpg"),
     ("dotek", "Dotek", [("dotek.html#intuitivni-masaz", "Intuitivní masáž")],
      "Masáž: intuitivní masáž, která spojuje sportovní masáž, aromaterapii, dech a thajskou masáž.", "dotek-ruce.jpg"),
     ("voda", "Voda", [("voda.html#vnitrni-ponor", "Kurz: Vnitřní ponor"), ("voda.html#retreat", "Retreat: V rytmu oceánu"), ("voda.html#freediving", "Kurz: Freediving (od léta 2027)")],
@@ -30,8 +30,11 @@ PILLARS = [
 CESTA_SUB = [("moje-cesta.html#pribeh", "Můj příběh"), ("moje-cesta.html#vzdelani", "Vzdělání a certifikace"),
              ("moje-cesta.html#reference", "Reference"), ("podnikavky.html", "Komunita: Podnikavky Přerov")]
 
+SANGHA = "nám. T. G. Masaryka 225/14, 750 02 Přerov"
+KINEO = "Anglická 682/17a, 353 01 Mariánské Lázně"
 PLACES = [
     ("Přerov", "Jóga a Pilates", "Žerotínovo nám. 14, 750 02 Přerov"),
+    ("Přerov", "Studio Sangha", SANGHA),
     ("Olomouc", "Centrum Dákiní", "8. května 12, 779 00 Olomouc"),
     ("Lipník nad Bečvou", "Frida cafe", "Losertova 624/12, 751 31 Lipník nad Bečvou"),
     ("Hradčany", "Sál OÚ", "Hradčany 64, 751 11 Radslavice"),
@@ -119,10 +122,9 @@ def page(path, title, desc, body, current=None):
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=Dancing+Script:wght@500;600&display=swap">
+<link rel="stylesheet" href="{pre}assets/fonts.css">
 <link rel="stylesheet" href="{pre}assets/style.css">
+<script data-goatcounter="https://lenkarekha.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 {schema}
 </head>
 <body>
@@ -158,6 +160,7 @@ def page(path, title, desc, body, current=None):
           <li><a href="{pre}moje-cesta.html#reference">Reference</a></li>
           <li><a href="{pre}firmy.html">Pro firmy</a></li>
           <li><a href="{pre}podnikavky.html">Podnikavky Přerov</a></li>
+          <li><a href="{pre}obchodni-podminky.html">Obchodní podmínky</a></li>
           <li><a href="{pre}gdpr.html">Ochrana osobních údajů</a></li>
         </ul>
       </div>
@@ -173,6 +176,7 @@ def page(path, title, desc, body, current=None):
     </div>
     <div class="legal">
       <span>Lenka Jüngling</span>
+      <span>Budovatelů 7, 750 02 Přerov</span>
       <span>IČO {ICO}</span>
       <span>Podnikatelka zapsaná v živnostenském rejstříku</span>
       <span>© 2026</span>
@@ -186,13 +190,16 @@ def page(path, title, desc, body, current=None):
 """
     head, _, rest = html.partition("<body>")
     html = head + "<body>" + nbsp(rest)
+    # fotky ve WebP (menší a rychlejší); JPG zůstává jen pro náhled na sociálních sítích a pro vyhledávače
+    html = re.sub(r'(src="[^"]*assets/img/)([^"/]+)\.jpg"',
+                  lambda m: m.group(1) + m.group(2) + (".webp" if (ROOT / "assets/img" / (m.group(2) + ".webp")).exists() else ".jpg") + '"', html)
     out = ROOT / path
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(html, encoding="utf-8")
 
 
 def contact_form(pre, topic="", subject="Nová zpráva z webu", button="Odeslat zprávu"):
-    options = ["Dech: pránájáma nebo workshop", "Pohyb: skupinové lekce", "Individuální lekce", "Dotek: masáž",
+    options = ["Úvodní lekce (nezávazná)", "Dech: pránájáma nebo workshop", "Pohyb: skupinové lekce", "Individuální lekce", "Dotek: masáž",
                "Voda: Vnitřní ponor", "Retreat na Bali", "Firemní lekce", "Podnikavky", "Jiné"]
     opts = "".join(f'<option{" selected" if o == topic else ""}>{o}</option>' for o in options)
     return f"""<form class="form" action="{FORM}" method="POST" data-ajax>
@@ -203,7 +210,7 @@ def contact_form(pre, topic="", subject="Nová zpráva z webu", button="Odeslat 
   </div>
   <label for="f-topic">Co tě zajímá?<select id="f-topic" name="tema">{opts}</select></label>
   <label for="f-msg">Zpráva<textarea id="f-msg" name="zprava" placeholder="Napiš mi, co potřebuješ, nebo s čím váháš."></textarea></label>
-  <label class="check" for="f-gdpr"><input id="f-gdpr" name="souhlas" type="checkbox" value="ano" required><span>Souhlasím se <a href="{pre}gdpr.html">zpracováním osobních údajů</a> za účelem odpovědi na mou zprávu.</span></label>
+  <p class="form-note">Údaje použiju jen k odpovědi na tvou zprávu. Víc v <a href="{pre}gdpr.html">zásadách ochrany osobních údajů</a>.</p>
   <div class="btn-row"><button class="btn" type="submit">{button}</button></div>
   <p class="form-status" role="status" aria-live="polite"></p>
 </form>"""
@@ -260,7 +267,7 @@ home = f"""
         <h1>Dech, pohyb, dotek, <span class="hand">voda.</span><span class="sub">Cesta zpátky k sobě má víc podob.</span></h1>
         <p class="lead">Jsem Lenka Rekha, lektorka jógy a jógové terapie, průvodkyně dechem a freediverka. Téměř deset let pomáhám lidem naslouchat vlastnímu tělu. Individuálně, ve skupině, offline i online. Lekce jógy vedu v Přerově, Olomouci, Lipníku nad Bečvou a Hradčanech.</p>
         <div class="btn-row">
-          <a class="btn light" href="pohyb.html#individualne">Domluvit úvodní lekci</a>
+          <a class="btn light" href="kontakt.html?tema=Úvodní">Domluvit úvodní lekci</a>
           <a class="btn outline-light" href="kontakt.html">Napsat mi</a>
         </div>
       </div>""", "band-hero band-split", "18% 40%").replace('</section>', '<a class="scroll-cue" href="#co-hledas">ponoř se ↓</a></section>')}
@@ -520,7 +527,7 @@ pillar_page("dech", "Dech", 'Dech je první <span class="hand">pohyb.</span>',
         ("pranajama", "Lekce: Pránájáma a dechové techniky", "Klid, který si můžeš kdykoli přivolat",
          """<p><strong>Dechové techniky</strong> jsou praktické nástroje: jak prodloužit výdech, zklidnit nervový systém, soustředit se nebo prodloužit zádrž. Naučíš se je rychle a použiješ je hned, třeba před spaním, před důležitým jednáním nebo před ponorem. Propojuji je s poznatky z freedivingu.</p>
 <p><strong>Pránájáma</strong> jde hlouběji. Je to jedna z cest jógy, komplexní praxe, která pracuje s dechem, energií a pozorností zároveň. Nejde jen o techniku, ale o to, jak dech mění tvůj vnitřní stav. Potřebuje pravidelnost a čas, a o to víc ti dá.</p>""",
-         """<h3>Nejbližší pránájáma</h3><p>Neděle 29. 11. a 20. 12., 9:00–10:00, <a href="https://www.google.com/maps/search/?api=1&query=Studio+Sangha%2C+Přerov" target="_blank" rel="noopener">studio Sangha</a>, 300 Kč.</p><p>Dechové techniky tě naučím i individuálně, osobně nebo online.</p>""" + ask("Přihlásit se"),
+         f"""<h3>Nejbližší pránájáma</h3><p>Neděle 29. 11. a 20. 12., 9:00–10:00, <a href="{maps('Studio Sangha, ' + SANGHA)}" target="_blank" rel="noopener">studio Sangha</a> (nám. T. G. Masaryka 14), 300 Kč.</p><p>Dechové techniky tě naučím i individuálně, osobně nebo online.</p>""" + ask("Přihlásit se"),
          ("lenka-tanec.jpg", "Lenka se zavřenýma očima a úsměvem v pohybu, soustředěná na dech")),
         ("workshopy", "Workshop: Flow State Reset", "Lehkost, radost a stav flow",
          """<p>Tříhodinový workshop. Praktický vhled do propojení pohybu a dechu jako nástrojů vědomé seberegulace. Bez výkonu a bez tlaku na dokonalost.</p>
@@ -529,8 +536,8 @@ pillar_page("dech", "Dech", 'Dech je první <span class="hand">pohyb.</span>',
 <div class="block"><span class="tag">Dech</span><h3>Dech a nervový systém</h3><p>Začínáme výchozím bodem, například BOLT testem (Body Oxygen Level Test). Pak přichází zklidnění, prohloubení dechu a hlavně výdechu, který se přenese do zádrže. Vydržíš déle, než si myslíš. Workshop uzavírá integrace a mindfulness.</p></div>
 </div>
 <p>Odneseš si konkrétní nástroje pro vědomou práci s vlastním stavem, přenositelné do každodenního života.</p>""",
-         """<h3>Nejbližší workshop</h3>
-<ul class="offer"><li><span>So 21. 11. 2026 · 9:00–12:00 · <a href="https://www.google.com/maps/search/?api=1&query=Kineo%2C+Mariánské+Lázně" target="_blank" rel="noopener">studio Kineo, Mariánské Lázně</a></span><span class="price">900 Kč</span></li></ul>
+         f"""<h3>Nejbližší workshop</h3>
+<ul class="offer"><li><span>So 21. 11. 2026 · 9:00–12:00 · <a href="{maps('Kineo, ' + KINEO)}" target="_blank" rel="noopener">studio Kineo, Anglická 17a, Mariánské Lázně</a></span><span class="price">900 Kč</span></li></ul>
 <p>Chceš workshop pro svou skupinu, studio nebo firmu? Napiš mi.</p>""" + ask("Přihlásit se"),
          ("lenka-tanec-smich.jpg", "Lenka se smíchem tančí ve světlém sále")),
     ],
@@ -668,7 +675,6 @@ rows = [
     ("prerov", "Neděle", "9:00–10:00", "Pránájáma", "1× měsíčně: 29. 11. a 20. 12.", "Přerov", "Studio Sangha", "300 Kč"),
 ]
 ADDR = {pl: a for _, pl, a in PLACES}
-ADDR["Studio Sangha"] = "Studio Sangha, Přerov"
 
 
 def place_cell(city, pl):
@@ -759,7 +765,7 @@ podnikavky = f"""
         </div>
         <label for="p-how">Jak dlouho podnikáš (nebo plánuješ)?<input id="p-how" name="podnikani" type="text"></label>
         <label for="p-exp">Co od setkání očekáváš?<textarea id="p-exp" name="ocekavani"></textarea></label>
-        <label class="check" for="p-gdpr"><input id="p-gdpr" name="souhlas" type="checkbox" value="ano" required><span>Souhlasím se <a href="gdpr.html">zpracováním osobních údajů</a> za účelem organizace setkání.</span></label>
+        <p class="form-note">Údaje použiju jen k organizaci setkání. Víc v <a href="gdpr.html">zásadách ochrany osobních údajů</a>.</p>
         <div class="btn-row"><button class="btn sun" type="submit">Přihlásit se</button></div>
         <p class="form-status" role="status" aria-live="polite"></p>
       </form>
@@ -808,37 +814,97 @@ gdpr = f"""
   <div class="wrap">
     <p class="crumbs"><a href="./">Domů</a> / Ochrana osobních údajů</p>
     <h1>Zásady ochrany osobních údajů</h1>
-    <p class="lead">Platné od 1. listopadu 2026.</p>
+    <p class="lead">Platné od 1. prosince 2026.</p>
   </div>
 </section>
 <section class="section">
   <div class="wrap">
     <div class="prose">
       <h2>Kdo zpracovává vaše údaje</h2>
-      <p>Správcem osobních údajů je Lenka Jüngling, IČO {ICO}, působící pod značkou Lenka Rekha, se sídlem v Přerově. Kontakt: <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
-      <h2>Jaké údaje sbírám</h2>
-      <p>Prostřednictvím formulářů na tomto webu sbírám jen to, co sami vyplníte:</p>
-      <ul><li>jméno</li><li>e-mail nebo telefon</li><li>téma, o které máte zájem</li><li>obsah zprávy</li><li>u přihlášky na Podnikavky také informace o vašem podnikání a očekáváních</li></ul>
-      <h2>K čemu údaje používám</h2>
-      <p>Výhradně k tomu, abych vám odpověděla, domluvila s vámi lekci, masáž, kurz nebo účast na akci a poslala vám k nim potřebné informace. Pokud se přihlásíte k odběru novinek, posílám vám e-mailem informace o nových kurzech, workshopech a retreatech.</p>
-      <h2>Právní základ</h2>
-      <p>Zpracování probíhá na základě vašeho souhlasu, který udělujete zaškrtnutím pole ve formuláři (čl. 6 odst. 1 písm. a) GDPR).</p>
+      <p>Správcem osobních údajů je Lenka Jüngling, IČO {ICO}, se sídlem Budovatelů 7, 750 02 Přerov, podnikající pod značkou Lenka Rekha. Kontakt: <a href="mailto:{EMAIL}">{EMAIL}</a>, {PHONE}.</p>
+      <h2>Jaké údaje zpracovávám</h2>
+      <p>Prostřednictvím formulářů, e-mailu nebo WhatsAppu zpracovávám jen to, co mi sami sdělíte:</p>
+      <ul><li>jméno</li><li>e-mail nebo telefon</li><li>téma, o které máte zájem, a obsah zprávy</li><li>u přihlášky na Podnikavky také informace o vašem podnikání a očekáváních</li><li>informace o zdravotním stavu, pokud mi je sami sdělíte kvůli bezpečnému vedení lekce, masáže nebo kurzu</li></ul>
+      <h2>K čemu a na jakém základě</h2>
+      <ul><li><strong>Odpověď na dotaz, domluva a poskytnutí služby</strong> (lekce, masáž, kurz, workshop, retreat): plnění smlouvy a jednání o ní, čl. 6 odst. 1 písm. b) GDPR.</li><li><strong>Vedení účetnictví a daňové evidence</strong>: plnění právní povinnosti, čl. 6 odst. 1 písm. c) GDPR.</li><li><strong>Informace o zdravotním stavu</strong>: zpracovávám jen s vaším výslovným souhlasem, čl. 9 odst. 2 písm. a) GDPR, a pouze proto, abych lekci nebo masáž přizpůsobila vašim možnostem.</li></ul>
       <h2>Jak dlouho údaje uchovávám</h2>
-      <p>Po dobu nezbytnou k vyřízení vaší zprávy nebo k poskytnutí služby, nejdéle však 2 roky od posledního kontaktu. Odběr novinek můžete kdykoli zrušit odkazem v každém e-mailu.</p>
+      <p>Po dobu nezbytnou k vyřízení vaší zprávy nebo k poskytnutí služby, nejdéle 2 roky od posledního kontaktu. Doklady o platbách uchovávám po dobu, kterou stanoví účetní a daňové předpisy.</p>
       <h2>Komu údaje předávám</h2>
-      <p>Vaše údaje neprodávám, nepronajímám ani nepředávám třetím stranám za účelem marketingu. Technicky je zpracovávají tito zpracovatelé, kteří se řídí vlastními zásadami GDPR:</p>
-      <ul><li>Formspree (formspree.io): doručení zpráv z formulářů</li><li>MailerLite (mailerlite.com): rozesílání novinek, pouze pokud se k nim přihlásíte</li><li>GitHub Pages: hosting webu</li></ul>
+      <p>Vaše údaje neprodávám, nepronajímám ani nepředávám třetím stranám za účelem marketingu. Technicky je zpracovávají tito zpracovatelé:</p>
+      <ul><li>Formspree (formspree.io, USA): doručení zpráv z formulářů do mého e-mailu. Předání do USA probíhá na základě standardních smluvních doložek EU.</li><li>Google (Gmail): e-mailová schránka, ve které zprávy přijímám.</li><li>GitHub Pages (GitHub, USA): hosting webu.</li></ul>
+      <h2>Měření návštěvnosti</h2>
+      <p>Pro základní přehled o návštěvnosti používám službu GoatCounter. Nepoužívá cookies, neukládá IP adresy a nesleduje vás napříč weby. Vidím jen souhrnná čísla, například kolik lidí přišlo na kterou stránku a odkud.</p>
       <h2>Vaše práva</h2>
-      <ul><li>požádat o přístup ke svým osobním údajům</li><li>požádat o jejich opravu nebo výmaz</li><li>kdykoli odvolat souhlas se zpracováním, stačí napsat e-mail</li><li>podat stížnost u Úřadu pro ochranu osobních údajů (uoou.gov.cz)</li></ul>
+      <ul><li>požádat o přístup ke svým osobním údajům</li><li>požádat o jejich opravu, výmaz nebo omezení zpracování</li><li>vznést námitku proti zpracování</li><li>kdykoli odvolat souhlas, stačí napsat e-mail</li><li>podat stížnost u Úřadu pro ochranu osobních údajů (uoou.gov.cz)</li></ul>
       <p>Pro uplatnění práv mi napište na <a href="mailto:{EMAIL}">{EMAIL}</a>. Odpovím do 30 dnů.</p>
       <h2>Cookies</h2>
-      <p>Tento web nepoužívá analytické ani marketingové cookies a nesleduje chování návštěvníků. Písma se načítají ze služby Google Fonts.</p>
+      <p>Tento web nepoužívá žádné cookies. Písma jsou uložená přímo na tomto webu, nenačítají se od třetích stran.</p>
     </div>
   </div>
 </section>
 """
 page("gdpr.html", "Ochrana osobních údajů — Lenka Rekha", "Zásady ochrany osobních údajů webu lenkarekha.com.", gdpr)
 
-(ROOT / "sitemap.xml").write_text(seo.sitemap([p for p in BUILT if p != "gdpr.html"]), encoding="utf-8")
+# ======================= OBCHODNÍ PODMÍNKY =======================
+vop = f"""
+<section class="page-hero wv-down">
+  <div class="wrap">
+    <p class="crumbs"><a href="./">Domů</a> / Obchodní podmínky</p>
+    <h1>Obchodní podmínky</h1>
+    <p class="lead">Přihlašování, platby a storno. Platné od 1. prosince 2026.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="prose">
+      <h2>Kdo služby poskytuje</h2>
+      <p>Lenka Jüngling, IČO {ICO}, se sídlem Budovatelů 7, 750 02 Přerov, podnikatelka zapsaná v živnostenském rejstříku, podnikající pod značkou Lenka Rekha. Kontakt: <a href="mailto:{EMAIL}">{EMAIL}</a>, {PHONE}.</p>
+      <h2>Jak se přihlásit</h2>
+      <p>Na lekci, masáž, kurz nebo workshop se přihlásíš zprávou přes formulář, e-mail nebo WhatsApp. Přihláška je závazná ve chvíli, kdy ti termín potvrdím, a u akcí placených předem po přijetí platby. Na pravidelné skupinové lekce se přihlásíš stejně, místo ti potvrdím podle kapacity sálu.</p>
+      <h2>Ceny a platba</h2>
+      <ul><li><strong>Skupinové lekce, individuální lekce a masáže:</strong> platba na místě, hotově nebo převodem.</li><li><strong>Kurzy, workshopy a balíčky lekcí:</strong> platba předem převodem na účet podle pokynů, které ti pošlu s potvrzením přihlášky.</li><li><strong>Retreat:</strong> záloha a doplatek podle podmínek, které dostaneš s přihláškou.</li></ul>
+      <p>Aktuální ceny najdeš u jednotlivých služeb a v rozvrhu. Nejsem plátkyně DPH.</p>
+      <h2>Zrušení a storno</h2>
+      <ul>
+        <li><strong>Individuální lekce a masáž:</strong> termín můžeš zdarma zrušit nebo přesunout nejpozději 24 hodin předem. Při pozdějším zrušení nebo nepříchodu účtuji 50 % ceny.</li>
+        <li><strong>Workshop:</strong> při zrušení nejpozději 7 dní předem vracím celou částku. Později částku nevracím, ale můžeš za sebe poslat náhradníka.</li>
+        <li><strong>Kurz (např. Vnitřní ponor):</strong> při zrušení nejpozději 14 dní před začátkem vracím celou částku. Později a po zahájení kurzu částku nevracím. Za sebe můžeš poslat náhradníka. Vynechanou lekci lze po domluvě nahradit v jiném termínu, pokud to kapacita dovolí.</li>
+        <li><strong>Balíček individuálních lekcí:</strong> platí 6 měsíců od zakoupení, nevyčerpané lekce se nevracejí.</li>
+        <li><strong>Retreat:</strong> řídí se zvláštními storno podmínkami, které dostaneš s přihláškou.</li>
+      </ul>
+      <p>Pokud akci zruším já (nemoc, nízký počet přihlášených, vyšší moc), nabídnu ti náhradní termín, nebo vrátím celou zaplacenou částku.</p>
+      <h2>Odstoupení od smlouvy</h2>
+      <p>Pokud smlouvu uzavíráš na dálku (e-mailem, přes formulář nebo WhatsApp), nemáš podle § 1837 písm. j) občanského zákoníku právo odstoupit od smlouvy do 14 dnů. Jde totiž o služby související s využitím volného času, které se poskytují v určeném termínu. Zrušení se proto řídí storno podmínkami výše.</p>
+      <h2>Zdraví a bezpečnost</h2>
+      <p>Lekce, masáže i kurzy nenahrazují lékařskou péči. Před první lekcí nebo masáží mi prosím řekni o svých zdravotních omezeních, těhotenství, úrazech nebo operacích, abych mohla praxi přizpůsobit. Cvičíš v rámci svých možností a na vlastní odpovědnost. V případě pochybností se nejdřív poraď s lékařem.</p>
+      <p>Lekce ve vodě v rámci kurzu Vnitřní ponor vede certifikovaný instruktor freedivingu a platí pro ni jeho bezpečnostní pravidla.</p>
+      <h2>Reklamace a spory</h2>
+      <p>Pokud nebudeš se službou spokojená nebo spokojený, napiš mi prosím na <a href="mailto:{EMAIL}">{EMAIL}</a>. Reklamaci vyřídím bez zbytečného odkladu, nejpozději do 30 dnů. Pokud se nedohodneme, můžeš se obrátit na Českou obchodní inspekci (<a href="https://adr.coi.cz" target="_blank" rel="noopener">adr.coi.cz</a>), která řeší mimosoudní spory se spotřebiteli.</p>
+      <h2>Fotografie z lekcí</h2>
+      <p>Na lekcích a akcích občas fotím. Fotky, na kterých jsi poznat, zveřejním jen s tvým souhlasem.</p>
+    </div>
+  </div>
+</section>
+"""
+page("obchodni-podminky.html", "Obchodní podmínky — Lenka Rekha", "Přihlašování, platby a storno podmínky lekcí, masáží, kurzů a workshopů Lenky Rekhy.", vop)
+
+# ======================= 404 =======================
+nf = f"""
+<section class="page-hero wv-down">
+  <div class="wrap">
+    <p class="eyebrow">Chyba 404</p>
+    <h1>Tady je jen <span class="hand">hluboká voda.</span></h1>
+    <p class="lead">Stránka, kterou hledáš, neexistuje nebo se přestěhovala. Nadechni se a zkus to odjinud.</p>
+    <div class="btn-row" style="margin-top:1.5rem"><a class="btn" href="./">Na úvodní stránku</a><a class="btn ghost" href="rozvrh.html">Rozvrh lekcí</a><a class="btn ghost" href="kontakt.html">Kontakt</a></div>
+  </div>
+</section>
+"""
+page("404.html", "Stránka nenalezena — Lenka Rekha", "Stránka neexistuje.", nf)
+_nf = (ROOT / "404.html").read_text(encoding="utf-8")
+_nf = re.sub(r'(href|src)="(?!https?:|mailto:|tel:|#|/|data:)', r'\1="/', _nf)
+_nf = _nf.replace('href="/./"', 'href="/"').replace('<link rel="canonical"', '<meta name="robots" content="noindex">\n<link rel="canonical"')
+(ROOT / "404.html").write_text(_nf, encoding="utf-8")
+
+(ROOT / "sitemap.xml").write_text(seo.sitemap([p for p in BUILT if p not in ("gdpr.html", "obchodni-podminky.html", "404.html")]), encoding="utf-8")
 (ROOT / "robots.txt").write_text(seo.ROBOTS, encoding="utf-8")
 print("hotovo")

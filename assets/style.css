@@ -587,3 +587,7 @@ td small { display: block; color: var(--muted); }
   .band-split .band-media::after, .band-hero.band-split .band-media::after { background: linear-gradient(180deg, rgba(15,61,68,0) 55%, var(--deep) 100%); }
   .band-split .band-inner { padding-top: 0.5rem; }
 }
+.form .form-note { font-size: 0.88rem; color: var(--muted); margin: 0; }
+.form .form-note a { color: inherit; }
+.legal a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.legal a:hover { color: var(--white); }

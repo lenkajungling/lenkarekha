@@ -65,7 +65,7 @@ def business(email, phone, ig, fb, places):
         "email": email,
         "telephone": phone.replace(" ", ""),
         "priceRange": "200–1000 Kč",
-        "address": {"@type": "PostalAddress", "addressLocality": "Přerov", "addressCountry": "CZ"},
+        "address": {"@type": "PostalAddress", "streetAddress": "Budovatelů 7", "postalCode": "750 02", "addressLocality": "Přerov", "addressCountry": "CZ"},
         "areaServed": ["Přerov", "Olomouc", "Lipník nad Bečvou", "Hradčany"],
         "sameAs": [ig, fb],
         "founder": {
@@ -80,8 +80,8 @@ def business(email, phone, ig, fb, places):
 
 
 def events():
-    loc_sangha = {"@type": "Place", "name": "Studio Sangha", "address": {"@type": "PostalAddress", "addressLocality": "Přerov", "addressCountry": "CZ"}}
-    loc_kineo = {"@type": "Place", "name": "Studio Kineo", "address": {"@type": "PostalAddress", "addressLocality": "Mariánské Lázně", "addressCountry": "CZ"}}
+    loc_sangha = {"@type": "Place", "name": "Studio Sangha", "address": {"@type": "PostalAddress", "streetAddress": "nám. T. G. Masaryka 225/14", "postalCode": "750 02", "addressLocality": "Přerov", "addressCountry": "CZ"}}
+    loc_kineo = {"@type": "Place", "name": "Studio Kineo", "address": {"@type": "PostalAddress", "streetAddress": "Anglická 682/17a", "postalCode": "353 01", "addressLocality": "Mariánské Lázně", "addressCountry": "CZ"}}
     org = {"@id": SITE + "#lenka-rekha"}
 
     def ev(name, start, end, loc, price, url):
