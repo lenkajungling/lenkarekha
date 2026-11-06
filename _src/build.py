@@ -342,7 +342,7 @@ journey = [
         "Ten pocit, když padáte volným pádem hlouběji do hlubin a neexistuje nic než přítomný okamžik, se těžko popisuje. Freediving se pro mě stal učitelem a životním stylem. Dokončila jsem certifikát AIDA4 a asistentku instruktora, učila jógu a dech na místech jako Panglao, Siquijor nebo Amed na Bali."],
      ("lenka-snorchl-vyrez.jpg", "Po ranním ponoru")),
     ("Indie podruhé", "Jógová terapie", [
-        "Než jsem se vrátila do Česka, strávila jsem půl roku v Indii, převážnou část studiem jógové terapie pod vedením Sonal Chaudhari. Její učitel Kobad Variava se pod přímým dohledem B.K.S. Iyengara stal seniorním učitelem. Tahle linie je pro mě inspirací v tom, jak k tělu přistupuji."],
+        "Než jsem se vrátila do Česka, strávila jsem půl roku v Indii, převážnou část studiem jógové terapie pod vedením Sonal Chaudhari. Její učitel Kobad Variava se pod přímým dohledem B.K.S. Iyengara stal seniorním učitelem. Tahle linie je pro mě inspirací v tom, jak k tělu přistupuji. Zároveň jsem učila v korporátu v Bombaji i v mezinárodní komunitě v Arambolu (Goa) či Dharamkotu (Himáčalpradéš)."],
      ("indie-terapie.jpg", "Studium jógové terapie v Indii")),
     ("Teď a tady", "Jóga bez nálepek", [
         "Po téměř dvou letech v Asii jsem si konečně odpověděla na otázky, kdo jsem a co chci. Jsem lektorka, která skrze autentičnost předává vlastní zkušenost prací s tělem. V mém přístupu se potkává dotek, pohyb, jóga i poznatky z freedivingu.",
