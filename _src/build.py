@@ -627,7 +627,7 @@ firmy_inner = """<div class="band-text">
     <h1>Pohyb a dech pro celý <span class="hand">tým.</span></h1>
     <p class="lead">Pravidelné lekce jógové terapie přímo u vás, v Přerově a Olomouci. Snižují bolest zad a hlavy, zlepšují posturu při dlouhodobém sezení a posilují odolnost vůči stresu.</p></div>"""
 firmy = f"""
-{band('', 'lekce-korekce.jpg', 'Lenka koriguje pozici klientky na lekci', firmy_inner, 'band-page')}
+{band('', 'lekce-korekce.jpg', 'Lenka koriguje pozici klientky na lekci', firmy_inner, 'band-page band-top', 'center 8%')}
 <section class="section s-white wv-up">
   <div class="wrap page-grid">
     <div class="prose">

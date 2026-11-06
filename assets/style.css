@@ -577,3 +577,5 @@ td small { display: block; color: var(--muted); }
   .band-split .band-media img { transform: none !important; }
   .band-split .band-media::after, .band-hero.band-split .band-media::after, .band-page.band-split .band-media::after { background: linear-gradient(90deg, var(--deep) 0%, rgba(15,61,68,0.55) 22%, rgba(15,61,68,0) 55%); }
 }
+/* fotky s obličejem u horního okraje: bez přesahu nahoru */
+.band-top .band-media { top: 0; }
