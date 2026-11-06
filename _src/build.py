@@ -862,11 +862,11 @@ vop = f"""
       <h2>Jak se přihlásit</h2>
       <p>Na lekci, masáž, kurz nebo workshop se přihlásíš zprávou přes formulář, e-mail nebo WhatsApp. Přihláška je závazná ve chvíli, kdy ti termín potvrdím, a u akcí placených předem po přijetí platby. Na pravidelné skupinové lekce se přihlásíš stejně, místo ti potvrdím podle kapacity sálu.</p>
       <h2>Ceny a platba</h2>
-      <ul><li><strong>Skupinové lekce, individuální lekce a masáže:</strong> platba na místě, hotově nebo převodem.</li><li><strong>Kurzy, workshopy a balíčky lekcí:</strong> platba předem převodem na účet podle pokynů, které ti pošlu s potvrzením přihlášky.</li><li><strong>Retreat:</strong> záloha a doplatek podle podmínek, které dostaneš s přihláškou.</li></ul>
+      <ul><li><strong>Všechny platby probíhají převodem na účet</strong>, platební údaje ti pošlu s potvrzením přihlášky.</li><li><strong>Kurzy, workshopy a balíčky lekcí:</strong> platba předem.</li><li><strong>Retreat:</strong> záloha a doplatek podle podmínek, které dostaneš s přihláškou.</li></ul>
       <p>Aktuální ceny najdeš u jednotlivých služeb a v rozvrhu. Nejsem plátkyně DPH.</p>
       <h2>Zrušení a storno</h2>
       <ul>
-        <li><strong>Individuální lekce a masáž:</strong> termín můžeš zdarma zrušit nebo přesunout nejpozději 24 hodin předem. Při pozdějším zrušení nebo nepříchodu účtuji 50 % ceny.</li>
+        <li><strong>Individuální lekce a masáž:</strong> termín můžeš zdarma zrušit nebo přesunout nejpozději 24 hodin předem. Při pozdějším zrušení nebo nepříchodu účtuji plnou cenu.</li>
         <li><strong>Workshop:</strong> při zrušení nejpozději 7 dní předem vracím celou částku. Později částku nevracím, ale můžeš za sebe poslat náhradníka.</li>
         <li><strong>Kurz (např. Vnitřní ponor):</strong> při zrušení nejpozději 14 dní před začátkem vracím celou částku. Později a po zahájení kurzu částku nevracím. Za sebe můžeš poslat náhradníka. Vynechanou lekci lze po domluvě nahradit v jiném termínu, pokud to kapacita dovolí.</li>
         <li><strong>Balíček individuálních lekcí:</strong> platí 6 měsíců od zakoupení, nevyčerpané lekce se nevracejí.</li>
