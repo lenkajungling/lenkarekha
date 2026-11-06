@@ -293,7 +293,7 @@ home = f"""
   </div>
 </section>
 
-{band('', 'lekce-terasa.jpg', 'Ranní lekce jógy na terase s výhledem na oceán', '<p class="band-quote">Jóga bez nálepek <span class="hand">a mantinelů.</span></p>')}
+{band('', 'plaz-skupina.jpg', 'Rozesmáté ženy po lekci jógy na pláži, s rukama nad hlavou', '<p class="band-quote">Jóga bez nálepek <span class="hand">a mantinelů.</span></p>', '', 'center 42%')}
 
 <section class="section s-mint wv-up" id="spoluprace">
   <div class="wrap">
