@@ -343,7 +343,7 @@ journey = [
      ("filipiny-ponor.jpg", "Po ponoru, Filipíny")),
     ("Indie podruhé · 2025", "Jógová terapie", [
         "Než jsem se vrátila do Česka, strávila jsem půl roku v Indii, převážnou část studiem jógové terapie pod vedením Sonal Chaudhari. Její učitel Kobad Variava se pod přímým dohledem B.K.S. Iyengara stal seniorním učitelem. Tahle linie je pro mě inspirací v tom, jak k tělu přistupuji. Zároveň jsem učila v korporátu v Bombaji i v mezinárodní komunitě v Arambolu (Goa) či Dharamkotu (Himáčalpradéš)."],
-     ("indie-terapie.jpg", "Studium jógové terapie v Indii")),
+     ("indie-setkani.jpg", "Setkání s dalajlámou")),
     ("Teď a tady", "Jóga bez nálepek", [
         "Po téměř dvou letech v Asii jsem si konečně odpověděla na otázky, kdo jsem a co chci. Dnes do jednoho přístupu propojuji jógu, pohyb, práci s dechem, vědomý dotek a poznatky z freedivingu.",
         "Od striktní aštángy jsem se přesunula k józe bez nálepek a mantinelů. Zajímá mě, jak pozici podle své fyziologie uděláš, ale taky jak se cítíš a jak dýcháš. Učím se žít v přítomném okamžiku, být vděčnější a obracet věci k dobru, i pro druhé. A tenhle posun neberu jako konečný.",
