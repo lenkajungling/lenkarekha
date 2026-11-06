@@ -25,7 +25,7 @@ PILLARS = [
     ("dotek", "Dotek", [("dotek.html#intuitivni-masaz", "Intuitivní masáž")],
      "Masáž: intuitivní masáž, která spojuje sportovní masáž, aromaterapii, dech a thajskou masáž.", "dotek-ruce.jpg"),
     ("voda", "Voda", [("voda.html#vnitrni-ponor", "Kurz: Vnitřní ponor"), ("voda.html#retreat", "Retreat: V rytmu oceánu"), ("voda.html#freediving", "Kurz: Freediving (od léta 2027)")],
-     "Freediving: kurz Vnitřní ponor, retreat V rytmu oceánu na Bali a od léta 2027 kurzy freedivingu.", "ponor-lano.jpg"),
+     "Freediving: kurz Vnitřní ponor, retreat V rytmu oceánu na Bali a od léta 2027 kurzy freedivingu.", "freediving-kanon.jpg"),
 ]
 CESTA_SUB = [("moje-cesta.html#pribeh", "Můj příběh"), ("moje-cesta.html#vzdelani", "Vzdělání a certifikace"),
              ("moje-cesta.html#reference", "Reference"), ("podnikavky.html", "Komunita: Podnikavky Přerov")]
@@ -591,7 +591,7 @@ pillar_page("dotek", "Dotek", 'Dotek, který tělu vrátí <span class="hand">ro
 # ---------- VODA ----------
 pillar_page("voda", "Voda", 'Nádech, který vydrží <span class="hand">déle.</span>',
     "Vnitřní ponor, retreat V rytmu oceánu na Bali a od léta 2027 kurzy freedivingu.",
-    ("ponor-lano.jpg", "Freediverka u lana pod hladinou proti slunci", "center 30%"),
+    ("freediving-kanon.jpg", "Freediverka klesá mezi skalními stěnami do modré hloubky", "center 42%"),
     [
         ("vnitrni-ponor", "Kurz: Vnitřní ponor", "Příprava na freediving",
          """<p><strong>Tohle není klasický jógový kurz. Není to ani kurz potápění.</strong> Je to deset týdnů, ve kterých zjistíš, co všechno dokáže tvůj dech a tvoje tělo, když jim dáš prostor.</p>
