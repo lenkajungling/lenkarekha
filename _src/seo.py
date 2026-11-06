@@ -53,7 +53,7 @@ def faq_html():
 </section>"""
 
 
-def business(email, phone, ig, fb, places):
+def business(email, phone, ig, fb, places, gmaps):
     return {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
@@ -67,7 +67,7 @@ def business(email, phone, ig, fb, places):
         "priceRange": "200–1000 Kč",
         "address": {"@type": "PostalAddress", "streetAddress": "Budovatelů 7", "postalCode": "750 02", "addressLocality": "Přerov", "addressCountry": "CZ"},
         "areaServed": ["Přerov", "Olomouc", "Lipník nad Bečvou", "Hradčany"],
-        "sameAs": [ig, fb],
+        "sameAs": [ig, fb, gmaps],
         "founder": {
             "@type": "Person", "name": "Lenka Rekha",
             "jobTitle": "Lektorka jógy a jógové terapie, průvodkyně dechem, freediverka",

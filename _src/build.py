@@ -13,6 +13,7 @@ PHONE = "+420 778 522 095"
 WA = "https://wa.me/420778522095"
 IG = "https://www.instagram.com/lenka_rekha_/"
 FB = "https://www.facebook.com/LenkaRekha"
+GMAPS = "https://share.google/nSKn5DJrgDvnfQj9e"
 ICO = "13983237"
 FORM = "https://formspree.io/f/mdavpakp"
 
@@ -84,7 +85,7 @@ def page(path, title, desc, body, current=None):
     BUILT.append(path)
     title, desc = seo.META.get(path, (title, desc))
     canon = seo.SITE + ("" if path == "index.html" else path)
-    schema = seo.ld(seo.business(EMAIL, PHONE, IG, FB, PLACES))
+    schema = seo.ld(seo.business(EMAIL, PHONE, IG, FB, PLACES, GMAPS))
     if path == "index.html":
         schema += seo.ld(seo.faq_schema())
     if path == "dech.html":
@@ -171,6 +172,7 @@ def page(path, title, desc, body, current=None):
           <li><a href="{WA}">WhatsApp {PHONE}</a></li>
           <li><a href="{IG}">Instagram</a></li>
           <li><a href="{FB}">Facebook</a></li>
+          <li><a href="{GMAPS}" target="_blank" rel="noopener">Google: recenze</a></li>
         </ul>
       </div>
     </div>
@@ -795,6 +797,7 @@ kontakt = f"""
         <li><span class="k">E-mail</span><a href="mailto:{EMAIL}">{EMAIL}</a></li>
         <li><span class="k">Instagram</span><a href="{IG}">@lenka_rekha_</a></li>
         <li><span class="k">Facebook</span><a href="{FB}">Lenka Rekha</a></li>
+        <li><span class="k">Google</span><a href="{GMAPS}" target="_blank" rel="noopener">Profil a recenze</a></li>
       </ul>
     </aside>
   </div>
