@@ -539,7 +539,7 @@ pillar_page("dech", "Dech", 'Dech je první <span class="hand">pohyb.</span>',
 # ---------- POHYB ----------
 pillar_page("pohyb", "Pohyb", 'Pohyb bez <span class="hand">mantinelů.</span>',
     "Skupinové lekce hravá flow a integrovaná terapie, individuální lekce a lekce pro firmy.",
-    ("lekce-skupina.jpg", "Skupina v pozici trojúhelníku na terase u moře", "center 40%"),
+    ("pohyb-terasa.jpg", "Skupina cvičí jógu s rukama nad hlavou na terase s výhledem na moře", "center 45%"),
     [
         ("individualne", "Lekce: Individuální", "Péče ušitá na míru",
          """<p>Pro tebe, ne pro skupinu. Kombinuji jógu, dech, pohyb i masáž, přizpůsobené přesně tobě. Sleduji a zapisuji tvůj progres, zadávám domácí úkoly a jsem ti k dispozici i mezi lekcemi přes WhatsApp. Osobně i online.</p>
