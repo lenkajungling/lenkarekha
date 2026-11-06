@@ -487,7 +487,7 @@ def pillar_page(slug, name, h1, lead, hero, sections, refs, cta_title, cta_text)
     <p class="crumbs"><a href="./">Domů</a> / {name}</p>
     <h1>{h1}</h1>
     <p class="lead">{lead}</p></div>"""
-    head = (band('', hero[0], hero[1], head_inner, "band-page band-split" if slug == "dotek" else "band-page", hero[2]) if hero
+    head = (band('', hero[0], hero[1], head_inner, "band-page", hero[2]) if hero
             else f'<section class="page-hero wv-down"><div class="wrap">{head_inner}</div></section>')
     secs = []
     for i, (sid, eyebrow, h2, body, aside, img) in enumerate(sections):
@@ -568,7 +568,7 @@ pillar_page("pohyb", "Pohyb", 'Pohyb bez <span class="hand">mantinelů.</span>',
 # ---------- DOTEK ----------
 pillar_page("dotek", "Dotek", 'Dotek, který tělu vrátí <span class="hand">rovnováhu.</span>',
     "Intuitivní masáž: sportovní masáž, aromaterapie, dech a prvky thajské masáže v jednom. Zaměřuji se hlavně na záda, šíji, hlavu, hrudník a nohy.",
-    ("uvod-dotek.jpg", "Lenka Rekha s rukama na zádech klientky při práci s dotekem", "center 30%"),
+    ("dotek-ruce.jpg", "Ruce Lenky Rekhy na zádech klientky při intuitivní masáži", "center 40%"),
     [
         ("intuitivni-masaz", "Intuitivní masáž", "Vědomý dotek",
          """<p>Moje intuitivní masáž kombinuje <strong>sportovní masáž, aromaterapii, práci s dechem a prvky thajské masáže</strong>. Není to jen mechanická technika. Je to vědomý dotek, který uvolní napětí, zklidní nervový systém a znovu tě propojí s vlastním tělem a dechem.</p>
