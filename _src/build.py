@@ -364,7 +364,7 @@ KDO = "".join(f'<img src="assets/img/{f}.jpg" alt="Lenka Rekha — {t}" loading=
 certs = [
     ("Aštánga jóga", "Scott Johnson", "Londýn 2017"),
     ("Yoga Chikitsa", "Manju Jois", "Londýn 2018"),
-    ("Intenzivní kurz aštánga jógy", "Saraswathi Jois", "Maisúr, Indie 2019"),
+    ("Intenzivní kurz aštánga jógy", "Saraswathi Jois", "Indie 2019"),
     ("Lektorka jógy, multistyl (akreditace MŠMT)", "Kabir", "Olomouc 2020"),
     ("Dynamické meditace", "Kabir", "Olomouc 2021"),
     ("Sportovní masáž (akreditace MŠMT)", "Vzdělávací zařízení zdravotně-hygienických služeb Zlín", "Zlín 2023"),
