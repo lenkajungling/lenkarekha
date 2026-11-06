@@ -552,7 +552,7 @@ td small { display: block; color: var(--muted); }
 .tl-item figure img[src$="pred-jogou.jpg"] { object-position: 22% center; }
 .tl-item figure img[src$="indie-maisur.jpg"] { object-position: 62% center; }
 .tl-item figure img[src$="lenka-snorchl-vyrez.jpg"] { object-position: center top; }
-.tl-item figure img[src$="indie-terapie.jpg"] { object-position: center top; }
+.tl-item figure img[src$="indie-terapie.jpg"] { object-position: center 45%; }
 .tl-item figure img[src$="prerov-navrat.jpg"] { object-position: center 35%; }
 .tl-item figure img[src$="indie-setkani.jpg"] { object-position: 55% center; }
 .tl-item.has-fig figure { width: 100%; max-width: 380px; justify-self: stretch; }
