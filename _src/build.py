@@ -125,6 +125,10 @@ def page(path, title, desc, body, current=None):
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="{pre}assets/fonts.css">
 <link rel="stylesheet" href="{pre}assets/style.css">
+<link rel="icon" href="{pre}favicon.ico" sizes="32x32">
+<link rel="icon" href="{pre}assets/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="{pre}apple-touch-icon.png">
+<meta name="theme-color" content="#369694">
 <script data-goatcounter="https://lenkarekha.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 {schema}
 </head>
