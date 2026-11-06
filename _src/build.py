@@ -272,7 +272,7 @@ home = f"""
 
 {band('', 'lekce-terasa.jpg', 'Ranní lekce jógy na terase s výhledem na oceán', '<p class="band-quote">Jóga bez nálepek <span class="hand">a mantinelů.</span></p>')}
 
-<section class="section s-mint wv-up">
+<section class="section s-mint wv-up" id="spoluprace">
   <div class="wrap">
     <div class="section-head stack" style="margin-bottom:2.6rem;max-width:820px">
       <p class="eyebrow">Čtyři cesty k sobě</p>
@@ -327,36 +327,36 @@ journey = [
         "Vyrostla jsem v Přerově. Vystudovala jsem ekonomku a nastoupila do korporátu. Ne proto, že bych věděla, co chci, ale proto, že jsem to vyjma tance nevěděla vůbec. Vdala jsem se a přestěhovala se do Londýna.",
         "Třetinu života jsem byla manželkou, dvě třetiny hodnou dcerou, která následovala představu rodičů o ideálním životě: dostudovat, najít kancelářskou práci, vdát se, pořídit byt, založit rodinu. Rozhodovala jsem se rozumem, i když mi intuice radila něco jiného. A rozum byl vždycky hlasitější."],
      ("pred-jogou.jpg", "Služebka v Rumunsku")),
-    ("Londýn · Peru · Indie", "Londýn, Peru, Indie", [
+    ("Londýn · Peru · Indie · 2016–2019", "Londýn, Peru, Indie", [
         "V Londýně začala moje transformace. Studovala jsem u učitele aštángy Scotta Johnsona a poprvé si začala klást otázky, kterým jsem se předtím vyhýbala: Kdo jsem? Co vlastně chci? Jaké je moje poslání?",
-        "Pak přišly léčivé ceremonie v peruánské Amazonii. O rok později první cesta do Indie, do Maisúru, na intenzivní kurz u Saraswathi Jois, dcery zakladatele aštánga jógy. Jógu jsem zkoumala na sobě i skrze učení druhých, až jsem si udělala lektorský kurz u Kabira, studenta Oshovy tradice. Dávat energii korporátu přestalo dávat smysl."],
+        "Pak přišly léčivé ceremonie v peruánské Amazonii. O rok později první cesta do Indie, do Maisúru, na intenzivní kurz u Saraswathi Jois, dcery zakladatele aštánga jógy. Jógu jsem zkoumala na sobě i skrze učení druhých. Dávat energii korporátu přestávalo dávat smysl."],
      ("indie-maisur.jpg", "Maisúr, Indie poprvé")),
-    ("Zpátky v Přerově", "Návrat domů a další oklika", [
-        "Po návratu domů jsem chtěla dávat zpátky komunitě. Skrze naši kavárnu i politiku. Organizovala jsem workshopy, sbírky a akce, dostala se do zastupitelstva a s kolegy jsme prosadili třeba vznik dostupného městského bydlení.",
-        "Začala jsem učit v jógových studiích, budovat skupinky v okolních vesnicích. Jóga, kavárna i politika, všechno hezky jelo, covidu navzdory."],
+    ("Přerov · 2019–2022", "Návrat domů", [
+        "Po návratu domů jsem chtěla dávat zpátky komunitě. Otevřeli jsme kavárnu a pustila jsem se i do politiky. Organizovala jsem workshopy, sbírky a akce, dostala se do zastupitelstva a s kolegy jsme prosadili třeba vznik dostupného městského bydlení.",
+        "Začala jsem učit v jógových studiích a budovat skupinky v okolních vesnicích. Poptávka po lekcích rostla, a tak jsem si u Kabira, studenta Oshovy tradice, udělala lektorský certifikát. V době covidu jsem z korporátu odešla. Jóga, kavárna i politika, všechno hezky jelo, covidu navzdory."],
      ("prerov-navrat.jpg", "Workshop v kavárně")),
-    ("Zlom", "Když intuici nikdo neposlouchá", [
+    ("Zlom · 2023", "Když intuici nikdo neposlouchá", [
         "Pak přišel rozchod. Samovolný potrat. Fungovala jsem na autopilota, přes spoustu lekcí jógy a ostré lokty v politice. Intuice říkala: odpočiň si, něco změň. Neposlechla jsem ji. Místo toho jsem se vrhla do intenzivního masérského kurzu. A po něm přišlo vyhoření. Každý den jsem se probouzela s vyčerpáním, astmatem a alergiemi. Můj nervový systém se přetížil."], None),
-    ("Filipíny · Bali", "Freediving jako učitel", [
-        "Tentokrát už intuici nešlo umlčet rozumem. Vyklidila jsem byt, prodala hromadu věcí, zahodila dýchátko a odstěhovala se na Filipíny. Půl roku jsem budovala jógovo-freedivingovou komunitu pod Blue Freedom, potkala světové špičky v oboru a hlavně se ponořila sama do sebe.",
+    ("Filipíny · Bali · 2024", "Freediving jako učitel", [
+        "Vyklidila jsem byt, prodala hromadu věcí, zahodila dýchátko a odstěhovala se na Filipíny. Půl roku jsem budovala jógovo-freedivingovou komunitu pod Blue Freedom, potkala světové špičky v oboru a hlavně se ponořila sama do sebe.",
         "Ten pocit, když padáte volným pádem hlouběji do hlubin a neexistuje nic než přítomný okamžik, se těžko popisuje. Freediving se pro mě stal učitelem a životním stylem. Dokončila jsem certifikát AIDA4 a asistentku instruktora, učila jógu a dech na místech jako Panglao, Siquijor nebo Amed na Bali."],
      ("filipiny-ponor.jpg", "Po ponoru, Filipíny")),
-    ("Indie podruhé", "Jógová terapie", [
+    ("Indie podruhé · 2025", "Jógová terapie", [
         "Než jsem se vrátila do Česka, strávila jsem půl roku v Indii, převážnou část studiem jógové terapie pod vedením Sonal Chaudhari. Její učitel Kobad Variava se pod přímým dohledem B.K.S. Iyengara stal seniorním učitelem. Tahle linie je pro mě inspirací v tom, jak k tělu přistupuji. Zároveň jsem učila v korporátu v Bombaji i v mezinárodní komunitě v Arambolu (Goa) či Dharamkotu (Himáčalpradéš)."],
      ("indie-terapie.jpg", "Studium jógové terapie v Indii")),
     ("Teď a tady", "Jóga bez nálepek", [
         "Po téměř dvou letech v Asii jsem si konečně odpověděla na otázky, kdo jsem a co chci. Dnes do jednoho přístupu propojuji jógu, pohyb, práci s dechem, vědomý dotek a poznatky z freedivingu.",
         "Od striktní aštángy jsem se přesunula k józe bez nálepek a mantinelů. Zajímá mě, jak pozici podle své fyziologie uděláš, ale taky jak se cítíš a jak dýcháš. Učím se žít v přítomném okamžiku, být vděčnější a obracet věci k dobru, i pro druhé. A tenhle posun neberu jako konečný.",
-        "Pomáhám ženám i mužům být víc v těle a méně v hlavě. Najít jejich autentické já."],
+        "Pomáhám ženám i mužům být víc v těle a méně v hlavě a najít své autentické já."],
      ("indie-setkani.jpg", "Setkání s dalajlámou")),
 ]
 tl = []
 for place, h, paras, fig in journey:
-    if place == "Filipíny · Bali":
+    if place.startswith("Filipíny · Bali"):
         tl.append('</div></div></section>' + band('', 'zelva-ponor.jpg', 'Lenka se noří vedle mořské želvy nad písečným dnem', '<p class="band-quote">Tentokrát už intuici nešlo umlčet rozumem.</p>', '', 'center 58%') + '<section class="section"><div class="wrap"><div class="timeline">')
     ps = "".join(f"<p>{p}</p>" for p in paras)
     f = (f'<figure><img src="assets/img/{fig[0]}" alt="{fig[1]}" loading="lazy"><figcaption>{fig[1]}</figcaption></figure>' if fig else "")
-    tl.append(f'<article class="tl-item{" has-fig" if fig else ""}" data-rv><div class="tl-place"><b>{len([x for x in tl if x.startswith("<article")]) + 1:02d}</b><span>{place}</span></div><div class="tl-text"><h2>{h}</h2>{ps}</div>{f}</article>')
+    tl.append(f'<article class="tl-item{" has-fig" if fig else ""}" data-rv><div class="tl-place"><b>{len([x for x in tl if x.startswith("<article")]) + 1:02d}</b><span>{re.sub(r" · (\d{4})", r"<br>\1", place)}</span></div><div class="tl-text"><h2>{h}</h2>{ps}</div>{f}</article>')
 
 kdo = [("kdo-01-kdo-jsem", "Kdo jsem?"), ("kdo-02-ucitelka", "učitelka"), ("kdo-03-joginka", "jogínka"), ("kdo-04-freediverka", "freediverka"),
        ("kdo-05-tanecnice", "tanečnice"), ("kdo-06-cestovatelka", "cestovatelka"), ("kdo-07-propojovatelka", "propojovatelka"), ("kdo-08-zena", "žena")]
@@ -385,9 +385,9 @@ cesta = f"""
     <div class="stack-lg">
     <h1>Kdo je Lenka Rekha?</h1>
     <p class="roles">učitelka · jogínka · freediverka · tanečnice · cestovatelka · propojovatelka</p>
-    <p class="lead">Lektorka jógy a jógové terapie s téměř desetiletou praxí. Průvodkyně dechem, která kombinuje pránájámu s technikami z freedivingu.</p>
-    <p class="lead">Lenka pomáhá klientům individuálně vnímat vlastní tělo skrze dech, dotek, pohyb i všímavost. Pracuje i s komunitami v pravidelných kurzech online i offline a pořádá workshopy po celém Česku. Vedle vlastní lektorské praxe je také spoluzakladatelkou komunity Podnikavky Přerov. Mimo jiné je freediverka s certifikací AIDA4 a celoživotní tanečnice.</p>
-    <p class="lead">A taky někdo, kdo si prošel pěkně dlouhou oklikou, než se dostal tam, kde je teď.</p>
+    <p class="lead">Jsem lektorka jógy a jógové terapie s téměř desetiletou praxí a průvodkyně dechem, která kombinuje pránájámu s technikami z freedivingu.</p>
+    <p class="lead">Pomáhám klientům individuálně vnímat vlastní tělo skrze dech, dotek, pohyb i všímavost. Pracuji i s komunitami v pravidelných kurzech online i offline a pořádám workshopy po celém Česku. Vedle vlastní lektorské praxe jsem také spoluzakladatelkou komunity Podnikavky Přerov. A celý život tančím.</p>
+    <p class="lead">A taky jsem si prošla pěkně dlouhou oklikou, než jsem se dostala tam, kde jsem dnes.</p>
     </div>
     <div class="split-media" style="max-width:380px;justify-self:end"><img src="assets/img/lenka-portret.jpg" alt="Portrét Lenky Rekhy"></div>
     </div>
@@ -421,7 +421,7 @@ cesta = f"""
     </div>
   </div>
 </section>
-{cta_band('', 'Podívej se, jak spolu můžeme pracovat', 'Dech, pohyb, dotek, voda. Individuálně i ve skupině.', 'Napsat mi')}
+{cta_band('', 'Podívej se, jak můžeme spolupracovat', 'Dech, pohyb, dotek, voda. Individuálně i ve skupině.', 'Napsat mi').replace('<a class="btn light" href="kontakt.html">Napsat mi</a>', '<div class="btn-row"><a class="btn light" href="./#spoluprace">Jak můžeme spolupracovat</a><a class="btn outline-light" href="kontakt.html">Napsat mi</a></div>')}
 """
 page("moje-cesta.html", "Moje cesta — Lenka Rekha",
      "Z korporátu přes Londýn, Indii a Filipíny k józe bez nálepek. Příběh Lenky Rekhy.", cesta, "moje-cesta")
