@@ -572,8 +572,8 @@ td small { display: block; color: var(--muted); }
 
 /* úvod: fotka na výšku – na počítači v pravé polovině, vlevo text na tmavém pozadí */
 @media (min-width: 861px) {
-  .band-hero { background: var(--deep); }
-  .band-hero .band-media { left: 46%; top: 0; bottom: 0; }
-  .band-hero .band-media img { transform: none !important; }
-  .band-hero .band-media::after { background: linear-gradient(90deg, var(--deep) 0%, rgba(15,61,68,0.55) 22%, rgba(15,61,68,0) 55%); }
+  .band-split { background: var(--deep); }
+  .band-split .band-media { left: 46%; top: 0; bottom: 0; }
+  .band-split .band-media img { transform: none !important; }
+  .band-split .band-media::after, .band-hero.band-split .band-media::after, .band-page.band-split .band-media::after { background: linear-gradient(90deg, var(--deep) 0%, rgba(15,61,68,0.55) 22%, rgba(15,61,68,0) 55%); }
 }
