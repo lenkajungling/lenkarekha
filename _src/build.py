@@ -322,14 +322,14 @@ home = f"""
 
 <section class="section s-teal wv-up wv-down">
   <div class="wrap">
-    <p class="eyebrow" style="margin-bottom:2rem">Co říkají ti, kdo se mnou cvičí</p>
+    <p class="eyebrow" style="margin-bottom:2rem">Co říkají ti, kdo to zažili</p>
     <div class="refs-mag" data-rv>
       <figure class="big-quote">
         <blockquote>{REFS["zuzka"][2]}</blockquote>
         <figcaption>{REFS["zuzka"][0]}, {REFS["zuzka"][1]}</figcaption>
       </figure>
       <div class="small-quotes">
-        <figure><blockquote>{REFS["olga"][2]}</blockquote><figcaption>{REFS["olga"][0]}, {REFS["olga"][1]}</figcaption></figure>
+        <figure><blockquote>{REFS["monika"][2]}</blockquote><figcaption>{REFS["monika"][0]}, {REFS["monika"][1]}</figcaption></figure>
         <figure><blockquote>{REFS["sandra"][2]}</blockquote><figcaption>{REFS["sandra"][0]}, {REFS["sandra"][1]}</figcaption></figure>
         <div><a class="btn light" href="moje-cesta.html#reference">Všechny reference</a></div>
       </div>
