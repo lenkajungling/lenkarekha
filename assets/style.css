@@ -556,3 +556,6 @@ td small { display: block; color: var(--muted); }
 .tl-item figure img[src$="prerov-navrat.jpg"] { object-position: center 35%; }
 .tl-item figure img[src$="indie-setkani.jpg"] { object-position: 55% center; }
 .tl-item.has-fig figure { width: 100%; max-width: 380px; justify-self: stretch; }
+
+/* menší mezery mezi sekcemi (vlna 44 px má pořád dost místa) */
+.section { padding-block: clamp(3.75rem, 6vw, 4.5rem); }
