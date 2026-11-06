@@ -386,7 +386,7 @@ cesta = f"""
     <h1>Kdo je Lenka Rekha?</h1>
     <p class="roles">učitelka · jogínka · freediverka · tanečnice · cestovatelka · propojovatelka</p>
     <p class="lead">Jsem lektorka jógy a jógové terapie s téměř desetiletou praxí a průvodkyně dechem, která kombinuje pránájámu s technikami z freedivingu.</p>
-    <p class="lead">Pomáhám klientům individuálně vnímat vlastní tělo skrze dech, dotek, pohyb i všímavost. Pracuji i s komunitami v pravidelných kurzech online i offline a pořádám workshopy po celém Česku. Vedle vlastní lektorské praxe jsem také spoluzakladatelkou komunity Podnikavky Přerov. A celý život tančím.</p>
+    <p class="lead">Pomáhám klientům individuálně vnímat vlastní tělo skrze dech, dotek, pohyb i všímavost. Pracuji i s komunitami v pravidelných kurzech online i offline a pořádám workshopy po celém Česku. Vedle vlastní lektorské praxe jsem také spoluzakladatelkou komunity Podnikavky Přerov. Celý život tančím a miluju být pod vodou.</p>
     <p class="lead">A taky jsem si prošla pěkně dlouhou oklikou, než jsem se dostala tam, kde jsem dnes.</p>
     </div>
     <div class="split-media" style="max-width:380px;justify-self:end"><img src="assets/img/lenka-portret.jpg" alt="Portrét Lenky Rekhy"></div>
