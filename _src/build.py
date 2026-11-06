@@ -23,7 +23,7 @@ PILLARS = [
     ("pohyb", "Pohyb", [("pohyb.html#individualne", "Lekce: Individuální"), ("pohyb.html#lekce", "Lekce: Skupinové"), ("firmy.html", "Lekce: Pro firmy"), ("dech.html#workshopy", "Workshop: Flow State Reset"), ("voda.html#vnitrni-ponor", "Kurz: Vnitřní ponor")],
      "Jóga: hravá flow a integrovaná terapie ve skupině, individuální lekce, jóga pro firmy a kurz Vnitřní ponor.", "pohyb-terasa.jpg"),
     ("dotek", "Dotek", [("dotek.html#intuitivni-masaz", "Intuitivní masáž")],
-     "Masáž: intuitivní masáž, která spojuje sportovní masáž, aromaterapii, dech a thajskou masáž.", "masaz.jpg"),
+     "Masáž: intuitivní masáž, která spojuje sportovní masáž, aromaterapii, dech a thajskou masáž.", "dotek-ruce.jpg"),
     ("voda", "Voda", [("voda.html#vnitrni-ponor", "Kurz: Vnitřní ponor"), ("voda.html#retreat", "Retreat: V rytmu oceánu"), ("voda.html#freediving", "Kurz: Freediving (od léta 2027)")],
      "Freediving: kurz Vnitřní ponor, retreat V rytmu oceánu na Bali a od léta 2027 kurzy freedivingu.", "ponor-lano.jpg"),
 ]
