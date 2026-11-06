@@ -559,3 +559,4 @@ td small { display: block; color: var(--muted); }
 
 /* menší mezery mezi sekcemi (vlna 44 px má pořád dost místa) */
 .section { padding-block: clamp(3.75rem, 6vw, 4.5rem); }
+.tl-item figure img[src$="filipiny-ponor.jpg"] { object-position: 45% center; }
