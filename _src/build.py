@@ -744,15 +744,32 @@ podnikavky = f"""
   <div class="wrap page-grid">
     <div class="prose">
       <h2 style="color:var(--sun);margin-top:0">O Podnikavkách</h2>
-      <p>Podnikavky Přerov jsou místo, kde se ženy z regionu potkávají, sdílí zkušenosti, inspirují se navzájem a budují si vlastní podnikatelskou síť. Bez tlaku, bez soutěžení, s otevřenou náručí pro začátečnice i zkušené podnikatelky.</p>
-      <p>Setkání organizuji já, Lenka Rekha, protože vím, jaké to je začínat vlastní cestu bez opory. A jak moc pomůže mít kolem sebe ženy, které tomu rozumí.</p>
+      <p>Setkání Podnikavek pořádám společně se <strong>Zuzanou Balcárkovou</strong>. V říjnu 2025 jsme si sedly na kafe a shodly se, že nechceme jen tlachat nad kafíčkem, ale také se posouvat v našem podnikání. Nechceme jezdit za službami dál, když je v Přerově a okolí určitě spousta podnikavých žen, jen o nich ještě nevíme. A tak vznikl nápad na pravidelná setkávání Podnikavek.</p>
+      <p>Za ten rok jsme se vzdělaly v AI, finanční gramotnosti nebo brandingu. Naučily jsme se dobře si stanovit cíle, opečovat nervovou soustavu, spojit se do projektů či navázat přátelství.</p>
+      <p><strong>A v roce 2027 budeme pokračovat dál, v novém formátu!</strong> Více informací brzy.</p>
       <div class="page-photo"><img src="assets/img/podnikavky-inhub.jpg" alt="Lenka s kolegyní mluví ke ženám na setkání Podnikavek v IN-HUB Přerov" style="aspect-ratio:4/5;max-width:420px;object-position:center 30%"></div>
     </div>
     <aside class="aside-card" style="background:var(--sun-tint);color:var(--ink)" id="akce">
       <h3 style="color:var(--sun-dark)">Nejbližší setkání</h3>
       <ul class="offer"><li><span><strong>15. 11. 2026</strong> · první narozeniny Podnikavek 🎉</span></li></ul>
-      <p>Čas a místo ti pošlu po <a href="#prihlaska">přihlášení</a>.</p>
+      <p>Čas a místo ti pošlu po <a class="pod-link" href="#prihlaska">přihlášení</a>.</p>
     </aside>
+  </div>
+</section>
+<section class="section" style="background:var(--sun-tint)" id="vize">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--sun);margin-bottom:1.6rem">Naše vize</p>
+    <figure class="big-quote pod-vize"><blockquote>Komunita žen, které podnikají s lehkostí, odvahou a naplněním, aniž by ztrácely stabilitu ve svých vztazích a ve svém vnitřním světě. Ženy, které jsou spokojené nejen v tom, co tvoří, ale i v tom, jak žijí.</blockquote></figure>
+  </div>
+</section>
+<section class="section" id="reference">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow" style="color:var(--sun)">Co o nás řekly</p><h2>Zkušenosti <span class="hand" style="color:var(--sun)">Podnikavek</span></h2></div>
+    <div class="pod-refs">
+      <figure class="ref-card"><blockquote>Na setkání je skvělá energie. Seznámíš se s dalšími úžasnými ženami, které ti dají nestranný náhled. Pohled zvenčí, který by tebe třeba nenapadl. Zažiješ přednášku na zajímavé téma, inspiruje tě to k dalším krokům, můžeš si odnést různá uvědomění a aha momenty. Získáš kontakty na ženy, se kterými se můžeš propojit i soukromě, vzájemně se obohatit a navázat spolupráce.</blockquote><figcaption><strong>Účastnice</strong>Podnikavky Přerov</figcaption></figure>
+      <figure class="ref-card"><blockquote>Sem může přijít kdokoliv a může se cítit naprosto uvolněně a přijatě. Může prezentovat svoje podnikání, ale i sny a touhy, a nechat se inspirovat ostatními. Stojí za to si to zkusit a poznat nové ženy.</blockquote><figcaption><strong>Účastnice</strong>Podnikavky Přerov</figcaption></figure>
+      <figure class="ref-card"><blockquote>Inspirativní prostředí žen, které podnikají v zajímavých oblastech. Hledají, jak se zlepšit, jak se ukotvit. Nebo taky dobré pro nakopnutí k akci nebo uspořádání svých myšlenek, jak začít nebo kam dál…</blockquote><figcaption><strong>Účastnice</strong>Podnikavky Přerov</figcaption></figure>
+    </div>
   </div>
 </section>
 <section class="section" style="background:var(--sun-tint)" id="prihlaska">
@@ -780,7 +797,7 @@ podnikavky = f"""
 </section>
 """
 page("podnikavky.html", "Podnikavky Přerov — setkání podnikavých žen",
-     "Neformální setkání pro ženy, které podnikají nebo o tom přemýšlí. Přerov a okolí.", podnikavky, "moje-cesta")
+     "Podnikavky Přerov: pravidelná setkání podnikavých žen, která pořádají Lenka Rekha a Zuzana Balcárková. Přednášky, inspirace a propojení. Přerov a okolí.", podnikavky, "moje-cesta")
 
 # ======================= KONTAKT =======================
 places = "".join(f'<a class="place" href="{maps(a)}" target="_blank" rel="noopener"><strong>{c}</strong><span>{p}<br>{a}</span></a>'.replace('<a class="place"', '<a class="place" style="text-decoration:none"') for c, p, a in PLACES)

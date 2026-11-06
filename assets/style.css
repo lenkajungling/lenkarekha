@@ -589,3 +589,11 @@ td small { display: block; color: var(--muted); }
 .form .form-note a { color: inherit; }
 .legal a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
 .legal a:hover { color: var(--white); }
+.pod-link, .aside-card a.pod-link { color: var(--sun-dark); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.pod-link:hover, .aside-card a.pod-link:hover { color: var(--sun); }
+.pod-vize blockquote { color: var(--sun-dark); font-size: clamp(1.5rem, 2.8vw, 2.4rem); max-width: 34ch; }
+.pod-vize blockquote::before { color: var(--sun); opacity: 0.35; }
+.pod-refs { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.1rem; }
+.pod-refs .ref-card { background: var(--sun-tint); box-shadow: none; }
+.pod-refs .ref-card blockquote::before { color: var(--sun); }
+.pod-refs .ref-card figcaption strong { color: var(--sun-dark); }
