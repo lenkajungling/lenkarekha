@@ -747,11 +747,11 @@ podnikavky = f"""
       <p>Podnikavky Přerov jsou místo, kde se ženy z regionu potkávají, sdílí zkušenosti, inspirují se navzájem a budují si vlastní podnikatelskou síť. Bez tlaku, bez soutěžení, s otevřenou náručí pro začátečnice i zkušené podnikatelky.</p>
       <p>Setkání organizuji já, Lenka Rekha, protože vím, jaké to je začínat vlastní cestu bez opory. A jak moc pomůže mít kolem sebe ženy, které tomu rozumí.</p>
       <div class="page-photo"><img src="assets/img/podnikavky-inhub.jpg" alt="Lenka s kolegyní mluví ke ženám na setkání Podnikavek v IN-HUB Přerov" style="aspect-ratio:4/5;max-width:420px;object-position:center 30%"></div>
-      <div class="todo">Logo Podnikavek (připravuje se).</div>
     </div>
     <aside class="aside-card" style="background:var(--sun-tint);color:var(--ink)" id="akce">
       <h3 style="color:var(--sun-dark)">Nejbližší setkání</h3>
-      <ul class="offer"><li><span><strong>15. 11. 2026</strong> · první narozeniny Podnikavek 🎉<br><span class="todo-inline">čas a místo</span></span></li></ul>
+      <ul class="offer"><li><span><strong>15. 11. 2026</strong> · první narozeniny Podnikavek 🎉</span></li></ul>
+      <p>Čas a místo ti pošlu po <a href="#prihlaska">přihlášení</a>.</p>
     </aside>
   </div>
 </section>
