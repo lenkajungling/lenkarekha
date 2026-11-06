@@ -333,7 +333,7 @@ journey = [
      ("indie-maisur.jpg", "Maisúr, Indie poprvé")),
     ("Přerov · 2019–2022", "Návrat domů", [
         "Po návratu domů jsem chtěla dávat zpátky komunitě. Otevřeli jsme kavárnu a pustila jsem se i do politiky. Organizovala jsem workshopy, sbírky a akce, dostala se do zastupitelstva a s kolegy jsme prosadili třeba vznik dostupného městského bydlení.",
-        "Začala jsem učit v jógových studiích a budovat skupinky v okolních vesnicích. Poptávka po lekcích rostla, a tak jsem si u Kabira, studenta Oshovy tradice, udělala lektorský certifikát. V době covidu jsem z korporátu odešla. Jóga, kavárna i politika, všechno hezky jelo, covidu navzdory."],
+        "Začala jsem učit v jógových studiích a budovat skupinky v okolních vesnicích. Poptávka po lekcích rostla, a tak jsem si u Kabira, studenta Oshovy tradice, udělala lektorský certifikát. V době covidu jsem z korporátu odešla. Jóga, kavárna i politika, všechno hezky jelo."],
      ("prerov-navrat.jpg", "Workshop v kavárně")),
     ("Zlom · 2023", "Když intuici nikdo neposlouchá", [
         "Pak přišel rozchod. Samovolný potrat. Fungovala jsem na autopilota, přes spoustu lekcí jógy a ostré lokty v politice. Intuice říkala: odpočiň si, něco změň. Neposlechla jsem ji. Místo toho jsem se vrhla do intenzivního masérského kurzu. A po něm přišlo vyhoření. Každý den jsem se probouzela s vyčerpáním, astmatem a alergiemi. Můj nervový systém se přetížil."], None),
