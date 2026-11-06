@@ -368,7 +368,7 @@ certs = [
     ("Lektorka jógy, multistyl (akreditace MŠMT)", "Kabir", "Olomouc 2020"),
     ("Dynamické meditace", "Kabir", "Olomouc 2021"),
     ("Sportovní masáž (akreditace MŠMT)", "Vzdělávací zařízení zdravotně-hygienických služeb Zlín", "Zlín 2023"),
-    ("Freediving AIDA4 a asistentka instruktora", "AIDA", "Filipíny 2024"),
+    ("Freediving: asistentka instruktora (AIDA4)", "AIDA", "Filipíny 2024"),
     ("Jógová terapie", "Sonal Chaudhari, linie B.K.S. Iyengara", "Indie 2025"),
 ]
 CERTS = "".join(f'<li><strong>{a}</strong><span>{b}</span><em>{c}</em></li>' for a, b, c in certs)
