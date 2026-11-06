@@ -1,7 +1,10 @@
 """Generátor webu lenkarekha.com — spusť `python3 _src/build.py` z kořene projektu.
 Společná hlavička a patička jsou tady, obsah jednotlivých stránek níže."""
 import re
+import sys
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import seo
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -18,11 +21,11 @@ PILLARS = [
     ("dech", "Dech", [("dech.html#pranajama", "Lekce: Pránájáma a dechové techniky"), ("dech.html#workshopy", "Workshop: Flow State Reset"), ("voda.html#vnitrni-ponor", "Kurz: Vnitřní ponor")],
      "Pránájáma, dechové techniky, tříhodinový workshop Flow State Reset a kurz Vnitřní ponor.", "relaxace-podlozka.jpg"),
     ("pohyb", "Pohyb", [("pohyb.html#individualne", "Lekce: Individuální"), ("pohyb.html#lekce", "Lekce: Skupinové"), ("firmy.html", "Lekce: Pro firmy"), ("dech.html#workshopy", "Workshop: Flow State Reset"), ("voda.html#vnitrni-ponor", "Kurz: Vnitřní ponor")],
-     "Hravá flow a integrovaná terapie ve skupině, individuální lekce, lekce pro firmy a kurz Vnitřní ponor.", "lekce-skupina.jpg"),
+     "Jóga: hravá flow a integrovaná terapie ve skupině, individuální lekce, jóga pro firmy a kurz Vnitřní ponor.", "lekce-skupina.jpg"),
     ("dotek", "Dotek", [("dotek.html#intuitivni-masaz", "Intuitivní masáž")],
-     "Intuitivní masáž: sportovní masáž, aromaterapie, dech a thajská masáž v jednom.", "masaz.jpg"),
+     "Masáž: intuitivní masáž, která spojuje sportovní masáž, aromaterapii, dech a thajskou masáž.", "masaz.jpg"),
     ("voda", "Voda", [("voda.html#vnitrni-ponor", "Kurz: Vnitřní ponor"), ("voda.html#retreat", "Retreat: V rytmu oceánu"), ("voda.html#freediving", "Kurz: Freediving (od léta 2027)")],
-     "Kurz Vnitřní ponor, retreat V rytmu oceánu na Bali a od léta 2027 kurzy freedivingu.", "ponor-lano.jpg"),
+     "Freediving: kurz Vnitřní ponor, retreat V rytmu oceánu na Bali a od léta 2027 kurzy freedivingu.", "ponor-lano.jpg"),
 ]
 CESTA_SUB = [("moje-cesta.html#pribeh", "Můj příběh"), ("moje-cesta.html#vzdelani", "Vzdělání a certifikace"),
              ("moje-cesta.html#reference", "Reference"), ("podnikavky.html", "Komunita: Podnikavky Přerov")]
@@ -71,7 +74,18 @@ def nbsp(html):
     return "".join(x if x.startswith("<") else one.sub(r"\1&nbsp;", x) for x in parts)
 
 
+BUILT = []
+
+
 def page(path, title, desc, body, current=None):
+    BUILT.append(path)
+    title, desc = seo.META.get(path, (title, desc))
+    canon = seo.SITE + ("" if path == "index.html" else path)
+    schema = seo.ld(seo.business(EMAIL, PHONE, IG, FB, PLACES))
+    if path == "index.html":
+        schema += seo.ld(seo.faq_schema())
+    if path == "dech.html":
+        schema += "".join(seo.ld(e) for e in seo.events())
     depth = path.count("/")
     pre = "../" * depth
     def item(slug, label, subs):
@@ -97,11 +111,16 @@ def page(path, title, desc, body, current=None):
 <meta name="description" content="{desc}">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
+<meta property="og:url" content="{canon}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<link rel="canonical" href="{canon}">
 <meta property="og:image" content="https://lenkarekha.com/assets/img/freediving-kanon.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=Dancing+Script:wght@500;600&display=swap">
 <link rel="stylesheet" href="{pre}assets/style.css">
+{schema}
 </head>
 <body>
 <header class="site-header">
@@ -162,7 +181,8 @@ def page(path, title, desc, body, current=None):
 </body>
 </html>
 """
-    html = nbsp(html)
+    head, _, rest = html.partition("<body>")
+    html = head + "<body>" + nbsp(rest)
     out = ROOT / path
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(html, encoding="utf-8")
@@ -235,7 +255,7 @@ home = f"""
 {band('', 'freediving-kanon.jpg', 'Freediverka klesá mezi skalními stěnami do modré hloubky', """
       <div class="band-text">
         <h1>Dech, pohyb, dotek, <span class="hand">voda.</span><span class="sub">Cesta zpátky k sobě má víc podob.</span></h1>
-        <p class="lead">Jsem Lenka Rekha, lektorka jógy a jógové terapie, průvodkyně dechem a freediverka. Téměř deset let pomáhám lidem naslouchat vlastnímu tělu. Individuálně, ve skupině, offline i online.</p>
+        <p class="lead">Jsem Lenka Rekha, lektorka jógy a jógové terapie, průvodkyně dechem a freediverka. Téměř deset let pomáhám lidem naslouchat vlastnímu tělu. Individuálně, ve skupině, offline i online. Lekce jógy vedu v Přerově, Olomouci, Lipníku nad Bečvou a Hradčanech.</p>
         <div class="btn-row">
           <a class="btn light" href="pohyb.html#individualne">Domluvit úvodní lekci</a>
           <a class="btn outline-light" href="kontakt.html">Napsat mi</a>
@@ -300,6 +320,8 @@ home = f"""
     </div>
   </div>
 </section>
+
+{seo.faq_html()}
 
 <section class="section s-deep wv-up" style="padding-top:clamp(5rem,9vw,7rem)">
   <div class="wrap contact-split">
@@ -481,6 +503,9 @@ def pillar_page(slug, name, h1, lead, hero, sections, refs, cta_title, cta_text)
 {refs_section(refs)}
 {cta_band('', cta_title, cta_text, 'Napsat mi')}
 """
+    topic = {"dech": "Dech", "pohyb": "Pohyb", "dotek": "Dotek", "voda": "Voda"}.get(slug)
+    if topic:
+        body = body.replace('href="kontakt.html"', f'href="kontakt.html?tema={topic}"')
     page(f"{slug}.html", f"{name} — Lenka Rekha", lead[:155], body, slug)
 
 
@@ -811,4 +836,6 @@ gdpr = f"""
 """
 page("gdpr.html", "Ochrana osobních údajů — Lenka Rekha", "Zásady ochrany osobních údajů webu lenkarekha.com.", gdpr)
 
+(ROOT / "sitemap.xml").write_text(seo.sitemap([p for p in BUILT if p != "gdpr.html"]), encoding="utf-8")
+(ROOT / "robots.txt").write_text(seo.ROBOTS, encoding="utf-8")
 print("hotovo")

@@ -162,3 +162,13 @@
     }
   });
 })();
+
+// Předvyplnění tématu ve formuláři podle odkazu (kontakt.html?tema=Dech)
+(function () {
+  var t = new URLSearchParams(location.search).get('tema');
+  var sel = document.querySelector('select[name="tema"]');
+  if (!t || !sel) return;
+  for (var i = 0; i < sel.options.length; i++) {
+    if (sel.options[i].text.indexOf(t) === 0) { sel.selectedIndex = i; break; }
+  }
+})();
