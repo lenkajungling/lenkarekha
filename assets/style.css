@@ -569,3 +569,11 @@ td small { display: block; color: var(--muted); }
 .faq-item summary::after { content: "+"; position: absolute; right: 0.3rem; top: 50%; transform: translateY(-50%); font-size: 1.6rem; color: var(--teal-deep); transition: transform 0.2s; }
 .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
 .faq-item p { padding: 0 0 1.3rem; color: var(--muted); max-width: 70ch; }
+
+/* úvod: fotka na výšku – na počítači v pravé polovině, vlevo text na tmavém pozadí */
+@media (min-width: 861px) {
+  .band-hero { background: var(--deep); }
+  .band-hero .band-media { left: 46%; top: 0; bottom: 0; }
+  .band-hero .band-media img { transform: none !important; }
+  .band-hero .band-media::after { background: linear-gradient(90deg, var(--deep) 0%, rgba(15,61,68,0.55) 22%, rgba(15,61,68,0) 55%); }
+}

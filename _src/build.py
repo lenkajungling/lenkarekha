@@ -255,7 +255,7 @@ index_rows = "".join(
 MARQUEE = "".join(f"<span>{w}</span>" for w in ["dech", "pohyb", "dotek", "voda"] * 3)
 
 home = f"""
-{band('', 'freediving-kanon.jpg', 'Freediverka klesá mezi skalními stěnami do modré hloubky', """
+{band('', 'uvod-dotek.jpg', 'Lenka Rekha s rukama na zádech klientky při práci s dotekem', """
       <div class="band-text">
         <h1>Dech, pohyb, dotek, <span class="hand">voda.</span><span class="sub">Cesta zpátky k sobě má víc podob.</span></h1>
         <p class="lead">Jsem Lenka Rekha, lektorka jógy a jógové terapie, průvodkyně dechem a freediverka. Téměř deset let pomáhám lidem naslouchat vlastnímu tělu. Individuálně, ve skupině, offline i online. Lekce jógy vedu v Přerově, Olomouci, Lipníku nad Bečvou a Hradčanech.</p>
@@ -263,7 +263,7 @@ home = f"""
           <a class="btn light" href="pohyb.html#individualne">Domluvit úvodní lekci</a>
           <a class="btn outline-light" href="kontakt.html">Napsat mi</a>
         </div>
-      </div>""", "band-hero", "center 42%").replace('</section>', '<a class="scroll-cue" href="#co-hledas">ponoř se ↓</a></section>')}
+      </div>""", "band-hero", "center 30%").replace('</section>', '<a class="scroll-cue" href="#co-hledas">ponoř se ↓</a></section>')}
 
 <section class="section s-white wv-up wv-down" id="co-hledas">
   <div class="wrap quiz">
