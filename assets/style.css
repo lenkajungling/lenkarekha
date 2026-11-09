@@ -605,7 +605,7 @@ td small { display: block; color: var(--muted); }
 .value-box { margin-top: 1.6rem; background: var(--deep); color: var(--white); border-radius: 28px; padding: clamp(1.6rem, 4vw, 2.6rem); }
 .value-box h3 { color: var(--mint); font-size: clamp(1.5rem, 2.6vw, 2.1rem); margin: 0 0 0.6rem; }
 .value-box p { margin: 0; max-width: 70ch; opacity: 0.92; }
-.sources { padding-block: 2.5rem; }
+.sources { padding-top: 2.5rem; padding-bottom: 5.5rem; }
 .sources-title { font-size: 1.1rem; margin: 0 0 0.6rem; color: var(--muted); }
 .sources-list { margin: 0; padding-left: 1.2rem; font-size: 0.85rem; line-height: 1.6; color: var(--muted); }
 .sources-list a { color: inherit; }
