@@ -619,3 +619,11 @@ ol.blocks.numbered { list-style: none; padding: 0; margin: 0; }
 .blocks.numbered .block p { margin: 0; line-height: 1.5; }
 ol.blocks.numbered { gap: 1.8rem 2.2rem; }
 .blocks.numbered .block { padding: 0; background: none; }
+.offer li { flex-wrap: nowrap; }
+.offer li > span:first-child { flex: 1 1 auto; }
+.offer li.featured { background: var(--teal-deep); color: var(--white); border-radius: 18px; border-bottom-color: transparent; padding: 1.2rem 1.2rem; margin: 0.6rem 0; align-items: center; box-shadow: 0 18px 36px -24px rgba(8,37,43,0.6); }
+.offer li.featured strong { color: var(--white); }
+.offer li.featured .price { color: var(--mint); font-size: 1.4rem; }
+.offer li.featured .save { font-size: 0.92rem; opacity: 0.85; }
+.offer .badge { display: inline-block; font: 600 0.68rem var(--font-head); letter-spacing: 0.14em; text-transform: uppercase; background: var(--mint); color: var(--deep); padding: 0.35em 0.8em; border-radius: 999px; margin-bottom: 0.45rem; display: table; }
+@media (max-width: 520px) { .offer li { flex-wrap: wrap; } }
