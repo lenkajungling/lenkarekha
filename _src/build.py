@@ -647,7 +647,7 @@ firmy = f"""
     <div class="stats">
       <div class="stat"><strong>62&nbsp;dní</strong><p>V průměru trvá v Česku jedna neschopenka kvůli nemocem pohybového aparátu, nejčastěji bolestem zad. Je to skupina nemocí, která firmy stojí nejvíc ztraceného pracovního času.<sup><a href="#zdroje">1</a></sup></p></div>
       <div class="stat"><strong>14&nbsp;dní</strong><p>Prvních čtrnáct dní každé nemoci platí náhradu mzdy zaměstnavatel. K tomu přichází zástup, přesčasy kolegů a práce, která čeká.<sup><a href="#zdroje">2</a></sup></p></div>
-      <div class="stat"><strong>12&nbsp;miliard</strong><p>Pracovních dní se ve světě ročně ztratí kvůli depresi a úzkosti. Světovou ekonomiku to stojí téměř bilion dolarů, hlavně na nižší výkonnosti.<sup><a href="#zdroje">3</a></sup></p></div>
+      <div class="stat"><strong>79&nbsp;dní</strong><p>V průměru trvá v Česku neschopenka kvůli duševním nemocem, jako jsou deprese nebo úzkostné poruchy. Déle stonají lidé jen s rakovinou.<sup><a href="#zdroje">3</a></sup></p></div>
       <div class="stat"><strong>12&nbsp;týdnů</strong><p>Jógy stačilo, aby o 21 procentních bodů méně lidí s chronickou bolestí zad potřebovalo léky proti bolesti než ve skupině bez cvičení. Jóga tu fungovala stejně dobře jako fyzioterapie.<sup><a href="#zdroje">4</a></sup></p></div>
     </div>
     <div class="value-box">
@@ -684,7 +684,7 @@ firmy = f"""
     <ol class="sources-list">
       <li>Česká správa sociálního zabezpečení, statistika pracovní neschopnosti 2025, podle <a href="https://www.businessinfo.cz/clanky/zdravi-zamestnancu-je-ekonomicka-nutnost/" target="_blank" rel="noopener">BusinessInfo.cz: Zdraví zaměstnanců je ekonomická nutnost</a>.</li>
       <li>Zákoník práce, § 192: náhrada mzdy v prvních 14 kalendářních dnech dočasné pracovní neschopnosti.</li>
-      <li>WHO a ILO, 2022: <a href="https://www.who.int/europe/news/item/28-09-2022-who-and-ilo-call-for-new-measures-to-tackle-mental-health-issues-at-work" target="_blank" rel="noopener">WHO and ILO call for new measures to tackle mental health issues at work</a>.</li>
+      <li>Český statistický úřad: <a href="https://csu.gov.cz/produkty/pocet-neschopenek-v-1-pololeti-roku-2024-klesl-o-ctyri-procenta" target="_blank" rel="noopener">Počet neschopenek v 1. pololetí roku 2024 klesl o čtyři procenta</a> (průměrná délka neschopnosti podle skupin nemocí).</li>
       <li>Saper a kol., 2017: <a href="https://bmc.org/news/press-releases/2017/06/19/yoga-and-physical-therapy-yield-similar-results-treating-chronic-low" target="_blank" rel="noopener">Yoga, Physical Therapy, or Education for Chronic Low Back Pain</a>, Annals of Internal Medicine. 320 dospělých, o 21 procentních bodů méně užívání léků proti bolesti oproti kontrolní skupině.</li>
       <li>Wolever a kol., 2012: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3373881/" target="_blank" rel="noopener">Effective and viable mind-body stress reduction in the workplace</a>, Journal of Occupational Health Psychology. 239 zaměstnanců.</li>
     </ol>
