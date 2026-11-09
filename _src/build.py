@@ -672,7 +672,7 @@ firmy = f"""
       <ul class="offer">
         <li><span><strong>Nezávazná úvodní lekce</strong> pro váš tým</span><span class="price">zdarma</span></li>
         <li><span><strong>Měsíční spolupráce</strong> · 4 × 50 min, skupina do 15 osob</span><span class="price">12 000 Kč / měs.</span></li>
-        <li class="featured"><span><span class="badge">Nejvýhodnější</span><strong>Půlroční spolupráce</strong> · 4 × 50 min měsíčně<br><span class="save">(celkem 48 000 Kč, ušetříte 24 000 Kč)</span></span><span class="price">8 000 Kč / měs.</span></li>
+        <li class="featured"><span><span class="badge">Nejžádanější</span><strong>Půlroční spolupráce</strong> · 4 × 50 min měsíčně<br><span class="save">(celkem 48 000 Kč, ušetříte 24 000 Kč)</span></span><span class="price">8 000 Kč / měs.</span></li>
       </ul>
       <p>Nejsem plátkyně DPH, ceny jsou konečné. Doprava v rámci Přerova a Olomouce zdarma. Lekce probíhají před pracovní dobou nebo po ní, bez zásahu do chodu firmy. Workshop Flow State Reset nabízím i pro týmy.</p>
     </div>
