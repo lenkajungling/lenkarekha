@@ -609,3 +609,7 @@ td small { display: block; color: var(--muted); }
 .sources-title { font-size: 1.1rem; margin: 0 0 0.6rem; color: var(--muted); }
 .sources-list { margin: 0; padding-left: 1.2rem; font-size: 0.85rem; line-height: 1.6; color: var(--muted); }
 .sources-list a { color: inherit; }
+ol.blocks.numbered { list-style: none; padding: 0; margin: 0; }
+.blocks.numbered .block { position: relative; }
+.blocks.numbered .num { display: block; font: 700 1.9rem/1 var(--font-head); color: var(--teal); letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+.blocks.numbered .block sup a { color: var(--teal-deep); text-decoration: none; font-weight: 600; }

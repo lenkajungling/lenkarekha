@@ -660,12 +660,14 @@ firmy = f"""
   <div class="wrap page-grid">
     <div class="prose">
       <h2 style="margin-top:0">Proč to funguje</h2>
-      <div class="blocks">
-        <div class="block"><h3>Méně bolesti zad a hlavy</h3><p>Jógová terapie cílí na příčiny obtíží: zkrácené svaly, přetížené fascie a kompenzační vzorce z dlouhého sezení u počítače. Výzkumy ukazují, že u chronické bolesti zad pomáhá podobně jako fyzioterapie.</p></div>
-        <div class="block"><h3>Méně stresu, lepší spánek</h3><p>V randomizované studii u zaměstnanců pojišťovny Aetna jóga výrazně snížila vnímaný stres a zlepšila kvalitu spánku i variabilitu srdeční frekvence, tedy schopnost těla zotavit se.<sup><a href="#zdroje">5</a></sup> Dechové techniky, které používají i freediveři, zklidní nervovou soustavu během pár minut.</p></div>
-        <div class="block"><h3>Lepší soustředění</h3><p>Odpočatý nervový systém znamená méně chyb a lepší rozhodování. Lekce před pracovní dobou nebo v polední pauze lidem vrátí energii na zbytek dne.</p></div>
-        <div class="block"><h3>Lidé, kteří chtějí zůstat</h3><p>Péče o zdraví je benefit, který zaměstnanci opravdu využijí a ocení. Sdílená praxe stmeluje tým a lidé se potkají jinak než u monitoru.</p></div>
-      </div>
+      <ol class="blocks numbered">
+        <li class="block"><span class="num">01</span><h3>Úleva od bolesti zad a hlavy</h3><p>Jógová terapie cílí na příčiny obtíží pohybového aparátu: zkrácené svaly, přetížené fascie a kompenzační vzorce při dlouhodobém sezení u počítače.</p></li>
+        <li class="block"><span class="num">02</span><h3>Korekce postury a pohybových vzorců</h3><p>Systematická práce s tělem mění způsob, jak zaměstnanci sedí, stojí a dýchají, i mimo lekci.</p></li>
+        <li class="block"><span class="num">03</span><h3>Méně stresu, rychle a měřitelně</h3><p>Dechové techniky z pránájámy, které využívají i profesionální freediveři, dokáží během minut zklidnit nervovou soustavu a obnovit soustředění.</p></li>
+        <li class="block"><span class="num">04</span><h3>Vyšší produktivita týmu</h3><p>Firmy, které investují do zdraví zaměstnanců, se podle studií dočkají návratnosti zhruba 1,5 až 6 korun za každou vloženou korunu, hlavně díky nižší absenci a nižším nákladům na péči o zdraví.<sup><a href="#zdroje">5</a></sup></p></li>
+        <li class="block"><span class="num">05</span><h3>Silnější tým</h3><p>Sdílená praxe stmeluje. Lekce jsou prostor, kde se lidé setkají jinak než u monitoru.</p></li>
+        <li class="block"><span class="num">06</span><h3>Méně nemocenských, měřitelně</h3><p>Britská studie zaměstnanců zdravotnictví ukázala velký rozdíl: zaměstnanci, kteří cvičili jógu, zameškali za 6 měsíců kvůli potížím pohybového aparátu 2 pracovní dny. Kontrolní skupina 43 dní.<sup><a href="#zdroje">6</a></sup></p></li>
+      </ol>
       <h2>Balíčky</h2>
       <ul class="offer">
         <li><span><strong>Nezávazná úvodní lekce</strong> pro váš tým</span><span class="price">zdarma</span></li>
@@ -686,7 +688,8 @@ firmy = f"""
       <li>Zákoník práce, § 192: náhrada mzdy v prvních 14 kalendářních dnech dočasné pracovní neschopnosti.</li>
       <li>Český statistický úřad: <a href="https://csu.gov.cz/produkty/pocet-neschopenek-v-1-pololeti-roku-2024-klesl-o-ctyri-procenta" target="_blank" rel="noopener">Počet neschopenek v 1. pololetí roku 2024 klesl o čtyři procenta</a> (průměrná délka neschopnosti podle skupin nemocí).</li>
       <li>Saper a kol., 2017: <a href="https://bmc.org/news/press-releases/2017/06/19/yoga-and-physical-therapy-yield-similar-results-treating-chronic-low" target="_blank" rel="noopener">Yoga, Physical Therapy, or Education for Chronic Low Back Pain</a>, Annals of Internal Medicine. 320 dospělých, o 21 procentních bodů méně užívání léků proti bolesti oproti kontrolní skupině.</li>
-      <li>Wolever a kol., 2012: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3373881/" target="_blank" rel="noopener">Effective and viable mind-body stress reduction in the workplace</a>, Journal of Occupational Health Psychology. 239 zaměstnanců.</li>
+      <li>Baicker a kol., 2010, Health Affairs: návratnost firemních programů péče o zdraví zhruba 3,27 USD na nákladech na zdravotní péči a 2,73 USD na absenci za každý vložený dolar. Střízlivější odhad společnosti RAND je 1,50 USD: <a href="https://www.shrm.org/topics-tools/news/benefits-compensation/real-roi-employee-wellness-programs" target="_blank" rel="noopener">SHRM: The Real ROI for Employee Wellness Programs</a>.</li>
+      <li>Hartfiel a kol., 2017: <a href="https://academic.oup.com/occmed/article/67/9/687/4676035" target="_blank" rel="noopener">Cost-effectiveness of yoga for managing musculoskeletal conditions in the workplace</a>, Occupational Medicine. Zaměstnanci britské zdravotní služby NHS.</li>
     </ol>
   </div>
 </section>
