@@ -641,15 +641,30 @@ firmy_inner = """<div class="band-text">
     <p class="lead">Pravidelné lekce jógové terapie přímo u vás, v Přerově a Olomouci. Snižují bolest zad a hlavy, zlepšují posturu při dlouhodobém sezení a posilují odolnost vůči stresu.</p></div>"""
 firmy = f"""
 {band('', 'lekce-korekce.jpg', 'Lenka koriguje pozici klientky na lekci', firmy_inner, 'band-page band-top', 'center 8%')}
-<section class="section s-white wv-up">
+<section class="section s-white wv-up" id="cisla">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Proč se to vyplatí</p><h2>Čísla, která <span class="hand">bolí.</span></h2></div>
+    <div class="stats">
+      <div class="stat"><strong>62&nbsp;dní</strong><p>V průměru trvá v Česku jedna neschopenka kvůli nemocem pohybového aparátu, nejčastěji bolestem zad. Je to skupina nemocí, která firmy stojí nejvíc ztraceného pracovního času.<sup><a href="#zdroje">1</a></sup></p></div>
+      <div class="stat"><strong>14&nbsp;dní</strong><p>Prvních čtrnáct dní každé nemoci platí náhradu mzdy zaměstnavatel. K tomu přichází zástup, přesčasy kolegů a práce, která čeká.<sup><a href="#zdroje">2</a></sup></p></div>
+      <div class="stat"><strong>12&nbsp;miliard</strong><p>Pracovních dní se ve světě ročně ztratí kvůli depresi a úzkosti. Světovou ekonomiku to stojí téměř bilion dolarů, hlavně na nižší výkonnosti.<sup><a href="#zdroje">3</a></sup></p></div>
+      <div class="stat"><strong>12&nbsp;týdnů</strong><p>Jógy stačilo, aby o 21 procentních bodů méně lidí s chronickou bolestí zad potřebovalo léky proti bolesti než ve skupině bez cvičení. Jóga tu fungovala stejně dobře jako fyzioterapie.<sup><a href="#zdroje">4</a></sup></p></div>
+    </div>
+    <div class="value-box">
+      <h3>Méně než 600&nbsp;Kč měsíčně na člověka</h3>
+      <p>Při půlroční spolupráci a týmu 15 lidí vychází pravidelná jóga na zhruba 530&nbsp;Kč na zaměstnance měsíčně. To je méně než jeden den náhrady mzdy. Stačí, aby lekce ušetřily jedinou delší neschopenku, a investice se firmě vrátí. Navíc získáte lidi, kteří jsou soustředěnější, méně ve stresu a rádi ve firmě zůstávají.</p>
+    </div>
+  </div>
+</section>
+<section class="section s-foam">
   <div class="wrap page-grid">
     <div class="prose">
       <h2 style="margin-top:0">Proč to funguje</h2>
       <div class="blocks">
-        <div class="block"><h3>Úleva od bolesti zad a hlavy</h3><p>Jógová terapie cílí na příčiny obtíží: zkrácené svaly, přetížené fascie a kompenzační vzorce při dlouhém sezení u počítače.</p></div>
-        <div class="block"><h3>Lepší postura</h3><p>Systematická práce s tělem mění způsob, jak lidé sedí, stojí a dýchají, i mimo lekci.</p></div>
-        <div class="block"><h3>Méně stresu</h3><p>Dechové techniky z pránájámy, které využívají i profesionální freediveři, dokáží během minut zklidnit nervovou soustavu a obnovit soustředění.</p></div>
-        <div class="block"><h3>Silnější tým</h3><p>Sdílená praxe stmeluje. Lekce jsou prostor, kde se lidé potkají jinak než u monitoru.</p></div>
+        <div class="block"><h3>Méně bolesti zad a hlavy</h3><p>Jógová terapie cílí na příčiny obtíží: zkrácené svaly, přetížené fascie a kompenzační vzorce z dlouhého sezení u počítače. Výzkumy ukazují, že u chronické bolesti zad pomáhá podobně jako fyzioterapie.</p></div>
+        <div class="block"><h3>Méně stresu, lepší spánek</h3><p>V randomizované studii u zaměstnanců pojišťovny Aetna jóga výrazně snížila vnímaný stres a zlepšila kvalitu spánku i variabilitu srdeční frekvence, tedy schopnost těla zotavit se.<sup><a href="#zdroje">5</a></sup> Dechové techniky, které používají i freediveři, zklidní nervovou soustavu během pár minut.</p></div>
+        <div class="block"><h3>Lepší soustředění</h3><p>Odpočatý nervový systém znamená méně chyb a lepší rozhodování. Lekce před pracovní dobou nebo v polední pauze lidem vrátí energii na zbytek dne.</p></div>
+        <div class="block"><h3>Lidé, kteří chtějí zůstat</h3><p>Péče o zdraví je benefit, který zaměstnanci opravdu využijí a ocení. Sdílená praxe stmeluje tým a lidé se potkají jinak než u monitoru.</p></div>
       </div>
       <h2>Balíčky</h2>
       <ul class="offer">
@@ -657,12 +672,24 @@ firmy = f"""
         <li><span><strong>Měsíční spolupráce</strong> · 4 × 50 min, skupina do 15 osob</span><span class="price">12 000 Kč / měs.</span></li>
         <li><span><strong>Půlroční spolupráce</strong> · 4 × 50 min měsíčně, celkem 48 000 Kč, ušetříte 24 000 Kč</span><span class="price">8 000 Kč / měs.</span></li>
       </ul>
-      <p>Ceny jsou bez DPH. Doprava v rámci Přerova a Olomouce zdarma. Lekce probíhají před pracovní dobou nebo po ní, bez zásahu do chodu firmy. Workshop Flow State Reset nabízím i pro týmy.</p>
+      <p>Nejsem plátkyně DPH, ceny jsou konečné. Doprava v rámci Přerova a Olomouce zdarma. Lekce probíhají před pracovní dobou nebo po ní, bez zásahu do chodu firmy. Workshop Flow State Reset nabízím i pro týmy.</p>
     </div>
     <aside class="aside-card"><h3>Nabídka pro váš tým</h3><p>Napište mi. Do 48 hodin se ozvu s konkrétním návrhem frekvence, formátu a ceny.</p>{ask('Poptat spolupráci')}</aside>
   </div>
 </section>
 {refs_section(["zivina", "monika"], "Co říkají firmy")}
+<section class="section s-white sources" id="zdroje">
+  <div class="wrap">
+    <h2 class="sources-title">Zdroje</h2>
+    <ol class="sources-list">
+      <li>Česká správa sociálního zabezpečení, statistika pracovní neschopnosti 2025, podle <a href="https://www.businessinfo.cz/clanky/zdravi-zamestnancu-je-ekonomicka-nutnost/" target="_blank" rel="noopener">BusinessInfo.cz: Zdraví zaměstnanců je ekonomická nutnost</a>.</li>
+      <li>Zákoník práce, § 192: náhrada mzdy v prvních 14 kalendářních dnech dočasné pracovní neschopnosti.</li>
+      <li>WHO a ILO, 2022: <a href="https://www.who.int/europe/news/item/28-09-2022-who-and-ilo-call-for-new-measures-to-tackle-mental-health-issues-at-work" target="_blank" rel="noopener">WHO and ILO call for new measures to tackle mental health issues at work</a>.</li>
+      <li>Saper a kol., 2017: <a href="https://bmc.org/news/press-releases/2017/06/19/yoga-and-physical-therapy-yield-similar-results-treating-chronic-low" target="_blank" rel="noopener">Yoga, Physical Therapy, or Education for Chronic Low Back Pain</a>, Annals of Internal Medicine. 320 dospělých, o 21 procentních bodů méně užívání léků proti bolesti oproti kontrolní skupině.</li>
+      <li>Wolever a kol., 2012: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3373881/" target="_blank" rel="noopener">Effective and viable mind-body stress reduction in the workplace</a>, Journal of Occupational Health Psychology. 239 zaměstnanců.</li>
+    </ol>
+  </div>
+</section>
 {cta_band('', 'Chcete to vyzkoušet?', 'Začněte nezávaznou úvodní lekcí.', 'Napsat mi')}
 """
 page("firmy.html", "Pro firmy — Lenka Rekha", "Jógová terapie a dech pro firmy v Přerově a Olomouci. Nezávazná úvodní lekce.", firmy, "firmy")

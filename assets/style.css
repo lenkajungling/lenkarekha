@@ -597,3 +597,15 @@ td small { display: block; color: var(--muted); }
 .pod-refs .ref-card { background: var(--sun-tint); box-shadow: none; }
 .pod-refs .ref-card blockquote::before { color: var(--sun); }
 .pod-refs .ref-card figcaption strong { color: var(--sun-dark); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.1rem; margin-top: 0.5rem; }
+.stat { background: var(--foam, #eef7f5); border-radius: 24px; padding: 1.6rem 1.5rem; display: flex; flex-direction: column; gap: 0.6rem; }
+.stat strong { font-family: var(--font-head); font-weight: 700; font-size: clamp(2.4rem, 4.2vw, 3.3rem); line-height: 1; letter-spacing: -0.03em; color: var(--teal-deep); }
+.stat p { margin: 0; font-size: 0.97rem; line-height: 1.55; color: var(--ink); }
+.stat sup a, .prose sup a { color: var(--teal-deep); text-decoration: none; font-weight: 600; }
+.value-box { margin-top: 1.6rem; background: var(--deep); color: var(--white); border-radius: 28px; padding: clamp(1.6rem, 4vw, 2.6rem); }
+.value-box h3 { color: var(--mint); font-size: clamp(1.5rem, 2.6vw, 2.1rem); margin: 0 0 0.6rem; }
+.value-box p { margin: 0; max-width: 70ch; opacity: 0.92; }
+.sources { padding-block: 2.5rem; }
+.sources-title { font-size: 1.1rem; margin: 0 0 0.6rem; color: var(--muted); }
+.sources-list { margin: 0; padding-left: 1.2rem; font-size: 0.85rem; line-height: 1.6; color: var(--muted); }
+.sources-list a { color: inherit; }
