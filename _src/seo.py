@@ -21,6 +21,8 @@ META = {
                         "Příběh lektorky jógy Lenky Rekhy: z korporátu přes Londýn, Indii a Filipíny k józe bez nálepek. Certifikace MŠMT, jógová terapie, AIDA4."),
     "rozvrh.html": ("Rozvrh lekcí jógy Přerov, Olomouc, Lipník, Hradčany | Lenka Rekha",
                     "Aktuální rozvrh lekcí jógy, jógové terapie, hravé flow a pránájámy v Přerově, Olomouci, Lipníku nad Bečvou a Hradčanech. Ceny 200–300 Kč."),
+    "rezervace.html": ("Rezervace masáže a individuální lekce jógy Přerov | Lenka Rekha",
+                       "Online rezervace intuitivní masáže a individuálních lekcí jógy v Přerově. Vyber si volný termín, potvrzení přijde e-mailem."),
     "kontakt.html": ("Kontakt: jóga, dech a masáže Přerov | Lenka Rekha",
                      "Napiš mi na WhatsApp, e-mail nebo přes formulář. Lekce jógy, masáže a kurzy v Přerově, Olomouci, Lipníku nad Bečvou a Hradčanech."),
 }
