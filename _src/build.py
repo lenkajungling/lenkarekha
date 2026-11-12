@@ -101,8 +101,6 @@ def page(path, title, desc, body, current=None):
     nav = [item(sl, n, subs) for sl, n, subs, *_ in PILLARS]
     nav.append(item("moje-cesta", "Moje cesta", CESTA_SUB))
     kcur = ' aria-current="page"' if current == "kontakt" else ""
-    rcur = ' aria-current="page"' if current == "rezervace" else ""
-    nav.append(f'<a class="nav-top" href="{pre}rezervace.html"{rcur}>Rezervace</a>')
     nav.append(f'<a class="nav-top" href="{pre}kontakt.html"{kcur}>Kontakt</a>')
     fcur = ' aria-current="page"' if current == "firmy" else ""
     nav.append(f'<a class="nav-firmy" href="{pre}firmy.html"{fcur}>Pro firmy</a>')
@@ -165,7 +163,7 @@ def page(path, title, desc, body, current=None):
         <ul>
           <li><a href="{pre}moje-cesta.html">Moje cesta</a></li>
           <li><a href="{pre}rozvrh.html">Rozvrh</a></li>
-          <li><a href="{pre}rezervace.html">Rezervace online</a></li>
+          <li><a href="{RES}" target="_blank" rel="noopener">Rezervace online</a></li>
           <li><a href="{pre}moje-cesta.html#reference">Reference</a></li>
           <li><a href="{pre}firmy.html">Pro firmy</a></li>
           <li><a href="{pre}podnikavky.html">Podnikavky Přerov</a></li>
@@ -277,7 +275,7 @@ home = f"""
         <h1>Dech, pohyb, dotek, <span class="hand">voda.</span><span class="sub">Cesta zpátky k sobě má víc podob.</span></h1>
         <p class="lead">Jsem Lenka Rekha, lektorka jógy a jógové terapie, průvodkyně dechem a freediverka. Téměř deset let pomáhám lidem naslouchat vlastnímu tělu. Individuálně, ve skupině, offline i online. Lekce jógy vedu v Přerově, Olomouci, Lipníku nad Bečvou a Hradčanech.</p>
         <div class="btn-row">
-          <a class="btn light" href="rezervace.html">Rezervovat termín</a>
+          <a class="btn light" href="https://rekha-yoga.reservio.com" target="_blank" rel="noopener">Rezervovat termín</a>
           <a class="btn outline-light" href="kontakt.html">Napsat mi</a>
         </div>
       </div>""", "band-hero band-split", "18% 40%").replace('</section>', '<a class="scroll-cue" href="#co-hledas">ponoř se ↓</a></section>')}
@@ -565,7 +563,7 @@ pillar_page("pohyb", "Pohyb", 'Pohyb bez <span class="hand">mantinelů.</span>',
 <li><span>Balíček 5 lekcí</span><span class="price">5 000 Kč</span></li>
 <li><span>Balíček 10 lekcí</span><span class="price">10 000 Kč</span></li>
 </ul>""",
-         f"""<h3>Rezervuj si úvodní lekci</h3><p>Vyber si volný termín v kalendáři. Nebo mi napiš, co tě trápí nebo co hledáš, a domluvíme se.</p><div class="btn-row">{ask('Rezervovat termín', 'rezervace.html')}{ask('Napsat mi', 'kontakt.html', 'ghost')}</div><p style="font-size:.95rem">Nebo rovnou na <a href="{WA}">WhatsApp</a>.</p>""",
+         f"""<h3>Rezervuj si úvodní lekci</h3><p>Vyber si volný termín v kalendáři. Nebo mi napiš, co tě trápí nebo co hledáš, a domluvíme se.</p><div class="btn-row"><a class="btn" href="{RES}" target="_blank" rel="noopener">Rezervovat termín</a>{ask('Napsat mi', 'kontakt.html', 'ghost')}</div><p style="font-size:.95rem">Nebo rovnou na <a href="{WA}">WhatsApp</a>.</p>""",
          ("lekce-popruh.jpg", "Lenka nastavuje klientovi jógový popruh přes ramena")),
         ("lekce", "Lekce: Skupinové", "Hravá flow a integrovaná terapie",
          """<h3>Integrovaná terapie</h3>
@@ -592,7 +590,7 @@ pillar_page("dotek", "Dotek", 'Dotek, který tělu vrátí <span class="hand">ro
 <p>Každé setkání přizpůsobuji tomu, co tělo právě potřebuje. Někdy hlubší práce se svaly, jindy jemnější přístup k celkovému uvolnění. Začínáme krátkou konzultací, pak masíruji.</p>
 <p>Jsem lektorka jógy a dlouhodobě pracuji s dechem a vědomým pohybem. Jako tanečnice i freediverka se učím vnímat tělo, rytmus a dech v hlubší rovině. Dotek je přirozeným rozšířením téhle práce.</p>
 <p>Brzy v nabídce i thajská masáž na futonu.</p>""",
-         """<h3>Pro koho</h3><p>Pro každého, kdo cítí napětí v těle, potřebuje si odpočinout nebo chce svému tělu dopřát vědomou péči.</p><p><strong>Kde:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Wilsonova%2C+Přerov" target="_blank" rel="noopener">Přerov, Wilsonova ulice</a></p>""" + ask("Rezervovat masáž"),
+         """<h3>Pro koho</h3><p>Pro každého, kdo cítí napětí v těle, potřebuje si odpočinout nebo chce svému tělu dopřát vědomou péči.</p><p><strong>Kde:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Wilsonova%2C+Přerov" target="_blank" rel="noopener">Přerov, Wilsonova ulice</a></p>""" + f'<a class="btn" href="{RES}" target="_blank" rel="noopener">Rezervovat masáž</a>',
          None),
         ("cenik", "Ceník", "Kolik to stojí",
          """<ul class="offer">
@@ -600,7 +598,7 @@ pillar_page("dotek", "Dotek", 'Dotek, který tělu vrátí <span class="hand">ro
 <li><span>Intuitivní masáž · 60 minut + 10 minut konzultace</span><span class="price">1 000 Kč</span></li>
 </ul>
 <p>Brzy v nabídce i <strong>thajská masáž na futonu</strong>.</p>""",
-         f"""<h3>Rezervace</h3><p>Volné termíny masáží najdeš v online kalendáři. Rezervace zabere minutu.</p><div class="btn-row">{ask('Rezervovat masáž', 'rezervace.html')}</div><p style="font-size:.95rem">Raději se nejdřív zeptáš? Napiš mi na <a href="{WA}">WhatsApp</a> nebo přes <a href="kontakt.html?tema=Dotek">formulář</a>.</p>""",
+         f"""<h3>Rezervace</h3><p>Volné termíny masáží najdeš v online kalendáři. Rezervace zabere minutu.</p><div class="btn-row"><a class="btn" href="{RES}" target="_blank" rel="noopener">Rezervovat masáž</a></div><p style="font-size:.95rem">Raději se nejdřív zeptáš? Napiš mi na <a href="{WA}">WhatsApp</a> nebo přes <a href="kontakt.html?tema=Dotek">formulář</a>.</p>""",
          None),
     ],
     ["sandra"], "Cítíš napětí, které nechce povolit?", "Napiš mi a domluvíme termín masáže.")
@@ -847,7 +845,7 @@ kontakt = f"""
   <div class="wrap page-grid">
     <div class="form-card">{contact_form('')}</div>
     <aside class="stack-lg">
-      <div class="booking-mini"><h3>Rezervace online</h3><p>Masáž nebo individuální lekci si zarezervuj rovnou v kalendáři.</p><a class="btn" href="rezervace.html">Rezervovat termín</a></div>
+      <div class="booking-mini"><h3>Rezervace online</h3><p>Masáž nebo individuální lekci si zarezervuj rovnou v kalendáři.</p><a class="btn" href="{RES}" target="_blank" rel="noopener">Rezervovat termín</a></div>
       <ul class="contact-list">
         <li><span class="k">WhatsApp / telefon</span><a href="{WA}">{PHONE}</a></li>
         <li><span class="k">E-mail</span><a href="mailto:{EMAIL}">{EMAIL}</a></li>
@@ -904,32 +902,6 @@ gdpr = f"""
 """
 page("gdpr.html", "Ochrana osobních údajů — Lenka Rekha", "Zásady ochrany osobních údajů webu lenkarekha.com.", gdpr)
 
-# ======================= REZERVACE =======================
-rez = f"""
-<section class="page-hero wv-down">
-  <div class="wrap">
-    <p class="crumbs"><a href="./">Domů</a> / Rezervace</p>
-    <h1>Rezervuj si <span class="hand">termín.</span></h1>
-    <p class="lead">Masáž, individuální lekce nebo nezávazná úvodní lekce. Vyber si službu a volný čas, potvrzení ti přijde e-mailem.</p>
-  </div>
-</section>
-<section class="section">
-  <div class="wrap">
-    <div class="booking-card">
-      <iframe class="booking-frame" src="{RES}" title="Rezervační kalendář Lenky Rekhy" loading="lazy"></iframe>
-    </div>
-    <p class="booking-fallback">Kalendář se nenačetl, nebo se ti v něm špatně kliká? <a class="btn" href="{RES}" target="_blank" rel="noopener">Otevřít rezervace v novém okně</a></p>
-    <div class="booking-info">
-      <div><h3>Storno</h3><p>Termín můžeš zdarma zrušit nebo přesunout nejpozději 24 hodin předem. Víc v <a href="obchodni-podminky.html">obchodních podmínkách</a>.</p></div>
-      <div><h3>Kde</h3><p>Masáže v Přerově. Individuální lekce osobně v Přerově a okolí, nebo online. Místo upřesním v potvrzení.</p></div>
-      <div><h3>Skupinové lekce</h3><p>Časy pravidelných lekcí, pránájámy a workshopů najdeš v <a href="rozvrh.html">rozvrhu</a>. Místo si rezervuj přes <a href="{WA}">WhatsApp</a>.</p></div>
-    </div>
-  </div>
-</section>
-{cta_band('', 'Nevíš, co vybrat?', 'Napiš mi pár vět o tom, co tě trápí nebo co hledáš. Poradím ti.', 'Napsat mi')}
-"""
-page("rezervace.html", "Rezervace — Lenka Rekha", "Online rezervace masáží a individuálních lekcí jógy v Přerově. Vyber si volný termín v kalendáři.", rez, "rezervace")
-
 # ======================= OBCHODNÍ PODMÍNKY =======================
 vop = f"""
 <section class="page-hero wv-down">
@@ -945,7 +917,7 @@ vop = f"""
       <h2>Kdo služby poskytuje</h2>
       <p>Lenka Jüngling, IČO {ICO}, se sídlem Budovatelů 7, 750 02 Přerov, podnikatelka zapsaná v živnostenském rejstříku, podnikající pod značkou Lenka Rekha. Kontakt: <a href="mailto:{EMAIL}">{EMAIL}</a>, {PHONE}.</p>
       <h2>Jak se přihlásit</h2>
-      <p>Masáž a individuální lekci si můžeš zarezervovat online v <a href="rezervace.html">rezervačním kalendáři</a> (služba Reservio). Rezervace je závazná ve chvíli, kdy ti přijde potvrzení e-mailem. Na lekci, masáž, kurz nebo workshop se můžeš přihlásit i zprávou přes formulář, e-mail nebo WhatsApp. Přihláška je závazná ve chvíli, kdy ti termín potvrdím, a u akcí placených předem po přijetí platby. Na pravidelné skupinové lekce se přihlásíš stejně, místo ti potvrdím podle kapacity sálu.</p>
+      <p>Masáž a individuální lekci si můžeš zarezervovat online v <a href="{RES}" target="_blank" rel="noopener">rezervačním kalendáři</a> (služba Reservio). Rezervace je závazná ve chvíli, kdy ti přijde potvrzení e-mailem. Na lekci, masáž, kurz nebo workshop se můžeš přihlásit i zprávou přes formulář, e-mail nebo WhatsApp. Přihláška je závazná ve chvíli, kdy ti termín potvrdím, a u akcí placených předem po přijetí platby. Na pravidelné skupinové lekce se přihlásíš stejně, místo ti potvrdím podle kapacity sálu.</p>
       <h2>Ceny a platba</h2>
       <ul><li><strong>Všechny platby probíhají převodem na účet</strong>, platební údaje ti pošlu s potvrzením přihlášky.</li><li><strong>Kurzy, workshopy a balíčky lekcí:</strong> platba předem.</li><li><strong>Retreat:</strong> záloha a doplatek podle podmínek, které dostaneš s přihláškou.</li></ul>
       <p>Aktuální ceny najdeš u jednotlivých služeb a v rozvrhu. Nejsem plátkyně DPH.</p>
